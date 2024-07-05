@@ -6,8 +6,8 @@
 ### 📂1st Semester
 | No. | Course                        | Concepts and knowledge                                   |
 |-----|-------------------------------|-------------------------------------------------------|
-| 1   | Algebra                       | Linear Algebra, Vector Spaces, Cryptography, Coding Theory            |
-| 2   | Mathematical Analysis         | Differential and Integral Calculus, Series, Gradient Descent |
+| 1   | [Algebra](#algebra)           | Linear Algebra, Vector Spaces, Cryptography, Coding Theory            |
+| 2   | [Mathematical Analysis]         | Differential and Integral Calculus, Series, Gradient Descent |
 | 3   | Programming Fundamentals      | Python, Pickle, Layered Architecture, Program Design, Problem Solving Methods |
 | 4   | Computer Systems Architecture | x86 Assembly, C, low-level multi-module programming   |
 | 5   | Computational Logic           | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
