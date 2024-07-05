@@ -7,23 +7,17 @@
 | No. | Course                        | Concepts and knowledge                                   |
 |-----|-------------------------------|-------------------------------------------------------|
 | 1   | Algebra                       | Linear Algebra, Vector Spaces, Cryptography, Coding Theory            |
-| 2   | Mathematical Analysis         | Differential calculus, integral calculus, Least Squares, planar curves |
-| 3   | Computer Systems Architecture | x86 Assembly, C, low-level multi-module programming   |
-| 4   | Computational Logic           | CNF, DNF, propositional calculus, predicate calculus, Boolean algebra, logic circuits |
-| 5   | Programming Fundamentals      | Python, Pygame, Pickle, CSV, JSON, SQL, layered architecture |
+| 2   | Mathematical Analysis         | Differential and Integral Calculus, Series, Gradient Descent |
+| 3   | Programming Fundamentals      | Python, Pickle, Layered Architecture, Program Design, Problem Solving Methods |
+| 4   | Computer Systems Architecture | x86 Assembly, C, low-level multi-module programming   |
+| 5   | Computational Logic           | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
 
 ### 📂2nd Semester
 | No. | Course                        | Tech Stack/Concepts                                   |
 |-----|-------------------------------|-------------------------------------------------------|
-| 1   | Operating Systems             | Linux, PuTTY, bash, C, processes, threads, file systems |
-| 2   | Object Oriented Programming   | C, C++, Qt, Observer design pattern, Model-View-Controller design pattern |
-| 3   | Data Structures and Algorithms| C++, Test-Driven Development, sparse matrices, AVL Trees, Huffman codes, ADT Types, Containers, Iterators |
-| 4   | Geometry                      | Analytic geometry, quadratic curves & surfaces, affine geometry |
-| 5  | Dynamical Systems             | Maple, Sage, Taylor expansion, Newton's second law of movement |
-
-
-
-
-
-
-
+| 2   | Object Oriented Programming   | C/C++, Qt, Qt Designer, Observer Design Pattern, Model View Controller Controller Pattern |
+| 3   | Data Structures and Algorithms| C++, Data Structures (arrays, linked lists, heaps, hash tables, binary trees), Abstract Data Types, AVL Trees |
+| 1   | Operating Systems             | Linux, Grep/Sed/Awk, Shell Program, Processes, Threads, Memory Management, Physical I/O |
+| 4   | Geometry                      | Affine Geometry, Euclidean Spaces, Affine Maps, Isometries, Quadratic Curves, Quaternions |
+| 5   | Dynamical Systems             | Maple, Sage, Linear Differential Equations And Systems, Phase Portrait |
+| 5   | Graph Algorithms              | Connectivity, Shortest Paths, Modeling Prerequisites, Flows, Traveling Salesman Problem, Planar Graphs |
