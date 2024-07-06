@@ -10,7 +10,7 @@
 | 2   | [Mathematical Analysis](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Mathematical%20Analysis)| Differential and Integral Calculus, Series, Gradient Descent |
 | 3   | [Programming Fundamentals](#programming-fundamentals)           | Python, Pickle, Layered Architecture, Program Design, Problem Solving Methods |
 | 4   | [Computer Systems Architecture](#computer-systems-architecture) | x86 Assembly, C, low-level multi-module programming   |
-| 5   | [Computational Logic](#computational-logic)                     | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
+| 5   | [Computational Logic](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Computational%20Logic) | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
 
 ### 📂2nd Semester
 | No. | Course                        | Concepts and knowledge                                    |
