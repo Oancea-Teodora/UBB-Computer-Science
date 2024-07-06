@@ -1,0 +1,7 @@
+
+The game will begin by each player placing their ships on their own battlefields.
+Then, each player will take turns targetting the opposing player's battlefield.
+If the player succesfully hits a ship, that player will also have the next turn.
+If not, the other player will have the next turn.
+
+The game is won simply by sinking the entire fleet of the opposing player.

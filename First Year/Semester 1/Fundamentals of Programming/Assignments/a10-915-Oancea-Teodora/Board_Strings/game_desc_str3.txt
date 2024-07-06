@@ -1,0 +1,8 @@
+
+The following are the ships for each player:
+
+    1. Carrier       +++++   (length of 5 squares)
+    2. Battleship    ++++    (length of 4 squares)
+    3. Destroyer     +++     (length of 3 squares)
+    4. Submarine     +++     (length of 3 squares)
+    5. Patrol Boat   ++      (length of 2 squares)
