@@ -13,7 +13,7 @@
 | 5   | [Computational Logic](#computational-logic)                     | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
 
 ### 📂2nd Semester
-| No. | Course                        | Tech Stack/Concepts                                   |
+| No. | Course                        | Concepts and knowledge                                    |
 |-----|-------------------------------|-------------------------------------------------------|
 | 1   | Object Oriented Programming   | C/C++, Qt, Qt Designer, Observer Design Pattern, Model View Controller Controller Pattern |
 | 2   | Data Structures and Algorithms| C++, Data Structures (arrays, linked lists, heaps, hash tables, binary trees), Abstract Data Types, AVL Trees |
