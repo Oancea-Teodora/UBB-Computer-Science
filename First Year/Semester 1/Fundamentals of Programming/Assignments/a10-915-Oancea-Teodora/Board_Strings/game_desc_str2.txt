@@ -1,0 +1,21 @@
+
+This is what a sample Battlefield looks like:
+
+       1  2  3  4  5  6  7  8  9  10
+    A [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+    B [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+    C [ ][ ][ ][ ][ ][ ][o][ ][ ][ ]
+    D [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+    E [ ][ ][ ][ ][+][X][+][+][ ][ ]
+    F [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+    G [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
+    H [ ][ ][o][ ][ ][ ][ ][ ][ ][ ]
+    I [ ][ ][ ][ ][+][+][+][+][ ][ ]
+    J [ ][ ][ ][ ][+][+][+][+][ ][ ]
+
+    Legend:
+    [ ] = Empty square
+    [+] = Occupied square (ship)
+    [o] = Targetted square (that was previously empty)
+    [X] = Targetted and hit square (that was occupied by a ship)
+    [#] = Destroyed ship
