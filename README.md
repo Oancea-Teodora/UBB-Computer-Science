@@ -7,7 +7,7 @@
 | No. | Course                        | Concepts and knowledge                                   |
 |-----|-------------------------------|-------------------------------------------------------|
 | 1   | [Algebra](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Algebra) |Linear Algebra, Vector Spaces, Cryptography, Coding Theory            |
-| 2   | [Mathematical Analysis](#mathematical-analysis)                 | Differential and Integral Calculus, Series, Gradient Descent |
+| 2   | [Mathematical Analysis](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Mathematical%20Analysis)| Differential and Integral Calculus, Series, Gradient Descent |
 | 3   | [Programming Fundamentals](#programming-fundamentals)           | Python, Pickle, Layered Architecture, Program Design, Problem Solving Methods |
 | 4   | [Computer Systems Architecture](#computer-systems-architecture) | x86 Assembly, C, low-level multi-module programming   |
 | 5   | [Computational Logic](#computational-logic)                     | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
