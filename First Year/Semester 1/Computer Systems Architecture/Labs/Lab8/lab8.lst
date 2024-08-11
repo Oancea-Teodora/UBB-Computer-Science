@@ -1,0 +1,48 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf            
+     8                                  import exit msvcrt.dll     
+     9                                  import printf msvcrt.dll     ; indicating to the assembler that the printf fct can be found in the msvcrt.dll library
+    10                                  import scanf msvcrt.dll                          ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    11                                  import fclose msvcrt.dll  
+    12                                  import fopen msvcrt.dll  
+    13                                  import fread msvcrt.dll  
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; a dd 7
+    18                                      ; push a (scanf)
+    19                                      ; push [a] (printf)
+    20 00000000 66697369657200              nume db 'fisier', 0
+    21 00000007 7700                        w db 'w', 0
+    22 00000009 73616C757400                s db 'salut', 0
+    23                                  ; our code starts here
+    24                                  segment code use32 class=code
+    25                                      start:
+    26                                          ; ...
+    27                                          ;FILE *fopen(const char * nume, const char * w)
+    28 00000000 68[07000000]                    push w
+    29 00000005 68[00000000]                    push nume
+    30                                          call [fopen]
+    30          ******************       error: symbol `fopen' undefined
+    31 0000000A 83C408                          add esp, 2*4
+    32 0000000D 89C3                            mov ebx, eax
+    33                                          ;fprint(eax, "%s %d %c", "string", -2, 'a');
+    34 0000000F 68[09000000]                    push s
+    35 00000014 50                              push eax
+    36 00000015 FF15[00000000]                  call [printf]
+    37 0000001B 83C408                          add esp, 2*4        
+    38                                          
+    39                                          ;int fclose(file *eax)
+    40 0000001E 50                              push eax
+    41                                          call [fclose]
+    41          ******************       error: symbol `fclose' undefined
+    42 0000001F 83C404                          add esp, 1*4
+    43                                      
+    44                                          ; exit(0)
+    45 00000022 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    46 00000024 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
