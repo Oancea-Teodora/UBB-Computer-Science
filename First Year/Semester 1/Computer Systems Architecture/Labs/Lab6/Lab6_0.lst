@@ -1,0 +1,62 @@
+     1                                  ;Problema. Se da un sir de valori numerice intregi reprezentate pe quadworduri.
+     2                                  ;Sa se determine suma cifrelor numarului multiplilor de 8 din sirul octetilor 
+     3                                  ;inferiori ai cuvintelor superioare ai dublucuvintelor superioare din elementele sirului de quadworduri.
+     4                                  
+     5                                  
+     6                                  ;Solutie: Parcurgand sirul de quadworduri vom obtine intai numarul multiplilor de 8 din 
+     7                                  ;sirul octetilor inferiori ai cuvintelor superioare ai dublucuvintelor superioare din elementele sirului. Apoi vom obtine 
+     8                                  ;cifrele acestui numar prin impartiri succesive la 10 si vom calcula suma lor.
+     9                                  
+    10                                  bits 32 
+    11                                  global start
+    12                                  extern exit; tell nasm that exit exists even if we won't be defining it
+    13                                  import exit msvcrt.dll; exit is a function that ends the calling process. It is defined in msvcrt.dll 
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16 00000000 B0BC0A1110311200D2-     	sir  dq  123110110abcb0h,1116adcb5a051ad2h,4120ca11d730cbb0h
+    16 00000009 1A055ACBAD1611B0CB-
+    16 00000012 30D711CA2041       
+    17                                  	len equ ($-sir)/8;lungimea sirului (in quadwords)
+    18 00000018 08                      	opt db 8;variabila folosita pentru testarea divizibilitatii cu 8
+    19 00000019 0A000000                	zece dd 10;variabila folosita pentru determinarea cifrelor unui numar prin impartiri succesive la 10
+    20 0000001D 00000000                	suma dd  0;variabila in care retinem suma cifrelor 
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 BE[00000000]            	mov esi, sir
+    25 00000005 FC                      	cld;parcurgem sirul de la stanga la dreapta (DF=0).    
+    26 00000006 B903000000              	mov ecx, len;vom parcurge elementele sirului intr-o bucla loop cu len iteratii.
+    27 0000000B BB00000000              	mov ebx, 0;in registrul ebx vom retine numarul multiplilor lui 8.
+    28                                  	repeta:
+    29 00000010 AD                      		lodsd;in eax vom avea dublucuvantul mai putin semnificativ al quadword-ului curent din sir
+    30 00000011 AD                      		lodsd;in eax vom avea dublucuvantul cel mai semnificativ al quadword-ului curent din sir
+    31 00000012 C1E810                  		shr eax, 16
+    32 00000015 B400                    		mov ah, 0;ne intereseaza doar octetul mai putin semnificativ din acest cuvant (AL)
+    33                                        
+    34 00000017 F635[18000000]          		div byte[opt];vedem daca al este divizibil cu 8
+    35 0000001D 80FC00                  		cmp ah, 0;daca restul nu este 0, reluam ciclul repeta. 
+    36                                  				;Altfel incrementam numarul multiplilor de 8 din registrul ebx. 
+    37 00000020 7501                    		jnz nonmultiplu
+    38 00000022 43                      		inc ebx
+    39                                  
+    40                                  		nonmultiplu:
+    41 00000023 E2EB                    	loop repeta;daca mai sunt elemente de parcurs(ecx>0) reia ciclul.
+    42                                  
+    43                                  	;mai departe, obtinem cifrele numarului ebx in baza 10 prin impartiri succesive la 10 si calculam suma acestor cifre. 
+    44                                  
+    45 00000025 89D8                    	mov eax, ebx
+    46 00000027 BA00000000              	mov edx, 0
+    47                                      
+    48                                  	transf:
+    49 0000002C F735[19000000]          		div dword[zece];impartim la 10 numarul din registrul ca sa aflam ultima cifra; aceasta cifra se afla in EDX
+    50 00000032 0115[1D000000]          		add dword[suma], edx;adunam cifra la suma.
+    51 00000038 83F800                  		cmp eax, 0
+    52 0000003B 7407                    	jz sfarsit;daca catul este 0 inseamna ca am obtinut toate cifrele si putem parasi bucla transf
+    53                                  				;Altfel, il pregatim pentru o noua iteratie 
+    54 0000003D BA00000000              	mov edx, 0				
+    55 00000042 EBE8                    	jmp transf;reluam bucla pentru obtinerea unei noi cifre.
+    56                                  
+    57                                  sfarsit:;incheiem programul.
+    58                                             
+    59 00000044 6A00                            push dword 0; push the parameter for exit onto the stack
+    60 00000046 FF15[00000000]                  call [exit]; call exit to terminate the program

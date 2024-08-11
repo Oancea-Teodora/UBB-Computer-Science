@@ -1,0 +1,48 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8 00000000 05                          a db 5
+     9 00000001 03                          b db 3
+    10 00000002 02                          c db 2
+    11 00000003 00CA9A3B                    e dd 1000000000  ; 
+    12 00000007 9999999999999999            x dq 9999999999999999h  ; 
+    13                                  ;(a+a+b*c*100+x)/(a+10)+e*a; a,b,c-byte; e-doubleword; x-qword
+    14                                  segment code use32 class=code
+    15                                  start:
+    16 00000000 A0[00000000]                mov al, [a] 
+    17 00000005 6698                        cbw
+    18 00000007 98                          cwde  
+    19 00000008 01C0                        add eax, eax         
+    20                                  
+    21 0000000A 8A1D[01000000]              mov bl, [b]  
+    22 00000010 6698                        cbw
+    23 00000012 98                          cwde
+    24                                      
+    25 00000013 8A0D[02000000]              mov cl, [c]  
+    26 00000019 6698                        cbw
+    27 0000001B 98                          cwde
+    28 0000001C F7EB                        imul ebx
+    29 0000001E F7E9                        imul ecx
+    30 00000020 BB00000000                  mov ebx, 0
+    31 00000025 BB64000000                  mov ebx, 100
+    32 0000002A F7EB                        imul ebx    
+    33                                  
+    34 0000002C 01D8                        add eax, ebx         
+    35                                  
+    36 0000002E BA00000000                  mov edx, 0
+    37 00000033 BB00000000                  mov ebx, 0
+    38 00000038 B900000000                  mov ecx, 0
+    39                                  
+    40 0000003D A1[07000000]                mov eax, [x]          
+    41 00000042 8B1D[00000000]              mov ebx, [a]         
+    42 00000048 83C30A                      add ebx, 10           
+    43                                  
+    44 0000004B F7FB                        idiv ebx             
+    45 0000004D 0305[03000000]              add eax, [e]          
+    46                                  
+    47 00000053 50                          push    eax           
+    48 00000054 FF15[00000000]              call    [exit]

@@ -1,0 +1,31 @@
+     1                                  bits 32
+     2                                  global _maxy
+     3                                  extern printf
+     4                                  import printf msvcrt.dll
+     5                                  segment data public data use32
+     6 00000000 69646B00                	format db "idk", 0
+     7                                  segment code public code use32
+     8                                  	maxy:
+     9 00000000 55                      		push ebp
+    10 00000001 89E5                    		mov ebp, esp
+    11 00000003 68[00000000]            		push format
+    12 00000008 FF15[00000000]          		call [printf]
+    13 0000000E 83C404                  		add esp, 4
+    14                                  		;[ebp+8] - nr
+    15                                  		;[ebp+12] - v
+    16 00000011 8B4D08                  		mov ecx, [ebp + 8]
+    17 00000014 E311                    		jecxz final
+    18 00000016 8B750C                  			mov esi, [ebp+12]
+    19 00000019 BB00000000              			mov ebx, 0
+    20                                  			bucsa:
+    21 0000001E AD                      				lodsd
+    22 0000001F 39C3                    				cmp ebx, eax
+    23 00000021 7D02                    				jge nu
+    24 00000023 89C3                    					mov ebx, eax
+    25                                  				nu:
+    26 00000025 E2F7                    			loop bucsa
+    27                                  		final:
+    28 00000027 89D8                    		mov eax, ebx
+    29 00000029 89EC                    		mov esp, ebp
+    30 0000002B 5D                      		pop ebp
+    31 0000002C C3                      		ret

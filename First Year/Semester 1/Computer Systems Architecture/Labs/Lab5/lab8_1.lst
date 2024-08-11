@@ -1,0 +1,43 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf  ; adaugam printf si scanf ca functii externe           
+     8                                  import exit msvcrt.dll     
+     9                                  import printf msvcrt.dll     ; indicam asamblorului ca functia printf se gaseste in libraria msvcrt.dll
+    10                                  import scanf msvcrt.dll 
+    11                                      ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    12                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16 00000000 00000000                    a dd 0
+    17 00000004 00000000                    b dd 0
+    18 00000008 256400                      f db "%d", 0
+    19                                  
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          ; Read two numbers a and b (in base 10) from the keyboard and calculate their product. This value will be stored in a variable called "result" (defined in the data segment).
+    24                                      
+    25                                          ; scanf(f, a)
+    26 00000000 68[00000000]                    push dword a
+    27 00000005 68[08000000]                    push dword f
+    28 0000000A FF15[00000000]                  call [scanf]
+    29 00000010 83C408                          add esp, 2*4
+    30 00000013 68[04000000]                    push dword b
+    31 00000018 68[08000000]                    push dword f
+    32 0000001D FF15[00000000]                  call [scanf]
+    33 00000023 83C408                          add esp, 2*4
+    34 00000026 A1[00000000]                    mov eax, [a]
+    35 0000002B 8B1D[04000000]                  mov ebx, [b]
+    36 00000031 01D8                            add eax, ebx
+    37 00000033 50                              push dword eax
+    38 00000034 68[08000000]                    push dword f
+    39 00000039 FF15[00000000]                  call [printf]
+    40 0000003F 83C008                          add eax, 2*4
+    41                                          ; exit(0)
+    42 00000042 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    43 00000044 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

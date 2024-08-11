@@ -1,0 +1,50 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf            
+     8                                  import exit msvcrt.dll     
+     9                                  import printf msvcrt.dll     ; indicating to the assembler that the printf fct can be found in the msvcrt.dll library
+    10                                  import scanf msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    11                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 6162636461626361            s db "abcdabca"
+    16                                      l equ $-s
+    17 00000008 00                          c db 0
+    18 00000009 256300                      d db "%c", 0
+    19 0000000C 2564                        e db "%d"
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          ;A character string is given (defined in the data segment). Read one character from the keyboard, then count the number of occurences of that character in the given string and display the character along wit
+    25                                          ; scanf("%c",c)
+    26 00000000 68[08000000]                    push c
+    27 00000005 68[09000000]                    push d
+    28 0000000A FF15[00000000]                  call [scanf]
+    29 00000010 58                              pop eax
+    30 00000011 58                              pop eax
+    31                                          ;add esp, 4*2
+    32 00000012 BE[00000000]                    mov esi, s
+    33 00000017 66BB0000                        mov bx, 0
+    34 0000001B B908000000                      mov ecx,l
+    35                                          lop:  ; esi->a  esi->b ...
+    36 00000020 AC                                  lodsb ; mov al, [esi]  add esi,1
+    37 00000021 3A05[08000000]                      cmp al, [c]
+    38 00000027 7504                                jne skip
+    39 00000029 6683C301                            add bx, 1
+    40                                              skip:
+    41 0000002D E2F1                            loop lop ;ecx=ecx-1  ecx>0 -> loop
+    42                                          
+    43                                          ;printf ("the number is %d", c)
+    44 0000002F 53                              push ebx 
+    45 00000030 68[0C000000]                    push e
+    46 00000035 FF15[00000000]                  call [printf]
+    47 0000003B 83C408                          add esp, 4*2
+    48                                          ; exit(0)
+    49 0000003E 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    50 00000040 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

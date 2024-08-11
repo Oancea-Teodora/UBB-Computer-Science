@@ -1,0 +1,63 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fread, fwrite          ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import fopen msvcrt.dll
+    11                                  import fclose msvcrt.dll
+    12                                  import fread msvcrt.dll
+    13                                  import fwrite msvcrt.dll 
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      ; ...
+    17 00000000 6E756D65312E747874-         nume db 'nume1.txt',0
+    17 00000009 00                 
+    18 0000000A 416D20636173747261-         sir db 'Am castraveti de culoare rosie 1, 2, 3 $', 0
+    18 00000013 766574692064652063-
+    18 0000001C 756C6F61726520726F-
+    18 00000025 73696520312C20322C-
+    18 0000002E 2033202400         
+    19 00000033 772B00                      modscriere db 'w+', 0
+    20 00000036 00000000                    filedescriptor dd 0
+    21 0000003A 00                          caracter db 0
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          ; ... Se dau un nume de fisier si un text (definite in segmentul de date). Textul contine litere mici, litere mari, cifre si caractere speciale. Sa se inlocuiasca toate CIFRELE din textul dat cu caracterul '
+    26 00000000 68[33000000]                    push dword modscriere
+    27 00000005 68[00000000]                    push dword nume
+    28 0000000A FF15[00000000]                  call [fopen]
+    29 00000010 A3[36000000]                    mov [filedescriptor], eax
+    30 00000015 83C408                          add esp, 2*4
+    31 00000018 BE[0A000000]                    mov esi, sir
+    32                                          repeta:
+    33 0000001D 803E00                              cmp byte [esi], 0
+    34 00000020 742B                                je sfarsit
+    35 00000022 AC                                  lodsb
+    36 00000023 3C30                                cmp al, '0'
+    37 00000025 7C06                                jl skip
+    38 00000027 3C39                                cmp al, '9'
+    39 00000029 7F02                                jg skip
+    40 0000002B B043                                mov al, 'C'
+    41                                              skip:
+    42 0000002D A2[3A000000]                        mov [caracter], al
+    43 00000032 FF35[36000000]                      push dword [filedescriptor]
+    44 00000038 6A01                                push dword 1
+    45 0000003A 6A01                                push dword 1
+    46 0000003C FF35[3A000000]                      push dword [caracter]
+    47 00000042 FF15[00000000]                      call [fwrite]
+    48 00000048 83C410                              add esp, 4*4
+    49 0000004B EBD0                            jmp repeta
+    50                                          sfarsit:        
+    51                                          
+    52 0000004D 68[00000000]                    push dword nume
+    53 00000052 FF15[00000000]                  call [fclose]
+    54 00000058 83C404                          add esp, 1*4
+    55                                      
+    56                                          ; exit(0)
+    57 0000005B 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    58 0000005D FF15[00000000]                  call    [exit]       ; call exit to terminate the program
