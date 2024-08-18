@@ -4,9 +4,9 @@ This repository contains resources, lectures, homework, exam subjects, and guide
 
 # Subject Ranking
 
-## 1. **Mathematical Analysis** 📈 - Pass rate: 89%
-## 2. **Fundamentals of Programming** 💻 - Pass rate: 83%
-## 3. **Algebra** ➕ - Pass rate: 79%
-## 4. **Computational Logic** 🔢 - Pass rate: 75%
-## 5. **Computer Systems Architecture** 🖥️ - Pass rate: ??%
+ 1. **Mathematical Analysis** 📈 - Pass rate: 89%
+ 2. **Fundamentals of Programming** 💻 - Pass rate: 83%
+ 3. **Algebra** ➕ - Pass rate: 79%
+ 4. **Computational Logic** 🔢 - Pass rate: 75%
+ 5. **Computer Systems Architecture** 🖥️ - Pass rate: ??%
 
