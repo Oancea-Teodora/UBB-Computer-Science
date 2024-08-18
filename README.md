@@ -18,6 +18,6 @@
 | 1   | Object Oriented Programming   | C/C++, Qt, Qt Designer, Observer Design Pattern, Model View Controller Controller Pattern |
 | 2   | Data Structures and Algorithms| C++, Data Structures (arrays, linked lists, heaps, hash tables, binary trees), Abstract Data Types, AVL Trees |
 | 3   | [Operating Systems](#operating-systems)              | Linux, Grep/Sed/Awk, Shell Program, Processes, Threads, Memory Management, Physical I/O |
-| 4   | Geometry                      | Affine Geometry, Euclidean Spaces, Affine Maps, Isometries, Quadratic Curves, Quaternions |
+| 4   | [Geometry](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%202/Geometry) | Affine Geometry, Euclidean Spaces, Affine Maps, Isometries, Quadratic Curves, Quaternions |
 | 5   | Dynamical Systems             | Maple, Sage, Linear Differential Equations And Systems, Phase Portrait |
 | 6   | Graph Algorithms              | Connectivity, Shortest Paths, Modeling Prerequisites, Flows, Traveling Salesman Problem, Planar Graphs |
