@@ -9,7 +9,7 @@
 | 1   | [Algebra](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Algebra) |Linear Algebra, Vector Spaces, Cryptography, Coding Theory            |
 | 2   | [Mathematical Analysis](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Mathematical%20Analysis)| Differential and Integral Calculus, Series, Gradient Descent |
 | 3   | [Fundamentals of Programming](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Fundamentals%20of%20Programming) | Python, Pickle, Layered Architecture, Program Design, Problem Solving Methods |
-| 4   | [Computer Systems Architecture](#computer-systems-architecture) | x86 Assembly, C, low-level multi-module programming   |
+| 4   | [Computer Systems Architecture](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Computer%20Systems%20Architecture) | x86 Assembly, C, low-level multi-module programming   |
 | 5   | [Computational Logic](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%201/Computational%20Logic) | Propositional Logic, Predicate Logic, Theorem Proving Methods, Boolean algebras and functions |
 
 ### 📂2nd Semester
