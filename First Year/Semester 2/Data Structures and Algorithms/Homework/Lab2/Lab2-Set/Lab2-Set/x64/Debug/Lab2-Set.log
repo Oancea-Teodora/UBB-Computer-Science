@@ -1,0 +1,14 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ExtendedTest.cpp(165,20): warning C4101: 'e': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ExtendedTest.cpp(172,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ExtendedTest.cpp(226,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ExtendedTest.cpp(233,20): warning C4101: 'ex': unreferenced local variable
+  Set.cpp
+  SetIterator.cpp
+  ShortTest.cpp
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ShortTest.cpp(61,25): warning C4101: 'e': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ShortTest.cpp(69,25): warning C4101: 'e': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Set\ShortTest.cpp(77,25): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  Lab2-Set.vcxproj -> C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab2\Lab2-Set\x64\Debug\Lab2-Set.exe

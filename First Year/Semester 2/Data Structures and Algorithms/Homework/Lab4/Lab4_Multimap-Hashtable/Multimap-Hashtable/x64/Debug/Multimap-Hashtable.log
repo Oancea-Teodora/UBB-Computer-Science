@@ -1,0 +1,10 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab4\MultiMap\ExtendedTest.cpp(243,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab4\MultiMap\ExtendedTest.cpp(250,20): warning C4101: 'ex': unreferenced local variable
+  MultiMap.cpp
+C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab4\MultiMap\MultiMap.cpp(12,21): warning C4305: '=': truncation from 'double' to 'float'
+  MultiMapIterator.cpp
+  ShortTest.cpp
+  Generating Code...
+  Multimap-Hashtable.vcxproj -> C:\Users\teodo\UBB-Computer-Science\First Year\Semester 2\Data Structures and Algorithms\Homework\Lab4\Multimap-Hashtable\x64\Debug\Multimap-Hashtable.exe
