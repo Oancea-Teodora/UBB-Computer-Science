@@ -1,0 +1,49 @@
+#programsListVBox {
+    -fx-background-color:  #9C2B27;
+    -fx-border-color: black;
+}
+
+.list-cell{
+    -fx-font-size:15.0px;
+}
+
+.list-view .scroll-bar {
+    -fx-padding: -10;
+    -fx-opacity: 0;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+#programsListView {
+    -fx-border-color: black;
+}
+
+#programsListView .list-cell:odd {
+    -fx-background-color: #20120F;
+}
+
+#programsListView .list-cell:even {
+    -fx-background-color: #542E26;
+}
+
+
+#programsListTitleLabel {
+    -fx-text-fill: #E1DADA;
+    -fx-font-size: 26.0px;
+
+}
+
+
+.button {
+    -fx-text-fill: #DAD6D6;
+    -fx-background-color: #E45652;
+    -fx-font-size: 18.0px;
+}
+
+#programsListExitLabel {
+    -fx-text-fill: #E4DDDD;
+    -fx-font-size: 26.0px;
+}

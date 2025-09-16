@@ -1,0 +1,1 @@
+Sa se scrie un script care numara cate fisiere cu extensia *.txt din directorul curent contin TOATE cuvintele date ca parametri. Se vor efectua toate validarile necesare!

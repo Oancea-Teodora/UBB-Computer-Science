@@ -1,0 +1,692 @@
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(Ref int a; (Ref int b; (int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+Ref int a
+(Ref int b; (int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+Ref int a
+(Ref int b; (int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(Ref int b; (int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(Ref int b; (int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+Ref int b
+(int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+Ref int b
+(int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(int v; (NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+int v
+(NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+int v
+(NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:58
+Execution Stack:
+(NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+(NewStmt(a, 0); (NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+NewStmt(a, 0)
+(NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+NewStmt(a, 0)
+(NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))
+Heap:
+
+Symbol Table:
+a --> (0, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+(NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))
+Heap:
+1 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+(NewStmt(b, 0); (WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))))
+Heap:
+1 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:48:59
+Execution Stack:
+NewStmt(b, 0)
+(WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))
+Heap:
+1 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:00
+Execution Stack:
+NewStmt(b, 0)
+(WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))
+Heap:
+1 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (0, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:00
+Execution Stack:
+(WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))
+Heap:
+1 --> 0
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:00
+Execution Stack:
+(WriteToHeap(a, 1); (WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))))
+Heap:
+1 --> 0
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:00
+Execution Stack:
+WriteToHeap(a, 1)
+(WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))
+Heap:
+1 --> 0
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:01
+Execution Stack:
+WriteToHeap(a, 1)
+(WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))
+Heap:
+1 --> 0
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:01
+Execution Stack:
+(WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))
+Heap:
+1 --> 1
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:01
+Execution Stack:
+(WriteToHeap(b, 2); (v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))))
+Heap:
+1 --> 1
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:01
+Execution Stack:
+WriteToHeap(b, 2)
+(v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))
+Heap:
+1 --> 1
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:02
+Execution Stack:
+WriteToHeap(b, 2)
+(v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))
+Heap:
+1 --> 1
+2 --> 0
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:02
+Execution Stack:
+(v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:03
+Execution Stack:
+(v = readFromHeap(a) < readFromHeap(b) ? 100 : 200; (print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:03
+Execution Stack:
+v = readFromHeap(a) < readFromHeap(b) ? 100 : 200
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:06
+Execution Stack:
+v = readFromHeap(a) < readFromHeap(b) ? 100 : 200
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:06
+Execution Stack:
+IF (readFromHeap(a) < readFromHeap(b)) THEN (v = 100) ELSE (v = 200)
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:07
+Execution Stack:
+IF (readFromHeap(a) < readFromHeap(b)) THEN (v = 100) ELSE (v = 200)
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:07
+Execution Stack:
+v = 100
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:08
+Execution Stack:
+v = 100
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:08
+Execution Stack:
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:09
+Execution Stack:
+(print(v); (v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v)))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:09
+Execution Stack:
+print(v)
+(v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+print(v)
+(v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+(v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+(v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200; print(v))
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+v = readFromHeap(b) - 2 > readFromHeap(a) ? 100 : 200
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:10
+Execution Stack:
+IF (readFromHeap(b) - 2 > readFromHeap(a)) THEN (v = 100) ELSE (v = 200)
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+IF (readFromHeap(b) - 2 > readFromHeap(a)) THEN (v = 100) ELSE (v = 200)
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+v = 200
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+v = 200
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 100
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 200
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+print(v)
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 200
+Output:
+100
+--------------------------------------------------
+ID: 1
+2025/01/19 17:49:11
+Execution Stack:
+
+Heap:
+1 --> 1
+2 --> 2
+Symbol Table:
+a --> (1, int)
+b --> (2, int)
+v --> 200
+Output:
+100
+200
+--------------------------------------------------

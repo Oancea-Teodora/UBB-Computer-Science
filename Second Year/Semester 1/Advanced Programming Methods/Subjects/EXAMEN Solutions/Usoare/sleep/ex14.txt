@@ -1,0 +1,572 @@
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+(int v; (v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10)))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+int v
+(v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+int v
+(v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+(v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10))))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+(v = 10; (fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10))))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:53
+Execution Stack:
+v = 10
+(fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+v = 10
+(fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+(fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+(fork((v = v - 1; (v = v - 1; print(v)))); (sleep(10); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+fork((v = v - 1; (v = v - 1; print(v))))
+(sleep(10); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+fork((v = v - 1; (v = v - 1; print(v))))
+(sleep(10); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+(sleep(10); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+(v = v - 1; (v = v - 1; print(v)))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+(sleep(10); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+(v = v - 1; (v = v - 1; print(v)))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+sleep(10)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+v = v - 1
+(v = v - 1; print(v))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+sleep(10)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+v = v - 1
+(v = v - 1; print(v))
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+sleep(9)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+(v = v - 1; print(v))
+Heap:
+
+Symbol Table:
+v --> 9
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+sleep(9)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+(v = v - 1; print(v))
+Heap:
+
+Symbol Table:
+v --> 9
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:54
+Execution Stack:
+sleep(8)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:54
+Execution Stack:
+v = v - 1
+print(v)
+Heap:
+
+Symbol Table:
+v --> 9
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(8)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:55
+Execution Stack:
+v = v - 1
+print(v)
+Heap:
+
+Symbol Table:
+v --> 9
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(7)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:55
+Execution Stack:
+print(v)
+Heap:
+
+Symbol Table:
+v --> 8
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(7)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:55
+Execution Stack:
+print(v)
+Heap:
+
+Symbol Table:
+v --> 8
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(6)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 2
+2025/01/19 17:51:55
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 8
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(6)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(5)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(5)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(4)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(4)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(3)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(3)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:55
+Execution Stack:
+sleep(2)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+sleep(2)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+sleep(1)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+sleep(1)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+sleep(0)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+sleep(0)
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+--------------------------------------------------
+ID: 1
+2025/01/19 17:51:56
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 10
+Output:
+8
+100
+--------------------------------------------------

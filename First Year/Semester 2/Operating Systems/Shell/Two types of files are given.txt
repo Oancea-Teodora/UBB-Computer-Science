@@ -1,0 +1,38 @@
+Two types of files are given:
+ - database file
+ - log file
+The database file contains columns of informations: one column contains an id and
+the other column contaions a numerical value asociated to the id from the
+same row. All IDs have a value asocieted and all values must be asocieted to
+a ID, all IDs are unique within a database.
+The log file contains a journal of operations executed on one or mor
+databases in the following format:
+<timestamp> <database> <id> <operation> [arguments]
+timestamp -> the time the operation was executed (presented in timestamp
+format run  date +%s  to see an example)
+databse -> the database the operation was executed on
+id -> the id the operation was executed on
+operation -> the executed operation
+                -- ad (row has been added)
+                -- del (row was deleted)
+                -- ch (the value of the rows was changed)
+                     --arguments
+                          +x (the value of the row was modified by adding the value of x)
+                          -x (the value of the row was modified by substracting the value of x)
+                          *x (the value of the row was modified by multiplying it x times)
+                          /x (the value of the row was mofidied by diving by it by x)
+Write a shell script that receives as command line arguments file respecting
+the format desribed above.
+The scritp will reverse all the operations found in the log files in all the
+database files received as arguments.
+Notes:
+  -> one log file can contain operations executed on multiple databases
+  -> operaions executed on a single database can be found in multiple logfiles
+The following commands can be used to solve this problem:
+for
+while
+awk
+sort
+sed
+
+GOOD LUCK.

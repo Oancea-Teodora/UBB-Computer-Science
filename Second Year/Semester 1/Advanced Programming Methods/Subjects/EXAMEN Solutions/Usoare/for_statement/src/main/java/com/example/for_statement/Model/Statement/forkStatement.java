@@ -1,0 +1,49 @@
+package com.example.for_statement.Model.Statement;
+
+import com.example.for_statement.Model.ADT.IDictionary;
+import com.example.for_statement.Model.ADT.MyDictionary;
+import com.example.for_statement.Model.ADT.MyStack;
+import com.example.for_statement.Model.Exceptions.MyException;
+import com.example.for_statement.Model.ProgramState.ProgramState;
+import com.example.for_statement.Model.Type.IType;
+import com.example.for_statement.Model.Value.IValue;
+
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class forkStatement implements IStatement{
+    private IStatement statement;
+
+    public forkStatement(IStatement stmt) {
+        this.statement = stmt;
+    }
+
+    @Override
+    public ProgramState execute(ProgramState currentState) throws MyException {
+        MyStack<IStatement> forkedExecutionStack = new MyStack<>();     // need to create a new execution stack
+        // Need to create a deep copy of the symbol table
+        // We cannot use the already existing method <shallowCopy> from IDictionary since that method will not
+        // create a deep copy of the dictionary's values, and we need that to ensure we won't have conflicts
+        Map<String, IValue> symbolTableContent = currentState.getSymbolTable().getContent();
+        MyDictionary<String, IValue> forkedSymbolTable = new MyDictionary<>();
+        forkedSymbolTable.setContent(symbolTableContent.entrySet().stream()
+                                        .collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue().deepCopy())));
+        return new ProgramState(forkedExecutionStack, forkedSymbolTable, currentState.getOutput(), currentState.getFileTable(), currentState.getHeapTable(), this.statement);
+    }
+
+    @Override
+    public IStatement deepCopy() {
+        return new forkStatement(this.statement.deepCopy());
+    }
+
+    @Override
+    public IDictionary<String, IType> typeCheck(IDictionary<String, IType> typeEnv) throws MyException {
+        this.statement.typeCheck(typeEnv.shallowCopy());
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return "fork(" + this.statement.toString() + ")";
+    }
+}

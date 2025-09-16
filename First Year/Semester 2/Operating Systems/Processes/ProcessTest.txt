@@ -1,0 +1,20 @@
+Write a C program that will read from keyboard lowercased strings (until X is written).
+The main process will start two types of Child processes: A and B started every time a string is read from the keyboard
+
+
+Child processes A.
+    The parent will send the string to the created child process using pipes.
+
+    Each child process will initiate a vector V with 26 zeros and will iterate over the string character by character trying to compute an index considering the ASCII code of a character:
+    a (97) -> 0
+    b (98) -> 1
+    c (99) -> 2
+    etc.
+
+    This index corresponds to a position in vector V that will have to be incremented during each character iteration.
+    This frequency vector for the characters found in the string will be send back:
+        - to the parent using pipes that will print it on the screen.
+        - to the process B
+
+Child processes B:
+    Will receive the frequency vector from the a child process A with a pipe and it will sum up all the values and print the

@@ -1,0 +1,504 @@
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+(int a; (int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+int a
+(int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+int a
+(int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+(int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))))
+Heap:
+
+Symbol Table:
+a --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+(int b; (int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))))
+Heap:
+
+Symbol Table:
+a --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:28
+Execution Stack:
+int b
+(int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))
+Heap:
+
+Symbol Table:
+a --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+int b
+(int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))
+Heap:
+
+Symbol Table:
+a --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(int c; (a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+int c
+(a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+int c
+(a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(a = 1; (b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+a = 1
+(b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+a = 1
+(b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))
+Heap:
+
+Symbol Table:
+a --> 0
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(b = 2; (c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+b = 2
+(c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+b = 2
+(c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 0
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:29
+Execution Stack:
+(c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+(c = 5; (switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300)))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+c = 5
+(switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+c = 5
+(switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+(switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+(switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300)); print(300))
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+switch(a * 10) (case b * c: (print(a); print(b))) (case 10: (print(100); print(200))) (default: print(300))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+IF (a * 10 == b * c) THEN ((print(a); print(b))) ELSE (IF (a * 10 == 10) THEN ((print(100); print(200))) ELSE (print(300)))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+IF (a * 10 == b * c) THEN ((print(a); print(b))) ELSE (IF (a * 10 == 10) THEN ((print(100); print(200))) ELSE (print(300)))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+(print(a); print(b))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+(print(a); print(b))
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:30
+Execution Stack:
+print(a)
+print(b)
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+print(a)
+print(b)
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+print(b)
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+print(b)
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+1
+2
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+print(300)
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+1
+2
+--------------------------------------------------
+ID: 1
+2025/01/19 17:53:31
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+a --> 1
+b --> 2
+c --> 5
+Output:
+1
+2
+300
+--------------------------------------------------

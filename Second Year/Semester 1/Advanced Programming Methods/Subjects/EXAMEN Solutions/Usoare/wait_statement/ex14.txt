@@ -1,0 +1,1162 @@
+ID: 1
+2025/01/20 11:31:47
+Execution Stack:
+(int v; (v = 20; (Wait(10); print(10 * v))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:47
+Execution Stack:
+int v
+(v = 20; (Wait(10); print(10 * v)))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:48
+Execution Stack:
+int v
+(v = 20; (Wait(10); print(10 * v)))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:48
+Execution Stack:
+(v = 20; (Wait(10); print(10 * v)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:49
+Execution Stack:
+(v = 20; (Wait(10); print(10 * v)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:49
+Execution Stack:
+v = 20
+(Wait(10); print(10 * v))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:50
+Execution Stack:
+v = 20
+(Wait(10); print(10 * v))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:50
+Execution Stack:
+(Wait(10); print(10 * v))
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:51
+Execution Stack:
+(Wait(10); print(10 * v))
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:51
+Execution Stack:
+Wait(10)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:53
+Execution Stack:
+Wait(10)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:53
+Execution Stack:
+(print(10); Wait(9))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:56
+Execution Stack:
+(print(10); Wait(9))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:56
+Execution Stack:
+print(10)
+Wait(9)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:57
+Execution Stack:
+print(10)
+Wait(9)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:57
+Execution Stack:
+Wait(9)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:58
+Execution Stack:
+Wait(9)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:58
+Execution Stack:
+(print(9); Wait(8))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:59
+Execution Stack:
+(print(9); Wait(8))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:31:59
+Execution Stack:
+print(9)
+Wait(8)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:00
+Execution Stack:
+print(9)
+Wait(8)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:00
+Execution Stack:
+Wait(8)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:00
+Execution Stack:
+Wait(8)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:00
+Execution Stack:
+(print(8); Wait(7))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:01
+Execution Stack:
+(print(8); Wait(7))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:01
+Execution Stack:
+print(8)
+Wait(7)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:02
+Execution Stack:
+print(8)
+Wait(7)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:02
+Execution Stack:
+Wait(7)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:03
+Execution Stack:
+Wait(7)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:03
+Execution Stack:
+(print(7); Wait(6))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:03
+Execution Stack:
+(print(7); Wait(6))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:03
+Execution Stack:
+print(7)
+Wait(6)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:04
+Execution Stack:
+print(7)
+Wait(6)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:04
+Execution Stack:
+Wait(6)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:04
+Execution Stack:
+Wait(6)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:04
+Execution Stack:
+(print(6); Wait(5))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:05
+Execution Stack:
+(print(6); Wait(5))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:05
+Execution Stack:
+print(6)
+Wait(5)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:06
+Execution Stack:
+print(6)
+Wait(5)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:06
+Execution Stack:
+Wait(5)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:06
+Execution Stack:
+Wait(5)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:06
+Execution Stack:
+(print(5); Wait(4))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:16
+Execution Stack:
+(print(5); Wait(4))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:16
+Execution Stack:
+print(5)
+Wait(4)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+print(5)
+Wait(4)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+Wait(4)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+Wait(4)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+(print(4); Wait(3))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+(print(4); Wait(3))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+print(4)
+Wait(3)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+print(4)
+Wait(3)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+Wait(3)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+Wait(3)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:17
+Execution Stack:
+(print(3); Wait(2))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+(print(3); Wait(2))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+print(3)
+Wait(2)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+print(3)
+Wait(2)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+Wait(2)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+Wait(2)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+(print(2); Wait(1))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+(print(2); Wait(1))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+print(2)
+Wait(1)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+print(2)
+Wait(1)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:18
+Execution Stack:
+Wait(1)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:19
+Execution Stack:
+Wait(1)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:19
+Execution Stack:
+(print(1); Wait(0))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:20
+Execution Stack:
+(print(1); Wait(0))
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:20
+Execution Stack:
+print(1)
+Wait(0)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:21
+Execution Stack:
+print(1)
+Wait(0)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:21
+Execution Stack:
+Wait(0)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:22
+Execution Stack:
+Wait(0)
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:22
+Execution Stack:
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:29
+Execution Stack:
+print(10 * v)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------------------------------------------
+ID: 1
+2025/01/20 11:32:29
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+200
+--------------------------------------------------

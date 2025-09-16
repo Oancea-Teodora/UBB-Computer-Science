@@ -1,0 +1,812 @@
+ID: 1
+2025/01/19 17:44:10
+Execution Stack:
+(int v; (v = 20; (for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:10
+Execution Stack:
+int v
+(v = 20; (for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10)))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:11
+Execution Stack:
+int v
+(v = 20; (for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10)))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:11
+Execution Stack:
+(v = 20; (for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:12
+Execution Stack:
+(v = 20; (for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10)))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:12
+Execution Stack:
+v = 20
+(for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:13
+Execution Stack:
+v = 20
+(for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:13
+Execution Stack:
+(for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:15
+Execution Stack:
+(for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1)); print(v * 10))
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:15
+Execution Stack:
+for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1))
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:18
+Execution Stack:
+for(v = 0; v < 3; v = v + 1) fork((print(v); v = v + 1))
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:18
+Execution Stack:
+(v = 0; While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) })
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:19
+Execution Stack:
+(v = 0; While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) })
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:19
+Execution Stack:
+v = 0
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:21
+Execution Stack:
+v = 0
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 20
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:21
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:22
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:22
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:23
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:23
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:24
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:24
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:24
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:25
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:25
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:25
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:25
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:28
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:28
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:28
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:28
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:29
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:29
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 0
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:29
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 2
+2025/01/19 17:44:29
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:30
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:30
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:30
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:30
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:30
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:30
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:30
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:31
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:31
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+(fork((print(v); v = v + 1)); v = v + 1)
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:31
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 1
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 3
+2025/01/19 17:44:31
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+fork((print(v); v = v + 1))
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:31
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:31
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:32
+Execution Stack:
+v = v + 1
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:32
+Execution Stack:
+(print(v); v = v + 1)
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:32
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:32
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:32
+Execution Stack:
+While (v < 3) { (fork((print(v); v = v + 1)); v = v + 1) }
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:32
+Execution Stack:
+print(v)
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:32
+Execution Stack:
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+2
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:32
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+2
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:33
+Execution Stack:
+print(v * 10)
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+2
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:33
+Execution Stack:
+v = v + 1
+Heap:
+
+Symbol Table:
+v --> 2
+Output:
+0
+1
+2
+--------------------------------------------------
+ID: 1
+2025/01/19 17:44:33
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+2
+30
+--------------------------------------------------
+ID: 4
+2025/01/19 17:44:33
+Execution Stack:
+
+Heap:
+
+Symbol Table:
+v --> 3
+Output:
+0
+1
+2
+30
+--------------------------------------------------

@@ -1,0 +1,54 @@
+MAP PREPARATION
+
+1.
+numbers.stream()
+// to transf to stream
+.filter(p->(p%3==0) || (p%7)==0) 
+// to filter only elems that respect the given conditins
+.map(p->(p-1)*10)
+// to transform all elements into -> ...
+.reduce(0, (col, p) -> (col + p)%5)
+//reduce the whole stream to a single value;
+//0 - initial value, col = collector, p= each element
+numbers.stream().filter(p->(p%5==0) || (p%2==0)
+.map(p->"N"+p.toString()+"R")
+.reduce("",(col,p)->col+p);
+// if list
+c) .collect(Collectors.toList())
+==========================
+2. 
+D > A > B
+          > C	
+// ? super C - you can use C or it's superclasses
+// <=> u can use D,A,C
+// ? extends A - you can use A or it's subclasses
+// <=> A, B, C
+// ? - Object method() return
+// add(null)
+==========================
+// ? extends A - u can read A or superclasses of A ( A D)
+// you can write null
+// ? super A - u can read Object type (read)
+// you can write A or subclasses (add)
+// ArrayList<A> not superclass for ArrayList<B>
+// => ? extends 
+========================
+3.
+// static variables cant be accessed with "this"
+// you can't use non-static function in a static functions 
+unless you declare an object of the type class
+and you call the function from that object.
+// non-static function can use static functions
+// watch out for what's not initializat
+//protected - private, but can be accessed in
+derived classes
+// watch out for infinte loop
+// watch out for derived classes to implement methods from their parent class
+// abstract class => minim one abstract method
+// abstract method => not implemeneted
+// you can have more function with the same name, but different number of parameters
+// watch out so all parameters have a name
+// interface cant have fields
+================================
+
+ 

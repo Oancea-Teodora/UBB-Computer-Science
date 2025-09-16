@@ -1,0 +1,121 @@
+Wildcard types
+
+(1) 4 classes:
+class A{..} 
+class B extends A{}
+class C extends A{}
+class Amain{ ...method1(...list) {return list.get(1);}
+	     ...method2(....list,...el){return list.add(el);}
+
+
+Requirements: -the correctness of the program;
+	      -compute the signatures for the class Amain methods(met 1 and 2) and 
+		the most specific types for var 'elem', 'list1' and 'list'
+		ArrayList<A> list A =new ArrayList<A>();listA.add(new(A());list A.add(new A());
+			 <B> list B 		---------||----------
+			 <C> list C		---------||----------
+
+	Amain ob=new Amain();
+	ob.methods(list A);x
+	-----||---- B
+	-----||---- C
+
+	=> ...elem=new...();
+	
+
+	ob.method2(list A, elem);--||-- list B, --||-- list C
+	...list 1;list 1=list B; list 1=list C;ob.method1(list);
+	...list 2;list 2= list A; list 2= list B; ob.method2(list 2,elem);
+
+(2)corectness/incorectenss wildcards types
+	ArrayList<?>   wildlist
+	ArrayList<Integer> intlist;
+	wildlist=intlist;
+	intlist.add(1,new Integer(2));
+	wildlist.add(1,new Integer(2));
+	Integer a=intlist.get(1);
+	Integer b=wildlist.get(1);
+
+
+
+
+
+STREAMS
+Collection:List<Integer> numbers=Array.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
+	R: a)eliminates all numbers that are not multiple of 3 or 7
+	   b)transform each remaining number in its predecesor(eh 3 its transformed into 2)
+	   c)compute the sum modulo 5 of the remaining numbers(eg (2+4) mod 5= 1)
+	   d)transform the result into a list
+	   e)concatenates all the strings
+	   f)transform each remaining number into a string, that consists of a prefix 'At',
+		the succesor of the numbers and the suffix "KM" (eg 6 is transformed into "At6Km')
+
+
+Sync mechanisms
+
+Latch
+	Ref int V1; Ref int V2;Ref int v3;int cnt;
+new(V1,2); new(V2,3) ; new(V3,4);new Latch(cnt,rh(V2));
+fork(wh(v1,rh(v1)*10)); print(rh(v11));countDown(cnt);
+  fork(wh(V2,rh(V2)*10)); -||-
+      fork(wh(V3,rh(V3)*10));	-||-
+await(cnt); print(100);
+countDown(cnt); print(100);
+
+
+		Output: {20, id-first child  \
+			 30, id-second child  \are unique identifiers
+			 40,id-third child    /of the 3 new threads
+			 100, id-parent1     /	creeated by fork, while
+			 100			id parent is the identifier of the  main thread
+
+
+
+BARRIERS
+	REF...
+	new(V1,2),new(V2,3),new(V3,4);newBarrier(cnt,rH(v,2));
+	FORK(await(cnt);wh(V1,rh(V1)*10));print(rh(V1)));
+		for(await(cnt);wh(V2,rh(V2)*10)); wh(V2,rh(V2)*10));
+				print(rH(V2)));
+	await(cnt);
+	print(rh(3));
+			OUTPUT{4,20,300}
+
+
+
+
+
+
+Problema de nota 5
+(1)Conditional Assigment       >0
+	a.Define new Stmt: V= exp1? exp2 :exp3
+	Create the Stmt on the Stack:if(exp1)then V=exp2
+						else V=exp3
+	Typecheck():exp 1 bool
+		    V,exp2,exp3 -match
+	b.Ref int a; Ref int b; int v;
+	  new(a,0) ; new(b,0);
+	  wh(a,1); wh(b,2);
+	  V=(rh(a)<rh(b)) ? 100:200; print(V);
+	  V=((rh(b)-2)> rh(a))?100:200;print(V);
+		
+		Output{100,200}
+
+
+(2)Repeat Stmt
+    Until                    !=true
+
+	a.repeat stmt1 until exp2
+	  Create on the Stack: Stmt1;
+				(Whilw(!exp2)Stmt)
+	 Typecheck : exp2 bool
+		     stmt1 
+	b.int v;int x;int y; v=0;
+	(repeat(fork(print(v);v--);v++)until V==3);
+	x=1;nop;
+	y=3;nop
+	print(v*10) 
+		Output{0,1,2,30}
+
+
+

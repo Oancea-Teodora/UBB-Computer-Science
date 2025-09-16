@@ -1,0 +1,8 @@
+Write a shell script that will receive as command line arguments a list of possible files or usernames.
+    - if the argument indicates the name of an existing file (recursive), it will store in a file named file-reports.info the full path of the file, its size and the last modified date.
+    - if the argument indicates the name of an existing test usernames (you can use /etc/passwd), it will store in a file named user-reports.info the username and its group.
+    - if it was not found a file/user with the value of the argument, the script will store the values in a file name errors-report.info
+
+    At the end, the script will have to print an info message telling what was the percentage of arguments that were files, usernames or none of them.
+
+Note: file-reports.info, user-reports.info, errors-report.info must be created if they do not exist.

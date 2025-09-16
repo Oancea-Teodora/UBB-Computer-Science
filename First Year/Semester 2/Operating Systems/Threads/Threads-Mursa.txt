@@ -1,0 +1,14 @@
+Threads-Mursa
+Write a C program that will read from keyboard N numbers and will send them to N separate threads.
+The main process will also initiate 2 vectors L and U, and an integer named S.
+
+Each thread will receive the correspondent number read from keyboard (thread i will receive the i-th number read from keyboard), variable S, and the 2 vectors L and U as function argument, and WILL NOT START until all threads were created.
+After all threads were created and initiated, each thread will check if the number received starts with an even or an odd digit:
+If it starts with an even digit it will be added in vector U, otherwise in vector L.
+It will also sum the number received to the variable S.
+
+Before inserting the thread will verify if it was the FIRST thread to insert a value in one of the 2 vectors and print a corresponding message on the screen.
+
+In the end the master will print the size of L and U and the value of S
+
+Use optimal lock mechanisms to make sure there are no data corruptions, and a proper synchronization method to make all threads wait until all threads were created.

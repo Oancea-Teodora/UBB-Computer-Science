@@ -1,0 +1,74 @@
+
+Count Down Latch
+Table Representation: The table contains an address pointing to the variable name of the count down latch and the number of threads that still need to complete their tasks until the main thread is released.
+
+Key Operations:
+
+newLatch(cnt, 3):
+Creates a count down latch with an initial count of 3.
+The main thread (or current thread) is blocked until 3 threads call countDown(cnt).
+countDown(cnt):
+Decrements the count in the latch by 1.
+Indicates that a thread has finished its execution.
+await(cnt):
+Makes the current thread wait until the count in the latch reaches 0.
+When the count becomes 0, the waiting thread (main thread) is unblocked and continues its execution.
+
+
+--------------------------------
+
+Cyclic Barrier
+Table Representation: The table contains an address pointing to the variable name of the barrier and a pair:
+
+The number of threads the barrier is waiting for.
+A list of threads that are currently waiting at the barrier.
+Key Operations:
+
+newBarrier(cnt, 3):
+Creates a barrier that blocks threads until 3 threads reach the barrier.
+await(cnt):
+Each thread calls await(cnt) and waits at the barrier.
+When the number of waiting threads equals the specified number (3), all threads are released to continue execution.
+Difference from Count Down Latch:
+
+A cyclic barrier can be reused after all threads are released, while a count down latch is one-time use.
+
+--------------------------------
+
+Lock
+Table Representation: The table contains an address pointing to the variable name of the lock and the thread currently holding the lock (blocking other threads).
+
+Key Operations:
+
+newLock(x):
+Creates a new lock and associates its address in the lock table with the variable x.
+lock(x):
+Acquires the lock, blocking other threads from accessing shared resources protected by the lock.
+Only the thread that holds the lock can access the protected resources until it calls unlock(x).
+If the lock is already held by another thread, the current thread will wait.
+unlock(x):
+Releases the lock, allowing other threads to acquire it.
+
+
+--------------------------------
+
+
+Semaphore
+Table Representation: The table contains an address pointing to the variable name of the semaphore and a pair:
+
+The number of threads (permits) the semaphore allows at the same time.
+A list of thread IDs currently using or waiting for the semaphore.
+Key Operations:
+
+createSemaphore(cnt, 2):
+Creates a semaphore that allows up to 2 threads to access the resource simultaneously.
+Initializes the table entry as: { address -> (2, []) }.
+acquire(cnt):
+A thread requests access to the resource.
+If there are available permits, the thread is added to the list and allowed to proceed.
+If no permits are available, the thread waits until another thread releases the semaphore.
+release(cnt):
+A thread releases its permit, removing itself from the list.
+This allows other waiting threads to acquire the semaphore.
+
+

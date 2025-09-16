@@ -1,0 +1,1580 @@
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(Ref int v1; (Ref int v2; (NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+Ref int v1
+(Ref int v2; (NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+Ref int v1
+(Ref int v2; (NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(Ref int v2; (NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(Ref int v2; (NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+Ref int v2
+(NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+Ref int v2
+(NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(NewStmt(v1, 20); (NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+NewStmt(v1, 20)
+(NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+NewStmt(v1, 20)
+(NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))
+Heap:
+1 --> 20
+Symbol Table:
+v1 --> (1, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+(NewStmt(v2, 30); (newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))))
+Heap:
+1 --> 20
+Symbol Table:
+v1 --> (1, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:10
+Execution Stack:
+NewStmt(v2, 30)
+(newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))
+Heap:
+1 --> 20
+Symbol Table:
+v1 --> (1, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+NewStmt(v2, 30)
+(newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))
+Heap:
+1 --> 20
+Symbol Table:
+v1 --> (1, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(newLock(x); (fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+newLock(x)
+(fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+newLock(x)
+(fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))); (fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))))
+(fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+fork((fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))))
+(fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:11
+Execution Stack:
+(fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))); (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:11
+Execution Stack:
+(fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))); (lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1)))
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:11
+Execution Stack:
+fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))))
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+fork((fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1)))
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:11
+Execution Stack:
+fork((lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))))
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:11
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:11
+Execution Stack:
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:11
+Execution Stack:
+(fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:11
+Execution Stack:
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+(fork(WriteToHeap(v2, readFromHeap(v2) + 1)); WriteToHeap(v2, readFromHeap(v2) + 1))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+(lock(x); (WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x)))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+fork(WriteToHeap(v2, readFromHeap(v2) + 1))
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+fork(WriteToHeap(v2, readFromHeap(v2) + 1))
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 5
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) + 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 5
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) + 1)
+Heap:
+1 --> 20
+2 --> 30
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) + 1)
+unlock(x)
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 3
+2025/01/20 21:28:12
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 5
+2025/01/20 21:28:12
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) + 1)
+unlock(x)
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+unlock(x)
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+unlock(x)
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+lock(x)
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:12
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:28:12
+Execution Stack:
+
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:12
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) - 1); unlock(x))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) - 1)
+unlock(x)
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))))
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) - 1)
+unlock(x)
+Heap:
+1 --> 21
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+unlock(x)
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+unlock(x)
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 4
+2025/01/20 21:28:13
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v2 --> (2, int)
+v1 --> (1, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:13
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:14
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+(NoOp Statement; (NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2)))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+NoOp Statement
+(NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+(NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+(NoOp Statement; (print(readFromHeap(v1)); print(readFromHeap(v2))))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+NoOp Statement
+(print(readFromHeap(v1)); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+NoOp Statement
+(print(readFromHeap(v1)); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+(print(readFromHeap(v1)); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+(print(readFromHeap(v1)); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+print(readFromHeap(v1))
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+print(readFromHeap(v1))
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:19
+Execution Stack:
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:20
+Execution Stack:
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:28:20
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 31
+Symbol Table:
+x --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+Output:
+20
+31
+--------------------------------------------------

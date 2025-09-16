@@ -1,0 +1,31 @@
+Write a script shell that receives command line arguments as follows:
+The first argument is a file containg text.
+The secound argument is a string.
+The third argument is an email address.
+The rest of the arguments are also email addresses.
+For each email address recived as an agrument, except the third argument
+the script will generate a file named:
+message-<email address here>
+Each file created will contain the following:
+
+From: <insert email received as the third argument here>
+To: <insert email address here>
+<insert the text from the file received as the first argument here>
+
+Delivered on <day>/<month>/<year>
+
+where day month year takne from the system current time.
+
+After creating the files the script will group all the files in directoies,
+each direcotory will be named after the domains of the email addresses given
+as arguments (the domain of an email address is the that part of the email
+that comes after @ ex: yahoo.com gmail.com scs.ubbcluj.ro)
+
+The following command can be used to solve this problem:
+while
+for
+mv
+date
+cut
+
+911/2 - cu Bradu

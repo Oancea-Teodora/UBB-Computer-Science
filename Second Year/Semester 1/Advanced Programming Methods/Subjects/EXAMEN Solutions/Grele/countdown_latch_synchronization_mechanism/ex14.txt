@@ -1,0 +1,1631 @@
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+(Ref int v1; (Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+Ref int v1
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+Ref int v1
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+Ref int v2
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+Ref int v2
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:49
+Execution Stack:
+Ref int v3
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+Ref int v3
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+int cnt
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+int cnt
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+NewStmt(v1, 2)
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+NewStmt(v1, 2)
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:50
+Execution Stack:
+NewStmt(v2, 3)
+(NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+NewStmt(v2, 3)
+(NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+(NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+(NewStmt(v3, 4); (newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+NewStmt(v3, 4)
+(newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+NewStmt(v3, 4)
+(newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:51
+Execution Stack:
+(newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+(newLatch(cnt, readFromHeap(v2)); (fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+newLatch(cnt, readFromHeap(v2))
+(fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+newLatch(cnt, readFromHeap(v2))
+(fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+(fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+(fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))); (await(cnt); (print(100); (countDown(cnt); print(100)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))))
+(await(cnt); (print(100); (countDown(cnt); print(100))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+fork((WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))))
+(await(cnt); (print(100); (countDown(cnt); print(100))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:52
+Execution Stack:
+(await(cnt); (print(100); (countDown(cnt); print(100))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:52
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+(await(cnt); (print(100); (countDown(cnt); print(100))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) * 10); (print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) * 10)
+(print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) * 10)
+(print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+(print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+(print(readFromHeap(v1)); (countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+print(readFromHeap(v1))
+(countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+print(readFromHeap(v1))
+(countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+(countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+(countDown(cnt); fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:53
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:53
+Execution Stack:
+countDown(cnt)
+fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:54
+Execution Stack:
+countDown(cnt)
+fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:54
+Execution Stack:
+fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:54
+Execution Stack:
+fork((WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 2
+2025/01/20 21:25:54
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); (print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+(print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+(print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))
+Heap:
+1 --> 20
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(print(readFromHeap(v2)); (countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+print(readFromHeap(v2))
+(countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+print(readFromHeap(v2))
+(countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+(countDown(cnt); fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:54
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:54
+Execution Stack:
+countDown(cnt)
+fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:55
+Execution Stack:
+countDown(cnt)
+fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:55
+Execution Stack:
+fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:55
+Execution Stack:
+fork((WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt))))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 3
+2025/01/20 21:25:55
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 4
+2025/01/20 21:25:55
+Execution Stack:
+(WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 4
+2025/01/20 21:25:55
+Execution Stack:
+(WriteToHeap(v3, readFromHeap(v3) * 10); (print(readFromHeap(v3)); countDown(cnt)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 1
+2025/01/20 21:25:55
+Execution Stack:
+await(cnt)
+(print(100); (countDown(cnt); print(100)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------
+ID: 4
+2025/01/20 21:25:55
+Execution Stack:
+WriteToHeap(v3, readFromHeap(v3) * 10)
+(print(readFromHeap(v3)); countDown(cnt))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+20
+2
+30
+3
+--------------------------------------------------

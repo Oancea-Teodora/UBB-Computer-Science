@@ -1,0 +1,51 @@
+Theory Subjects – 23 January 2020
+
+Work Time: 40min
+Please copy the subjects and then close your laptops.
+
+
+Default (1p)
+
+1 (1p). Compare overriding vs. overloading in Java.
+
+
+2 (3p). Given the following collection 
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,14,15);
+Using Java functional style (Java streams), 
+please write a program that is doing the following operations in the following order:
+a)keep only the numbers which are multiple of  5 or  multiple of 2;
+b)transform each remaining number into a string, that consists of a prefix "N", the number and the suffix "R"
+(eg. 5 is transformed into "N5R") 
+c)concatenate all the strings
+
+
+
+3 (3p). Given the following four classes in Java:
+class A {...}   class B extends A {...}   class C extends B {...}
+
+class Amain{
+
+A  method1(ArrayList<...> list) {  if list.isEmpty() return null; 
+                                   else return list.get(1);}
+
+void method2(ArrayList<...>  list, C elem) {  list.add(elem);}
+
+void method3(C elem){
+ArrayList<A> listA=new ArrayList<A>(); listA.add(new A());
+ArrayList<B> listB = new ArrayList<B>(); listB.add(new B());
+ArrayList<C> listC = new ArrayList<C>(); listC.add(new C());
+this.method1(listA); this.method1(listB); this.method1(listC);
+this.method2(listA,elem); this.method2(listB,elem); this.method2(listC,elem);
+}
+}
+Compute the most specific signatures for the class Amain methods (method1 and method2) 
+such that the entire program is correct. 
+If it is not possible to find the types justify your answer.
+Discuss line by line the correctness of the above program. 
+
+
+
+
+
+
+4 (2p). What is a CountDownLatch in Java.

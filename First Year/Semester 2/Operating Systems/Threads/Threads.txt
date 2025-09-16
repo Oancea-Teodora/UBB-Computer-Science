@@ -1,0 +1,5 @@
+Threads
+Deci din ce mi s-a spus, la os la 917 s-a dat asa:
+1. Aveau o propozitie de minim 5 cuvinte, si, folosind 5 threaduri, trebuiau sa inverseze ordinea cuvintelor (ana are mere -> mere are ana)  
+2. ⁠Aceeasi chestie doar ca cu niste numere in loc de cuvinte
+3. ⁠Aveau o variabila globala si o suma, si fiecare thread  (erau tot 5) incrementa variabila, ii calcula factorialul si adauga factorialul la suma. Astea pana cand variabila globala devenea egala cu un nr dat de la tastatura. Si la final in main printai suma 4. Sa se scrie un program care citeste intr-o variabila globala "g" un numar natural N de la     tastatura si creeaza 5 threaduri care primesc fiecare ca parametru numarul de ordine cu     care este creat. Threadurile decrementeaza prin rotatie (pe baza numarului de ordine) var    iabila "g" cu o valoare aleatoare in intervalul [0-9] pana cand variabila g ajunge la val    oarea 0. Dupa decrementare fiecare thread va afisa mesajul: "Thread <index> decrementeaza     <g> cu <delta> si ramane <noul g>!"

@@ -1,0 +1,25 @@
+Pipes
+Write 2 c programs.
+Program number 1:
+Will receive an array of numbers as command line arguments. The program will
+create 2 child processes and will pass all the numbers received as command
+line arguments to the childs via pipes, the odd numbers to one process the
+even number to the other. The process thar receives the odd numbers will
+calculate the product of the numbers received and the process that receives
+the even number will calculate the sum of the numbers received.
+After the calculations both processes will write theyr results in a fifo.
+Program 2:
+The program will read the 2 numbers written in the previously mentioned fifo
+and will display on the standard output the greatest commnon divisor of the
+2 numbers.
+For passing the exam:
+ * all c souce codes must be compiled without any syntax errors or warnings
+   using the folowing command: gcc -Wall -g
+ * no crashes/runtime errors are allowed
+For obtaining the maximum grade:
+ * no memory leaks/context errors allowed
+ * no envirounment presetup/cleanup allowed (aka. the programs will have to
+create/delete the fifo during the execution)
+ * the name of the fifo will pe passed via command line arguments for both
+programs
+GOOD LUCK!!

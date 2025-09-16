@@ -1,0 +1,27 @@
+La OS
+Write a c program that receives qutruplets of positive numbers as command
+line arguments. For each quatruplet of numbers the program will create two
+threads, each thread will receive 2 of the 4 numbers as an argument, with
+all 4 numers passed between the 2 threads.
+All the threads will have access to a integer global variable.
+The two threads created for the quatruplet will behave as follows:
+ * the first thread will add n to the global variable m times (n and m are
+   the parameters received by the thread)
+     WARNING: adding n m times != =+n*m
+ * the secound thread will start after the first thread is has finished and
+it will decreas x from the global variables y times (same observation and
+warning as above) without allowing the value of the global variable to drop
+below 0, if a thread is about to decrese the value of the global variable
+below 0 that thread will sees decreasing the global variable. After the
+thread has finished its rounds of decreases it will display on the standard
+output the number of decreases that it didn't got the chance to execute, in
+case it didn't finished his decreases.
+Notes:
+ * the program must be compiled using the gcc -Wall -g command without
+displaying any warinngs or syntax errors
+ * all access to sensible memory segment must be consistently and optimally
+syncronised
+ * all syncronisation mechanisms must be properly initialised and cleared
+ * during the execution of the program all threads will display messages on
+the standard output so we can follow the execution of set threads
+ * no memory leacks and/or runtime errors/charhes are allowed.

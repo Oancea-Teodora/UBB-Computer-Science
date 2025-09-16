@@ -1,0 +1,1196 @@
+ID: 14
+Execution Stack:
+(Ref int v1; (Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v1
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v1
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))))
+Heap:
+
+Symbol Table:
+
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(Ref int v2; (Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v2
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v2
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(Ref int v3; (int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v3
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+Ref int v3
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(int cnt; (NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+int cnt
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+int cnt
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))
+Heap:
+
+Symbol Table:
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v1, 2); (NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v1, 2)
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v1, 2)
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))
+Heap:
+
+Symbol Table:
+cnt --> 0
+v1 --> (0, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v2, 3); (NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v2, 3)
+(NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v2, 3)
+(NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))
+Heap:
+1 --> 2
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (0, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(NewStmt(v3, 4); (newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v3, 4)
+(newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+NewStmt(v3, 4)
+(newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))
+Heap:
+1 --> 2
+2 --> 3
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (0, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(newBarrier(cnt, readFromHeap(v2)); (fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+newBarrier(cnt, readFromHeap(v2))
+(fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+newBarrier(cnt, readFromHeap(v2))
+(fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 0
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))); (fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))))
+(fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+fork((await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))))
+(fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+(await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))); (await(cnt); print(readFromHeap(v3))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+(await(cnt); (WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))))
+(await(cnt); print(readFromHeap(v3)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+fork((await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))))
+(await(cnt); print(readFromHeap(v3)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(await(cnt); print(readFromHeap(v3)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+(await(cnt); print(readFromHeap(v3)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(await(cnt); (WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+await(cnt)
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+await(cnt)
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+await(cnt)
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+await(cnt)
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+await(cnt)
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+await(cnt)
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+await(cnt)
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+await(cnt)
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+await(cnt)
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+print(readFromHeap(v3))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 15
+Execution Stack:
+(WriteToHeap(v1, readFromHeap(v1) * 10); print(readFromHeap(v1)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); (WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2))))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+
+--------------------------------------------------
+ID: 14
+Execution Stack:
+
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 15
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) * 10)
+print(readFromHeap(v1))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 16
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+(WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 15
+Execution Stack:
+WriteToHeap(v1, readFromHeap(v1) * 10)
+print(readFromHeap(v1))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 16
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+(WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))
+Heap:
+1 --> 2
+2 --> 3
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 15
+Execution Stack:
+print(readFromHeap(v1))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 15
+Execution Stack:
+print(readFromHeap(v1))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 16
+Execution Stack:
+(WriteToHeap(v2, readFromHeap(v2) * 10); print(readFromHeap(v2)))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+--------------------------------------------------
+ID: 15
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+--------------------------------------------------
+ID: 16
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+--------------------------------------------------
+ID: 16
+Execution Stack:
+WriteToHeap(v2, readFromHeap(v2) * 10)
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 30
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+--------------------------------------------------
+ID: 16
+Execution Stack:
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 300
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+--------------------------------------------------
+ID: 16
+Execution Stack:
+print(readFromHeap(v2))
+Heap:
+1 --> 20
+2 --> 300
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+--------------------------------------------------
+ID: 16
+Execution Stack:
+
+Heap:
+1 --> 20
+2 --> 300
+3 --> 4
+Symbol Table:
+cnt --> 1
+v1 --> (1, int)
+v2 --> (2, int)
+v3 --> (3, int)
+Output:
+4
+20
+300
+--------------------------------------------------

@@ -1,0 +1,17 @@
+Write a shell script that receives directories as command line arguments.
+The script will search inside the hierarchy of all directories and do the
+following operations:
+
+ -> it will createa a file named report.txt containing all the symbolic
+links found in the directoryes and the paths they are pointing to
+ -> will createa a copy of all files found inside the directoryes, the
+copies will be stored in a directory having the same name as the extension
+of the file, if multiple files with the same name are found theyr content
+will be concatenated, copies files without an extension will be stored in a
+folder of theyr own, all copies created will have the following signatiure:
+
+<<-- Created on <day>/<month>/<year> <hour>:<minute> by <insert your name here> -->>
+
+where day month year hour and minute are taken from the curent time of the
+system.
+GOOD LUCK!!
