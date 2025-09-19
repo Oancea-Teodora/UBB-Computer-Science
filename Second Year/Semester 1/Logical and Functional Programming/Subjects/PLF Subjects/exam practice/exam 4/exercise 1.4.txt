@@ -1,0 +1,18 @@
+p(1).
+p(2).
+q(1).
+q(2).
+r(1).
+r(2).
+
+% 111 true
+% 112 true
+% 121 true
+% 122 true
+
+s:- p(X), !,
+    q(Y),
+    r(Z),
+    write(X),
+    write(Y),
+    write(Z), nl.

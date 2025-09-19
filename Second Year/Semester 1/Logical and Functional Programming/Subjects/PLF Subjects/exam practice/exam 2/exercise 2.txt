@@ -1,0 +1,39 @@
+comb(_, 0, []).
+comb([_|T], K, R):-
+    K > 0,
+    comb(T, K, R).
+comb([H|T], K, [H|R1]):-
+    K > 0,
+    K1 is K-1,
+    comb(T, K1, R1).
+
+% this is how we obtain permutations
+% [2,3] [3,2]
+% [1,2,3] [2,1,3] [2,3,1]
+% [1,3,2] [3,1,2] [3,2,1]
+myInsert(E, [], [E]).
+myInsert(E, [H|T], [E,H|T]).
+myInsert(E, [H|T], [H|R]):-
+    myInsert(E, T, R).
+
+perm([], []).
+perm([H|T], R):-
+    perm(T, R1),
+    myInsert(H, R1, R).
+
+filter([], IP, IP).
+filter([H|T], IP, P):-
+    P =< IP,
+    P1 is P*H,
+    filter(T, IP, P1).
+
+arrangements([], _, _, []).
+arrangements(L, K, P, R):-
+    comb(L, K, R1),
+    filter(R1, P, 1),
+    perm(R1, R).
+
+wrapper(L, K, P, R):-
+    findall(Arr, arrangements(L, K, P, Arr), R).
+
+    

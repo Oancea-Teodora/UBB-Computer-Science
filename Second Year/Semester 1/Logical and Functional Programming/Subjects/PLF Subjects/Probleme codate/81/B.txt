@@ -1,0 +1,123 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor de sumă S dată, cu elementele unei liste,
+%  astfel încât numărul elementelor pare din submulțime să fie par.
+% Exemplu- pentru lista [1, 2, 3, 4, 5, 6, 10] şi S=10 ⇒ [[1,2,3,4], [4,6]].
+
+
+% insertFirst(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+
+% insertFirst(L:list, E:element, R:list)
+% (i,i,o)
+
+insertFirst(L,E,[E|L]).
+
+
+% insert(l1l2...ln, elem) =
+% = list(elem) , if n = 0
+% = l1l2...ln , if l1 = elem
+% = {elem} U l1l2...ln, if elem < l1
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert([],E,[E]).
+insert([H|_],E,[H|_]):-
+    H=:=E,
+    !.
+insert([H|T],E,R1):-
+    E < H,
+    !,
+    insertFirst([H|T],E,R1).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+% sortare(l1l2...ln) = 
+% = nil , if n = 0
+% = insert(sortare(l2...ln), l1) , otherwise
+
+% sortare(L:list, R:result)
+% (i,o)
+
+sortare([],[]).
+sortare([H|T],R1):-
+    sortare(T,R),
+    insert(R,H,R1).
+
+%subsets(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subsets(l2...ln), if n >= 1
+% = subsets(l2...ln), if n >= 1
+
+% subsets(L:list, R:result list)
+% (i,o)
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+% countEven(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + countEven(l2...ln), if l1 % 2 == 0
+% = countEven(l2...ln), otherwise
+
+% countEven(L:list, R:number)
+% (i,o)
+
+countEven([],0).
+countEven([H|T],R1):-
+    H mod 2 =:= 0,
+    !,
+    countEven(T,R),
+    R1 is R + 1.
+countEven([_|T],R):-
+    countEven(T,R).
+
+% checkEven(l1l2...ln) = 
+% = true, if countEven(l1l2...ln) % 2 = 0
+% = false, otherwise
+
+% checkEven(L:list)
+% (i)
+
+checkEven(L):-
+    countEven(L,RL),
+    RL mod 2 =:= 0.
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+% checkSum(l1l2...ln, s) = 
+% = true, if computeSum(l1l2...ln) = s
+% = false, otherwise
+
+checkSum(L,S):-
+    computeSum(L,RS),
+    RS =:= S.
+
+% oneSol(L:list, S:number, R:list)
+% (i,i,o)
+
+oneSol(L,S,R):-
+    subsets(L,R),
+    checkEven(R),
+    checkSum(R,S).
+
+%allSols(L:list, S:number, R:list)
+% (i,i,o)
+
+allSols(L,S,R):-
+    sortare(L,LS),
+    findall(RPartial, oneSol(LS,S,RPartial),R).

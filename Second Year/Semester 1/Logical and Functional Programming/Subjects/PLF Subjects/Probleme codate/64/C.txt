@@ -1,0 +1,24 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat lista 
+; iniţială din care au fost eliminate toate apariţiile unui element e. Se va folosi o funcție MAP.
+
+; Exemplu a) dacă lista este (1 (2 A (3 A)) (A)) şi e este A => (1 (2 (3)) NIL)
+;         b) dacă lista este (1 (2 (3))) şi e este A => (1 (2 (3)))
+
+
+; removeElem(l, elem) = 
+; = nil, if l is an atom and l = elem
+; = list(l), if l is an atom
+; = removeElem(l1, elem) U ... U removeElem(ln, elem), otherwise (l = l1l2...ln)
+
+(defun removeElem(l elem)
+  (cond
+    ((and (atom l) (equal l elem)) nil) 
+    ((atom l) (list l))
+    (t (list (mapcan #' (lambda (a) (removeElem a elem)) l)))
+  )
+)
+
+
+(defun main(l elem)
+  (car (removeElem l elem))
+)

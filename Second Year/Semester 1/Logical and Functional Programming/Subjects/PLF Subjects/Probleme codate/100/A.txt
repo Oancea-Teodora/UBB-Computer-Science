@@ -1,0 +1,20 @@
+% A. Fie L o listă numerică şi următoarea definiţie de predicat PROLOG f(list, integer), având modelul de flux (i, o):
+
+f([], 0).
+f([H|T],S):-f(T,S1),H<S1,!,S is H+S1.
+f([_|T],S):-f(T,S1), S is S1+2.
+
+% Rescrieți această definiție pentru a evita apelul recursiv f(T,S) în ambele clauze, fără a redefini logica clauzelor.
+%  Justificați răspunsul.
+
+f1([], 0).
+f1([H|T],S):-
+    f1(T,S1),
+    aux(S1,H,S).
+
+aux(S1,H,S):-
+    H < S1,
+    !,
+    S is H + S1.
+aux(S1,_,S):-
+    S is S1 + 2.

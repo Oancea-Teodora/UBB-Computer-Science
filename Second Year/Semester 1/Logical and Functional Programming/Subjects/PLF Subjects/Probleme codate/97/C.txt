@@ -1,0 +1,24 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;  lista iniţială din care au fost eliminați toți atomii numerici pari situați pe un nivel impar.
+;  Nivelul superficial se consideră a fi 1. Se va folosi o funcție MAP.
+
+; Exemplu a) dacă lista este (1 (2 A (4 A)) (6)) => (1 (2 A (A)) (6))
+;         b) dacă lista este (1 (2 (C))) => (1 (2 (C)))
+
+
+; removeElems(l,level) = 
+; = nil, if l is a number and l % 2 == 0 and level % 2 == 1
+; = list(l), if l is an atom
+; = removeElems(l1, level + 1) U ... removeElems(ln, level + 1), otherwise (l = l1l2...ln)
+
+(defun removeElems(l level)
+  (cond
+    ((and (and (numberp l) (equal (mod l 2) 0)) (equal (mod level 2) 1)) nil)
+    ((atom l) (list l))
+    (t (list (mapcan #' (lambda (a) (removeElems a (+ 1 level))) l)))
+  )
+)
+
+(defun main(l)
+  (car (removeElems l 0))
+)

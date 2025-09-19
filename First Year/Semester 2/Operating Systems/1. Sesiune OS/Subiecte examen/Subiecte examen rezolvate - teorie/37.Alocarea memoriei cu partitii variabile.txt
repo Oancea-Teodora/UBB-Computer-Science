@@ -1,0 +1,7 @@
+10.2.4 Alocarea cu partiþii variabile 
+ 
+Acest mod de legare mai este cunoscut ºi sub numele de alocare dinamicã sau alocare MVT - 
+Memory Variable Task. El reprezintã o extensie a alocãrii cu partiþii fixe, care permite o 
+exploatare mai suplã ºi mai economicã a memoriei SC. In funcþie de solicitãrile la sistem ºi de 
+capacitatea de memorie încã disponibilã la un moment dat, numãrul ºi dimensiunea partiþiilor se 
+modificã automat

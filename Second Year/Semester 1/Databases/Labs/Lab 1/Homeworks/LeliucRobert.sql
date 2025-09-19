@@ -1,0 +1,90 @@
+use CarDealership
+
+CREATE TABLE Manufacturers(
+	ManufacturerID INT PRIMARY KEY,
+	Name NVARCHAR(50) NOT NULL,
+	Country NVARCHAR(30) NOT NULL
+);
+
+CREATE TABLE CarModels(
+	CarModelID INT PRIMARY KEY,
+	ModelName NVARCHAR(50) NOT NULL,
+	ManufacturerID INT FOREIGN KEY REFERENCES Manufacturers(ManufacturerID),
+	Engine NVARCHAR(30),
+	Horsepower INT,
+	BodyType NVARCHAR(30),
+	FuelType NVARCHAR(30),
+	Acceleration0To100 DECIMAL(5 , 2),
+	Transmission NVARCHAR(30)
+);
+
+CREATE TABLE Cars(
+	CarID INT PRIMARY KEY,
+	CarModelID INT FOREIGN KEY REFERENCES CarModels(CarModelID),
+	Year INT,
+	Price DECIMAL(10 , 2),
+	Color NVARCHAR(20),
+	Mileage DECIMAL(10 , 2),
+);
+
+CREATE TABLE Parts (
+	PartID INT PRIMARY KEY,
+	PartName NVARCHAR(50) NOT NULL,
+	Price DECIMAL(10 , 2),
+	ManufacturerID INT FOREIGN KEY REFERENCES Manufacturers(ManufacturerID)
+);
+
+CREATE TABLE CarParts (
+	CarID INT FOREIGN KEY REFERENCES Cars(CarID),
+	PartID INT FOREIGN KEY REFERENCES Parts(PartID),
+	Quantity INT,
+	PRIMARY KEY (CarID , PartID)
+);
+
+CREATE TABLE Addresses (
+	AddressID INT PRIMARY KEY,
+	Street NVARCHAR(50) NOT NULL,
+	City NVARCHAR(30) NOT NULL,
+	State NVARCHAR(30),
+	PostalCode NVARCHAR(10),
+	Country NVARCHAR(30)
+);
+
+CREATE TABLE Customers (
+	CustomerID INT PRIMARY KEY,
+	Name NVARCHAR(50) NOT NULL,
+	Phone NVARCHAR(20),
+	Email NVARCHAR(30),
+	AddressID INT FOREIGN KEY REFERENCES Addresses(AddressID)
+);
+
+CREATE TABLE SalesPersons (
+	SalesPersonID INT PRIMARY KEY,
+	Name NVARCHAR(50),
+	Phone NVARCHAR(20),
+	Email NVARCHAR(30),
+	AddressID INT FOREIGN KEY REFERENCES Addresses(AddressID)
+);
+
+CREATE TABLE Sales (
+	SalesID INT PRIMARY KEY,
+	CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID),
+	CarID INT FOREIGN KEY REFERENCES Cars(CarID),
+	SalesPersonID INT FOREIGN KEY REFERENCES SalesPersons(SalesPersonID),
+	Date DATETIME NOT NULL,
+	SalePrice DECIMAL(10 , 2) NOT NULL
+);
+
+CREATE TABLE Services (
+	ServiceID INT PRIMARY KEY,
+	ServiceType NVARCHAR(100),
+	Price DECIMAL(10 , 2)
+);
+
+CREATE TABLE Appointments (
+	AppointmentID INT PRIMARY KEY,
+	CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID),
+	CarID INT FOREIGN KEY REFERENCES Cars(CarID),
+	ServiceID INT FOREIGN KEY REFERENCES Services(ServiceID),
+	Date DATETIME NOT NULL,
+);

@@ -1,0 +1,24 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;    lista iniţială in care atomii de pe nivelul k au fost inlocuiti cu 0 
+;    (nivelul superficial se consideră 1). Se va folosi o funcție MAP.
+; Exemplu pentru lista (a (1 (2 b)) (c (d)))
+; a) k=2 => (a (0 (2 b)) (0 (d))) b) k=1 => (0 (1 (2 b)) (c (d))) c) k=4 =>lista nu se modifică
+
+
+; replaceElems(l, level, k) = 
+; = 0, if l is an atom and if level = k
+; = l, if l is an atom
+; = replaceElems(l1, level + 1, k) U ... U replaceElems(ln, level + 1, k), otherwise (l = l1l2...ln)
+
+(defun replaceElems(l level k)
+  (cond
+    ((and (atom l) (equal level k)) 0)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceElems a (+ 1 level) k)) l))
+  )
+)
+
+
+(defun main(l k)
+  (replaceElems l 0 k)
+)

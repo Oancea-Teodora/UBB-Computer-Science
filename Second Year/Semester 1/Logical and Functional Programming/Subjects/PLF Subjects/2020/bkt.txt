@@ -1,0 +1,55 @@
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+% perm(l1l2...ln) = 
+% = [], if n = 0 
+% = insert(l1, perm(l2...ln)), otherwise
+
+% perm(L:list, R: result list)
+% (i,o)
+
+perm([],[]).
+perm([H|T],R1):-
+    perm(T,R),
+    insert(H,R,R1).
+
+
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k - 1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([H|],1,[H]).
+arr([|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(H,R,R1).
+% comb(l1l2...ln, k) = 
+% = l1, if k = 1 and n >= 1
+% = comb(l2...ln, k), if k >= 1
+% = {l1} U comb(l2...ln, k - 1), if k > 1
+
+% comb(L:list, K:number, R:list)
+% (i,i,o)
+
+comb([E|],1,[E]).
+comb([|T],K,R):-
+    comb(T,K,R).
+comb([H|T],K,[H|R]):-
+    K > 1,
+    K1 is K - 1,
+    comb(T, K1, R).

@@ -1,0 +1,17 @@
+(defun f(x &rest y)
+  (cond
+    ((null y) x)
+    (t (append x (mapcar #'car y)))
+  )
+)
+
+(print (append (f '(1 2)) (f '(3 4) '(5 6) '(7 8))))
+
+; (f '(1 2)) will return x, namely (1 2)
+
+; now for (f '(3 4) '(5 6) '(7 8)):
+; (mapcar #'car y) will be applied on ((5 6) (7 8)) 
+; and will return (5 7), which will be appended to x, thus resulting
+; (3 4 5 7)
+
+; we append the results of the two calls and obtain (1 2 3 4 5 7)

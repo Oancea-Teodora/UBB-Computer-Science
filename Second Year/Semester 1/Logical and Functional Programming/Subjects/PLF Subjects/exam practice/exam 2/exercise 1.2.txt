@@ -1,0 +1,13 @@
+% initial function
+% (i, o)
+f([], -1).
+f([H|T], S):- H>0, f(T, S1), S1<H, !, S is H.
+f([_|T], S):- f(T, S1), S is S1.
+
+aux(H, S1, H):- H>0, S1<H.
+aux(_, S1, S1).
+
+% refactored function
+% (i, o)
+g([], -1).
+g([H|T], S):- g(T, S1), aux(H, S1, S).

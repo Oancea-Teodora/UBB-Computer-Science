@@ -1,0 +1,24 @@
+; C. Se dă o listă neliniară și se cere înlocuirea valorilor numerice care sunt mai mari
+;     decât o valoare k dată și sunt situate pe un nivel impar, cu numărul natural predecesor.
+;     Nivelul superficial se consideră 1. Se va folosi o funcție MAP.
+
+; Exemplu pentru lista (1 s 4 (3 f (7))) și
+; a) k=0 va rezulta (0 s 3 (3 f (6))) b) k=8 va rezulta (1 s 4 (3 f (7)))
+
+
+; replaceNumbers(l, k, level) = 
+; = l - 1, if l is a number and l > k and level % 2 == 1
+; = l, if l is an atom
+; = replaceNumbers(l1, k, level + 1) U ... U replaceNumbers(ln, k, level + 1), otherwise (l = l1l2...ln)
+
+(defun replaceNumbers(l k level)
+  (cond
+    ((and (and (numberp l) (> l k)) (equal (mod level 2) 1)) (- l 1))
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceNumbers a k (+ 1 level))) l))
+  )
+)
+
+(defun main(l k)
+  (replaceNumbers l k 0)
+)

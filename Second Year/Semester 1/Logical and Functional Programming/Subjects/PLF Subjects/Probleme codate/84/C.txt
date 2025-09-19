@@ -1,0 +1,29 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;    lista iniţială din care au fost eliminaţi toţi atomii de pe nivelul k 
+;    (nivelul superficial se consideră 1). Se va folosi o funcție MAP.
+
+; Exemplu pentru lista (a (1 (2 b)) (c (d)))
+; a) k=2 => (a ((2 b)) ((d))) 
+; b) k=1 => ((1 (2 b)) (c (d))) 
+; c) k=4 =>lista nu se modifică
+
+
+
+; removeElems(l, k, level) = 
+; = nil , if l is an atom and level = k
+; = (list l), if l is an atom
+; = removeElems(l1, k, level + 1) U ... U removeElems(ln, k, level + 1), otherwise (l = l1l2...ln)
+
+
+(defun removeElems (l k level)
+  (cond
+    ((and (atom l) (equal level k)) nil)
+    ((atom l) (list l))
+    (t (list (mapcan #' (lambda(a) (removeElems a k (+ level 1))) l)))
+  )
+)
+
+
+(defun main(l k)
+  (car (removeElems l k 0))
+)

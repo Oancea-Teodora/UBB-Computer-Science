@@ -1,0 +1,42 @@
+minsert([], E, [E]).
+minsert([H|T], E, [E, H|T]).
+minsert([H|T], E, [H|R]):-
+    minsert(T, E, R).
+
+perm([], []).
+perm([H|T], R):- 
+    perm(T, R1),
+    minsert(R1, H, R).
+
+getAllPermutations(L, R):-
+    findall(Output,perm(L, Output),R).
+% [2, 3] -> [2, 3], [3, 2]
+% [1, 2, 3] -> [1, 2, 3], [2, 1, 3], [2, 3, 1]
+% [1, 3, 2], [3, 1, 2], [3, 2, 1]
+
+condition([]).
+condition([_]).
+condition([H1, H2 | T]):- 
+    Diff is H1 - H2, 
+    abs(Diff) =< 3, 
+    condition([H2|T]).
+
+filter([], []).
+filter([H|T], R):- filter(T, R1), condition(H), !, R = [H|R1].
+filter([_|T], R):- filter(T, R1), R = R1.
+
+% (i, o)
+wrapper([], []).
+wrapper(L, R):- 
+    getAllPermutations(L, Permutations), write(Permutations), nl,
+    filter(Permutations, R).
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+% B. Să se scrie un program PROLOG care generează lista combinărilor de k elemente
+%    dintr-o listă de numere întregi, având suma număr par.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+
+% Exemplu- pentru lista [6, 5, 3, 4], k=2 ⇒ [[6,4],[5,3]] (nu neapărat în această ordine)
+
+
+% comb(l1l2...ln, k) = 
+% = l1, if k = 1 and n >= 1
+% = comb(l2...ln, k), if k >= 1
+% = {l1} U comb(l2...ln, k - 1), if k > 1
+
+% comb(L:list, K:number, R:list)
+% (i,i,o)
+
+comb([E|_],1,[E]).
+comb([_|T],K,R):-
+    comb(T,K,R).
+comb([H|T],K,[H|R]):-
+    K > 1,
+    K1 is K - 1,
+    comb(T, K1, R).
+
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+
+% oneSol(L:list, K:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,R):-
+    comb(L,K,R),
+    computeSum(R,S),
+    S mod 2 =:= 0.
+
+allSols(L,K,R):-
+    findall(RP, oneSol(L,K,RP),R).

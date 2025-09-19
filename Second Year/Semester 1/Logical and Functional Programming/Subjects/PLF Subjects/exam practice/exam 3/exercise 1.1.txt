@@ -1,0 +1,22 @@
+(defun f(l)
+  (cond 
+    ((null l) 0)
+    ((> (f (car l)) 2) (+ (carl) (f (cdr l))))
+    (t (f (car l)))
+  )
+)
+
+;same error, so it is good
+(defun f(l)
+(
+  (lambda (v) 
+    (cond 
+    ((null l) 0)
+    ((> v 2) (+ (carl) (f (cdr l))))
+    (t v)
+    ))
+  (f (car l))
+)
+)
+
+(print (f '(2 1 3)))

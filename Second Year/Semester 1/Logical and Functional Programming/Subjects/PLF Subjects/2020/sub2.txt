@@ -1,0 +1,143 @@
+I.1
+
+(DEFUN F(L)
+    ((LAMBDA (v)
+        (COND
+            ((NULL L) 0)
+            ((> v 2) (+ (CAR L) (F (CDR L))))
+            (T v)
+        )
+    ) (F (CAR L)))
+)
+
+I.2
+
+f([], 0).
+f([H|T], S) :-
+    f(T, S1),
+    H < S1,
+    !,
+    S is H+S1.
+f([_|T], S) :-
+    f(T, S1),
+    S is S1+2.
+
+aux(H, S1, S) :-
+    H < S1,
+    !,
+    S is H+S1.
+aux(_, S1, S) :-
+    S is S1+2.
+
+f([], 0).
+f([H|T], S) :-
+    f(T, S1),
+    aux(H, S1, S2),
+    S is S2.
+
+[1, 3, 1, -2, 4, 1]
+s = 6
+
+I.3
+
+(DEFUN F(X &REST Y)
+    (COND
+        ((NULL Y) X)
+        (T (APPEND X (MAPCAR #'CAR Y)))
+    )
+)
+
+(PRINT (APPEND (F '(1 2)) (F '(3 4) '(5 6) '(7 8))))
+
+(1 2 3 4 5 7) 
+
+
+I.4
+
+1 1 1
+1 1 2
+1 2 1
+1 2 2
+2 1 1
+2 1 2
+2 2 1
+2 2 2
+
+p(1). 
+p(2).
+q(1).    
+q(2).
+r(1).         
+r(2).  
+s :- 
+    p(X), 
+    q(Y),
+    r(Z),
+    write(X),
+    write(Y),
+    write(Z), 
+    nl.
+
+
+II.
+
+subset([], []).
+subset([H|T], C):-
+    subset(T, R),
+    C = [H|R].
+subset([_|T], R):-
+    subset(T, R).
+
+sum([], 0).
+sum([H|T], S) :-
+    sum(T, S1),
+    S is S1+H.
+
+len([], 0).
+len([_|T], S) :-
+    len(T, S1),
+    S is S1+1.
+
+f(L, N, R) :-
+	subset(L, C),
+    sum(C, S),
+    mod(S, 3) =:= 0,
+    len(C, LN),
+    LN >= N,
+    R = C.
+
+
+III.
+
+(DEFUN F(L K lvl)
+    (COND
+        ((ATOM L) 
+           (COND
+              ((= lvl K) 0)
+	          (t L)
+           )
+        )
+        (t
+           (MAPCAR #'(lambda (v) (F v K (+ lvl 1))) L)
+        )
+    )
+)
+(PRINT (F '(a (1 (2 b)) (c (d))) 2 0))
+
+% L - the list
+% K - the needed level
+% lvl - the current level
+
+% F(L, k, lvl) =
+% = 0, if L is atom AND k = lvl,
+% = L, if L is atom AND k != lvl,
+% = {(U [i=1,n] F(li, k, lvl+1))} , if L is list = (l1...ln)
+
+
+
+
+
+
+
+
+

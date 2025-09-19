@@ -1,0 +1,204 @@
+MAC - 6 BYTES, FARA LITERE PESTE F
+- guaranteed to be unique , not routable, can be changed, understood by switch but not by hub
+- determined by arp , when ip is known; 
+-------------------
+COMPUTATIONAL
+CHECK IP/NM VALID => Binary both IP and NM. Where u have 0 in NM you must have 0 in IP
+--
+IP + NM => NA = IP && NM | BA = IP || (!NM)
+---
+NetMask given => hosts: 2^(nr 0)-2 | subnets: 31-(nr 1)
+----
+can be broadcast address => 4k-1 | can be network address => 4k
+----
+2^(30-x) = number of /30 subnets that can be made from /x
+----
+how many subnets with minim dim contain 2 addresses: find how many bits are the same from left to right(ex 7)
+find how many addresses can u have on that subnet mask ( ex 2^22)
+=> 2^(32-22-7) = 8
+-------------------
+IP ADDRESS CLASSES:
+A - 1.x.x.x-127.x.x.x/8 | B - 128.x.x.x->191.x.x.x/16 | C - 192-223/24 | D 224-239 multicast | E-240-255 experimental
+-------------------
+Private IPs    ---- 127.0.0.1 - loopback addr
+192.168.x.x /<=16     |     10.x.x.x/<=8   |    172.16.0.0-172.31.x.x /<=12
+-----------------
+TCP: SOCK_STREAM
+tcp header = 20
+TCP HEADER = DCP HEADER + 12 BYTES (length)
+TCP Header - Source/Dest port, seq num, ack numb, flags, data offset, checksum, urgent pointer
+- hhtp, ftp, stmp - email
+--------------------
+UDP:   SOCK_DGRAM
+UDP packets - encapsulated in IP datagram | HEADER = 8
+-------------------
+deci daca am x.x.y.d
+x.x.z.d
+fac y-z<=2^caca
+mask = 255.255.(256-2^caca).0
+--------------------
+COMMANDS:
+SERVER - accept, bind 
+TCP server - bind mandatory, connect not mandatory, listen not mandatory, accept mandatory
+UDP server - connect not mandatory, bind mandatory
+recvfrom() doesnt send data to the tcp server
+NO ACCEPT IN UDP SERVER
+CLIENT - nothing mandatory
+Client - socket, listen, connect | bind - not mandatory , can be in tcp/udp, accept not mandatory
+sendto() sends data to udp client
+recvfrom() reads data from UDP client; the client doesnt get data from recvfrom() call
+listen => accepts incoming requests; signalled by making socket passive
+UDP NO CONNECT !!! no connect
+TCP MUST HAVE CONNECT AND ACCEPT
+---
+no: udp client -connect ; udp server no accept;
+mandatory: tcp client connect and accept; tcp server bind and accept; udp server bind;
+recvfrom() reads from udp clients and sendto - sends to client
+-----------------
+APP LAYERs: dns, ssh, ftp, http, smtp
+Pres layer | session layer | transp layer = udp, tcp, https | netw layer = ip | data link = mac | phys
+- OSI 
+TCP/IP - 4 layers
+--------------------
+IP(v4)
+IP addr - 32bits/4bytes; first ip addr = network addr<----->broadcast adr =last ip address
+----
+IP Protocol - unreliable, affects packet routing, defines the internet addressing sys
+offset field - order of fragments | ICMP = Internet control message protocvol
+IP routing is based on Destination Ip | ICMP packets are encapsulated within IP datagrams
+-------------------
+RIP = Routing Information Protocol
+RIPv1 - same timers as v2; supports classless routing protocols; not < admin dist RIPV2; not easier to config
+RIPv2 - maximum metric(hop count) of 15; >15 = unreachable
+-------------------
+Optical fiber - light waves, no limit in bandwith | wifi - electromagnetic waves
+-------------------
+CHECKSUM - ip header - computed on each router and source/dest hosts
+a 16bit field used on header for error checking
+-----------------
+DHCP= clinet/sv protocol that provides an ip host with its ip address, subnetmask and gateway
+------------------
+Switch > hub, switch - mac addr, sends to one, not to all; both have multiple ports
+switches can transport tcp packets & ip packets & udp packets
+------------------
+DOMAIN: (not every not used domain is free to claim)
+ana.are.mere.ro => ro = top level dom; mere subdom of ro, are subdom of mere.ro; ana subdom of are.mere.ro
+------------------
+TLD = Top Level Domain | ARP =Addr Res Prot | FTP = File Trans Prot | DHCP = Dyn Host Config Prot |
+DNS= Dom Name Sys | ROTLD = Rom Top Lvl Dom | UDP = User Datagr Prot | TCP = Trans Contr Prot |
+P2P = Peer to Peer |  ISP = Internet Serv Provider  | LAN = Local Area Network |  MAC = Media Access Control
+NAT = Network Address Translation | HTTP = HyperText Transfer Protocol | DSL = Digital Subscriber Line
+SSH = Secure Shell | CLI= command line interface
+-------------------
+Bus - newtork topology = single cable that connects in series all computers from network
+Star - network topology - Ring
+---------------------
+TTL = Time To Live -> number of routers the packet is allowed to pass
+------------------------------
+Computer to switch =  straight-through cable | PC to router = Cross-over cable
+------------------
+SMB or SAMBA Protocol is a file transfer protocol
+------------------
+Bandwidth = amount of data that can be carried in a given time; physical property of the transm medium
+throughput = quantity of data over quantity of time which we send at a given time, through a trans channel
+-----------------
+listen system call = used by a sv process; indicates that sv is ready to accept incoming conections on the socket
+- accept with "accept"
+------------------
+Congestion window = sender impose window - avoid overrunning routers in a network path
+below threshold -> grow exponentially | above threshold -> grow lineary
+-------------------
+Datagram = basic transfer unit used in packet-switched netws, providing a connectionless comm service
+------------------
+++Routing Table: Interface, netmask, destination address, gateway
++ISP aggregates smaller networks into a larger one to reduce numb of entries in routing table of the router connecting the ISP to the Internet  | HTTP +transfers encrypted data + client to sv with telnet
+++Traceroute shows all IPs of the routers parsed until the current IP
++Ping uses the Protocol ICMP 
+++arp /a 
+check datalink layer
++NAT - causes loss of end-to-end IP traceability | configure NAT-static,dynamic, NAT overload
+++Protocol defines when/how/what data is communicated
++Supernetting - 2^(net-supernet)
+++DNS - can be def gateway - it's main function is to provide host names to TCP/IP addr res | runs on port 53 on both udp and tcp
++ FTP - uses data and control channels | doesnt provide encryption | on application layer
+++ network adapter mac addr => ipconfig /all
++Whois Query -> domain name is already bought
+++Duplicate ack-> NO congest win cut in half/cut in half & grow exp/set to 1mss
++Classless routing protocol -> supported by RIPv2 only, variable length mask and discontiguous netw
+++ Internet API - set of rules that the sending program must follow - for delivery to destination program
++ localhost is 127.0.0.1, also the loopback address
+++ AFTER translation=>  Inside Global Host | Before Translation=> Outside Local Host
++SSH- app layer
+++Computers can have more than one ip address
++UDP - not ALWAYS FASTER than TCP | udp is process to process
+++UDP- reads bytes from a packet, tcp writes stream of bytes(doesnt read) (?)
++ Hub shares bandwidth
+------------------
+INTREBARI:
+1.A company has three departments: Offices, Public and Managers. The offices have 123 computers, Public Relationship has 29 computers and Managers have 5 computers. The company wants to make a network such that: - every computer has access to the internet - have minimum costs - it must be certainly known from which department some webpages are accessed from the HQ in another city Provide a good configuration for these requirements:
+a) 3 subnetworks, 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24 for every department and connect every subnet directly to the internet, using NAT, through a different provider
+b) 1 subnetwork for all the company, 192.168.0.0/24, connect computers to internet through a router which translates every address IP to a public IP address with different class depending on department
+c) 3 subnetworks, 192.168.0.0/25, 192.168.0.128/27, 192.168.0.160/29, one router which translates the first network to 30.0.0.1, second to 30.0.0.2, and third to 30.0.0.3
+d) 3 subnetworks, 192.168.0.0/25, 192.168.0.128/27, 192.168.0.160/29 and connect them to a central router which translates all the IPs on 192.168.0.0/24 with the IP 30.0.0.5
+----------------------------
+2.Two connected routers are configured with RIP routing. What will be the result when a router received a routing update that contains a higher-cost path to a network already in its routing table?
+a) the updated information will be added to the existing routing table
+b) the update will be ignored and no further action will occur
+c) the updated information will replace the existing routing table entry
+d) the existing routing table entry will be deleted from the routing table and all routers will exchange routing updates to reach convergence
+asta ce sens are, daca e higher cost n-ar trebui sa o ignore sau ceva?
+--------------------------------
+3.Which of the following IP addresses cannot be broadcast addresses?
+a) 192.168.0.255    ||   b) 200.0.0.33    |||    c) 10.0.1.254     |||    d) 25.0.2.31
+---------------------------------
+4.Consider the following network address: 192.0.2.64 . How many net masks can it be used with?
+---------------------------------
+5.Which of the following are valid IP addresses to mark a subnetwork?
+a) 177.91.107.144/29       |||   b) 177.91.107.0/32     |||  c) 177.91.107.1/25     |||    d) 177.91.154/30
+----------------------------------
+6.Given the address 137.25.28.0/255.255.254.0 provide the maximum number of valid subnets that can be obtained from splitting this network
+-----------------------------------
+7.In how many subclasses with the netmask 255.192.0.0 can the class of minimal dimension containing both IP addresses: 78.79.80.81 and 79.80.81.82, be divided?
+a) 7     b) 10      c) 8        d) 9
+-------------------------
+8.What happens if the Gateway in a Routing table entry is 0.0.0.0?
+a) The router drops the packet as there is no such gateway IP address
+b) This is not possible
+c) All packets will be directed to 0.0.0.0
+d) The router puts the packet on the associated network interface with this route
+----------------------------
+9.Write as [network address]/[xx] - in the most compact and ordered way - the addressing space 62.255.254.224...63.64.0.31. (if multiple combinations are needed write them separated by comas without spaces or other characters)
+-----------------------------
+10.193.231.20.0/24 can be divided in exactly X subnets of equal sizes. X=?
+a) 7 subnets     |||    b) 14 subnets     |||    c) 5 subnets     |||    d) 8 subnets      |||   e) 4 subnets
+------------
+11.Which of the following can be a mask, such that 62.244.89.16 is a valid network address?
+a) 255,255,255,252     |||      b) /29   |||  c) 255,255,255,248     |||   d) /27     |||     e) 255.255.255.128
+Your answer: abc     Incorrect!         The correct answer was abd
+-----------------------------
+12.Which of the following is correct regarding Class B address of IP address
+a) Network 18 , Host 16   |||   b) Network 14 , Host 16   |||  c) Network 16 , Host 14   |||  d) Network 12 , Host 14
+------------------------------
+13.What is the broadcast address of the following IP address 221.17.123.9 that has in its network 42 pcs?
+a) 221.17.123.255   |||   b) 255.255.255.255   |||| c) 221.17.123.64    ||||    d) 221.17.123.65
+Your answer: a    |    Incorrect!    |   The correct answer was c
+-----------------------
+14.What is the netmask of the minimum sized network that has as broadcast 70.71.79.255 and also contains the host IP address 70.71.79.240 ?
+Your answer: 255.255.255.240 | Incorrect! The correct answer was 255.255.255.224
+---------------------
+15.Write the network mask (only as /x.y.z.t) of the minimum sized network that
+contain both 80.81.82.83 and 80.83.84.85.
+-----------------------
+16.What is the network address and mask of the smallest subnet that fits these two
+IP addresses: 180.181.182.183 and 180.186.12.180? (addr/x.y.z.t format)
+---------------------
+17.Write the network mask (only as /x.y.z.t) of the minimum sized network that
+contain both 80.81.82.83 and 80.83.84.85.
+------------------
+18.You need to subnet a network that has 7 subnets, each with at least 16 hosts. Which classful subnet mask would you use?
+a) 255.255.255.192
+b) 255.255.255.224
+c) 255.255.255.240
+d) 255.255.255.252
+-----------------
+19. What is the network address and mask of the smallest subnet that fits these two IP addresses: 180.181.182.183 and 180.186.12.180? (addr/x.y.z.t format) => my answer 180.176.0.0/255.240.0.0

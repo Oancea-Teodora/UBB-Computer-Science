@@ -1,0 +1,24 @@
+; C. Să se substituie un element e prin altul e1 la orice nivel impar al unei liste neliniare.
+;    Nivelul superficial se consideră 1. 
+
+; De exemplu, pentru lista (1 d (2 d (d))), e=d şi e1=f rezultă lista (1 f (2 d (f))). 
+; Se va folosi o funcție MAP.
+
+
+; replaceElem(l, newElem, elem, level) = 
+; = elem, if l is an atom and l = elem and level % 2 == 1
+; = l, if l is an atom
+; = replaceElem(l1, elem, level + 1) U ... U replaceElem(ln, elem, level + 1), otherwise (l = l1l2...ln)
+
+
+(defun replaceElem (l elem newElem level)
+  (cond
+    ((and (and (atom l) (equal elem l)) (equal (mod level 2) 1)) newElem)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceElem a elem newElem (+ 1 level))) l))
+  )
+)
+
+(defun main(l elem newElem)
+  (replaceElem l elem newElem 0)
+)

@@ -1,0 +1,38 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel (nod subarbore1 subarbore2 .....). 
+;    Se cere să se determine numărul de noduri de
+;    pe nivelul k. Nivelul rădăcinii se consideră 0.
+;    Se va folosi o funcție MAP.
+
+; Exemplu pentru arborele (a (b (g)) (c (d (e)) (f)))
+; a) k=2 => nr=3 (g d f) b) k=4 => nr=0 ()
+
+
+; computeSum(l1l2...ln) = 
+; = 0, if n = 0
+; = computeSum(l1) + computeSum(l2...ln), if l1 is a list
+; = l1 + computeSum(l2...ln), otherwise
+
+(defun computeSum (l)
+  (cond
+    ((null l) 0)
+    ((listp (car l)) (+ (computeSum (car l)) (computeSum (cdr l))))
+    (t (+ (car l) (computeSum (cdr l))))
+  )
+)
+
+;  nrNodes(l k level)
+; = list(1), if l is an atom and k = level
+; = list(0), if l is an atom
+; = nrNodes(l1, k, level + 1) + ... + nrNodes(ln, k, level + 1), otherwise (l = l1l2...ln)
+
+(defun nrNodes(l k level)
+  (cond
+    ((and (atom l) (eq k level)) 1)
+    ((atom l) 0)
+    (t (apply #'computeSum (list (mapcar #' (lambda (a) (nrNodes a k (+ 1 level))) l))))
+  )
+)
+
+(defun main(l k)
+  (nrNodes l k -1)
+)

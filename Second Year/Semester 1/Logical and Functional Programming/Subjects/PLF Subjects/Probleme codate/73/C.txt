@@ -1,0 +1,62 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel ( nod subarbore1 subarbore2 .....). 
+;    Se cere să se determine calea de la radăcină către un nod dat. 
+;    Se va folosi o funcție MAP.
+
+; Exemplu pentru arborele (a (b (g)) (c (d (e)) (f)))
+; a) nod=e => (a c d e) b) nod=v => ()
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; reverseSuperficial(l1l2...ln) = 
+; = [], if n = 0
+; = myAppend(reverseSuperficial(l2...ln), list(l1)), otherwise
+
+(defun reverseSuperficial(l)
+  (cond
+    ((null l) nil)
+    (t (myAppend (reverseSuperficial (cdr l) ) (list (car l))))
+  )
+)
+
+
+; linearize(l) = 
+; = [], if l = []
+; = list(l), if l is an atom
+; = linearize(l1) U ... U linearize(ln), otherwise (l = l1l2...ln)
+
+(defun linearize(l)
+  (cond
+    ((null l) nil)
+    ((atom l) (list l))
+    (t (mapcan #' linearize l))
+  )
+)
+
+
+; path(l, node, collector) =
+; = collector, if l is an atom and l equal node
+; = nil, if l is an atom
+; = path(l1, node, {l1,1} U collector) U ... U path(ln, node, {ln,1} U collector), otherwise (where l = l1l2...ln)
+
+
+(defun path (l node collector) 
+    (cond
+        ((and (atom l) (eq l node)) collector)
+        ((atom l) nil)
+        (t (apply #'linearize (list (mapcar #'(lambda (a) (path a node (cons (car l) collector))) l))))
+    )
+)
+
+(defun pathMain (tree node)
+    (reverse (path tree node nil))
+)

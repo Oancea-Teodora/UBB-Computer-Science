@@ -1,0 +1,41 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel (nod subarbore1 subarbore2 .....).
+;    Se cere să se verifice dacă un nod x apare pe un nivel par în arbore. 
+;    Nivelul rădăcinii se consideră a fi 0. Se va folosi o funcție MAP.
+
+; Exemplu pentru arborele (a (b (g)) (c (d (e)) (f)))
+; a) x=g => T 
+; b) x=h => NIL
+
+
+; exists(l1l2...ln) = 
+; = false, if n = 0
+; = true, if l1 is true
+; = exists(l2...ln), otherwise
+
+(defun exists(l)
+  (cond
+    ((null l) nil)
+    ((eq (car l) t) t)
+    ((listp (car l)) (or (exists (car l)) (exists (cdr l))))
+    (t (exists (cdr l)))
+  )
+)
+
+; checkExistence(l, node, level) = 
+; = true, if l is an atom and l = node and level % 2 == 0
+; = false, if l is an atom
+; = checkExistence(l1, node, level + 1) U ... U checkExistence(ln, node, level + 1), otherwise (l = l1l2...ln)
+
+
+
+(defun checkExistence(l node level)
+  (cond
+    ((and (and (atom l) (eq l node)) (eq (mod level 2) 0)) (list T))
+    ((atom l) (list nil))
+    (t (apply #' exists (list (mapcar #' (lambda (a) (checkExistence a node (+ 1 level))) l))))
+  )
+)
+
+(defun main(l node)
+  (checkExistence l node -1)
+)

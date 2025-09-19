@@ -1,0 +1,1 @@
+dhcp, rutare statica si nat

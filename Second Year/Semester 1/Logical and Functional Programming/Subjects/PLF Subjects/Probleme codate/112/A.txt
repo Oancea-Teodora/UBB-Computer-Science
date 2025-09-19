@@ -1,0 +1,28 @@
+; A. Fie următoarea definiţie de funcţie LISP
+
+
+(DEFUN F(G L)
+  (COND
+    ((NULL L) NIL)
+    ((> (FUNCALL G L) 0) (CONS (FUNCALL G L) (F (CDR L))))
+    (T (FUNCALL G L))
+  )
+)
+
+; Rescrieți această definiție pentru a evita apelul repetat (FUNCALL G L), fără a redefini logica clauzelor și fără a folosi o funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+(defun f1(g l)
+  (cond
+    ((null l) nil)
+    (t ((lambda (x)
+         (cond
+           (( > x 0) (cons x (f1 (cdr l))))
+           (t x)
+         )
+        )(FUNCALL G L)
+       )
+    )
+  )
+)
+

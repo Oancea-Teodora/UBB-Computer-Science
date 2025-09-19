@@ -1,0 +1,15 @@
+; easy to understand
+  (defun g(l)
+    (list (car l) (car l))
+  )
+  
+
+  (defvar q 'a)
+  (defvar p 'b)
+  (setq q 'g)
+  (setq p q) ; no " ' ", so q is evaluated to g. So the funcall will work and will return (a a)
+  
+(defun main ()
+  (funcall p '(a b c)))
+
+(print (main))

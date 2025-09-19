@@ -1,0 +1,25 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel ( nod subarbore1 subarbore2 .....)
+; Se cere să se înlocuiască nodurile de pe nivelul k din arbore cu o valoare e dată. Nivelul rădăcinii se consideră a fi 0.
+; Se va folosi o funcție MAP.
+
+; Exemplu pentru arborele (a (b (g)) (c (d (e)) (f))) şi e=h
+;  a) k=2 => (a (b (h)) (c (h (e)) (h)))
+;  b) k=4 => (a (b (g)) (c (d (e)) (f)))
+
+
+; replaceElems(l, level, k, elem) = 
+; = elem, if l is an atom and level = k
+; = l, if l is an atom
+; = replaceElems(l1, level + 1, k, elem) U ... U replaceElems(ln, level + 1, k, elem) , otherwise (l = l1l2...ln)
+
+(defun replaceElems(l level k elem)
+  (cond
+    ((and (atom l) (equal level k)) elem)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceElems a (+ 1 level) k elem)) l))
+  )
+)
+
+(defun main(l k elem)
+  (replaceElems l -1 k elem)
+)

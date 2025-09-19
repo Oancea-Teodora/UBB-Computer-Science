@@ -1,0 +1,26 @@
+; A. Fie următoarea definiţie de funcţie ȋn LISP
+
+(DEFUN F(L1 L2)
+  (APPEND (F (CAR L1) L2)
+    (COND
+      ((NULL L1) (CDR L2))
+      (T (LIST (F (CAR L1) L2) (CAR L2)))
+    )
+  )
+)
+
+; Rescrieți această definiție pentru a evita dublul apel recursiv (F (CAR L1) L2), fără a redefini logica clauzelor și fără a folosi
+; o funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+(defun f1(l1 l2)
+  ((lambda (x) 
+    (append x
+      (cond
+        ((null l1) (cdr l2))
+        (t (list x (car l2)))
+      )
+     )
+    )(f1 (car l1) l2)
+  )
+)

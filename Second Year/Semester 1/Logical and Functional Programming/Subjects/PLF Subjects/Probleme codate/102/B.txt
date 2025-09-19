@@ -1,0 +1,59 @@
+% B. Să se scrie un program PROLOG care generează lista aranjamentelor de k elemente
+%    dintr-o listă de numere întregi, având o sumă S dată.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+
+% Exemplu- pentru lista [6, 5, 3, 4], k=2 şi S=9⇒ [[6,3],[3,6],[5,4],[4,5]] (nu neapărat în această ordine)
+
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k - 1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([H|_],1,[H]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(H,R,R1).
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+
+% oneSol(L:list, K:number, S:number, R:list)
+% (i,i,i,o)
+
+oneSol(L,K,S,R):-
+    arr(L,K,R),
+    computeSum(R,RS),
+    RS =:= S.
+
+allSols(L,K,S,R):-
+    findall(RP, oneSol(L,K,S,RP),R).

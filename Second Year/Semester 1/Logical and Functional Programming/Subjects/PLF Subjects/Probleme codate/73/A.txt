@@ -1,0 +1,28 @@
+;A. Fie următoarea definiţie de funcţie LISP
+
+(DEFUN F(L)
+  (COND
+    ((NULL L) 0)
+    ((> (F (CDR L)) 2) (+ (F (CDR L)) (CAR L)))
+    (T (+ (F (CDR L)) 1))
+  )
+)
+
+; Rescrieți această definiție pentru a evita apelul recursiv repetat (F (CDR L)), fără a redefini logica clauzelor și fără a folosi o
+; funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+
+(defun f1(l)
+  (cond
+    ((null l) 0)
+    (t ((lambda (x)
+         (cond
+           ((> x 2) (+ x (car l)))
+           (t (+ x 1))
+         )
+        )(f1 (cdr l))
+       )
+    )
+  )
+)

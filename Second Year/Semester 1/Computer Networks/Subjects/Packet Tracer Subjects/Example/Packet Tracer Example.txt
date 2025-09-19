@@ -1,0 +1,73 @@
+Packet Tracer Example
+
+Network IP: 128.163.252.0
+Mask: 255.255.255.0 (/24)
+x = 32 - 24 = 8 => 2^8 = 256 IP Addresses
+
+Sub networks:
+N1: 48 IP's
+N2: 52 IP's
+N3: 12 IP's
+N4: 16 IP's
+N5: 4 IP's
+
+We also need:
+N12345:  5 IP's
+N5w: 2 IP's
+
+n devices (IP) + 1 router + 1 NA + 1 BA => n+3
+* N1: 48 + 3 = 51 < 64 = 2^6 => /26
+* N2: 52 + 3 = 55 < 64 = 2^6 => /26
+* N3: 12 + 3 = 15 < 16 = 2^4 => /28
+* N4: 16 + 3 = 19 < 32 = 2^5 => /27
+* N5: 4 + 3 = 7 < 8 = 2^3 => /29
+* N12345: 5 + 2 = 7 < 8 = 2^3 => /29
+* N5w: 2 + 2 = 4 < 4 = 2^2 => /30
+
+64 + 64 + 16 + 32 + 8 + 8 + 4 = 196 < 256
+
+Enumerating the networks:
+* N1 = 128.163.252.0  /26		R1=.1   S1=.2  
+* N2 = 128.163.252.64 /26		R2=.65  SWEB=.66
+* N3 = 128.163.252.128/28 		R3=.129 SDNS=.130
+* N4 = 128.163.252.144/27		R4=.145
+* N5 = 128.163.252.176/29		R5=.177
+* N12345 = 128.163.252.184/29		R1=.185 R2=.186 R3=.187 R4=.188 R5=.189
+* N5w = 128.163.252.192 /30		R5=.193 Rw=.194
+
+Netmasks:
+/24 => 255.255.255.0
+/25 => 255.255.255.128
+/26 => 255.255.255.192
+/27 => 255.255.255.224
+/28 => 255.255.255.240
+/29 => 255.255.255.248
+/30 => 255.255.255.252
+
+EXPLANATIONS (STEPS)
+- Routers (Router-PT-Empty):
+	1. Stop the router
+	2. Add 4 CFE boards
+	* Can config just one router than copy-paste
+	* Take it one at a time
+	* Link N to R using FastEthernet0/0
+- Link end-devices and severs to switch and to router usinf 'Copper Straight-Through'
+- Router -> Config -> Turn ON -> Complete IP & Mask
+- Server -> Desktop -> IP Configuration -> Static -> Complete IP & Mask, Default Gateway (Router's IP), DNS -> Services -> DHCP -> ON -> Start IP Adresses serverIP + 1, Default Gateway, DNS -> SAVE!
+- PC -> Desktop -> DHCP
+- Server WEB - DO SAME AS SERVER + Services -> HTTP -> Edit Index.html -> Desktop -> Web Browser -> URL = Server IP
+- Server DNS - DO SAME AS SERVER + Services + DNS + ON + Set a name(whatever) + Set address of WEB server + ADD!
+- If PCs don't have a server -> set static IP (Router IP + 1)
+	// OR Config Router as DHCP: CLI -> enable -> configure t -> ip dhcp pool x -> network IP NETMASK -> default-router Router IP -> dns-server DNS IP -> CTRL+Z -> write memory
+- Laptops -> Turn off -> Remove default board -> Add WPC board -> Turn ON -> Wireless -> SSID Name -> SET DHCP
+- Access point -> config -> Port1 -> set SSID NAME
+- Wireless router is connected with 'Cross-Over' cable (INTERNET -> Avaliable port) -> Config -> Static - Complete all fields -> Wireless -> Rename (PCs need to be linked with 'Copper Straight-Through')
+- Smartphone -> Config -> Wirless -> Set name of wireless connection -> DHCP (MUST HAVE OUR DNS)
+
+Routing Tables
+Config -> Static Routing -> Details (Network = Nx IP, Mask = Associated Mask, Next HOP = linked component IP) -> Add
+R1 to: R2, R3, R4, R5, Rw
+ALL to ALL
+
+TEST
+R1 -> PC -> Desktop -> Comand Prompt -> ping x.x.x.WEB; ping x.x.x.DNS -> browser -> domain.com

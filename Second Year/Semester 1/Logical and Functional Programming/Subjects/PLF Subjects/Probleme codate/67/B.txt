@@ -1,0 +1,115 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor cu valori din intervalul
+%    [a, b], având număr par de elemente pare și număr impar de elemente impare.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru a=2 și b=4 ⇒ [[2,3,4]]
+
+
+
+% subsets(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subsets(l2...ln), if n >= 1
+% = subsets(l2...ln), if n >= 1
+
+% subsets(L:list, R:result list)
+% (i,o)
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+% countEven(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + countEven(l2...ln), if l1 % 2 == 0
+% = countEven(l2...ln), otherwise
+
+% countEven(L:list, R:number)
+% (i,o)
+
+countEven([],0).
+countEven([H|T],R1):-
+    H mod 2 =:= 0,
+    !,
+    countEven(T,R),
+    R1 is R + 1.
+countEven([_|T],R):-
+    countEven(T,R).
+
+% countOdd(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + countEven(l2...ln), if l1 % 2 == 
+% = countEven(l2...ln), otherwise
+
+% countOdd(L:list, R:number)
+% (i,o)
+
+countOdd([],0).
+countOdd([H|T],R1):-
+    H mod 2 =:= 1,
+    !,
+    countOdd(T,R),
+    R1 is R + 1.
+countOdd([_|T],R):-
+    countOdd(T,R).
+
+
+% checkEven(l1l2...ln) = 
+% = true, if countEven(l1l2...ln) % 2 = 0
+% = false, otherwise
+
+% checkEven(L:list)
+% (i)
+
+checkEven(L):-
+    countEven(L,R),
+    R=:=0,
+    !,
+    false.
+checkEven(L):-
+    countEven(L,R),
+    R mod 2 =:= 0.
+
+
+% checkOdd(l1l2...ln) = 
+% = true, if countOdd(l1l2...ln) % 2 = 1
+% = false, otherwise
+
+% checkOdd(L:list)
+% (i)
+
+checkOdd(L):-
+    countOdd(L,R),
+    R mod 2 =:= 1.
+
+% createList(a, b) =
+% = [], if a = b + 1
+% = {a} U createList(a + 1, b), otherwise
+
+% createList(A:number, B:number, R:list)
+% (i,i,o)
+
+createList(A,B,[]):-
+    A =:= B + 1.
+createList(A,B,[A|R]):-
+    A1 is A + 1,
+    createList(A1,B,R).
+
+
+% oneSol(l1l2...ln, r1r2...rn) = 
+% = subsets(l1l2...ln), if checkOdd(subsets(l1l2...ln)) = true and checkEven(subsets(l1l2...ln)) = true
+
+% oneSol(L:list, R:list)
+% (i,o)
+
+oneSol(L,R):-
+    subsets(L,R),
+    checkOdd(R),
+    checkEven(R).
+
+
+allSols(A,B,R):-
+    createList(A,B,L),
+    findall(RPartial, oneSol(L, RPartial), R).
+

@@ -1,0 +1,125 @@
+% B. Dându-se o listă formată din numere întregi, să se genereze lista submulţimilor
+%   cu k elemente numere impare, în progresie aritmetică.
+%   Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+
+% Exemplu- pentru lista L=[1,5,2,9,3] şi k=3 ⇒ [[1,5,9],[1,3,5]]
+%  (nu neapărat în această ordine)
+
+% insertFirst(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+% = {l1} U insertFirst(l2...ln, elem)
+
+% insertFirst(L:list, E:element, R:list)
+% (i,i,o)
+
+insertFirst(L,E,[E|L]).
+insertFirst([H|T],E,[H|R]):-
+    insertFirst(T,E,R).
+
+
+% insert(l1l2...ln, elem) =
+% = list(elem) , if n = 0
+% = l1l2...ln , if l1 = elem
+% = {elem} U l1l2...ln, if elem < l1
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert([],E,[E]).
+insert([H|_],E,[H|_]):-
+    H=:=E,
+    !.
+insert([H|T],E,R1):-
+    E < H,
+    !,
+    insertFirst([H|T],E,R1).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+% sortare(l1l2...ln) = 
+% = nil , if n = 0
+% = insert(sortare(l2...ln), l1) , otherwise
+
+% sortare(L:list, R:result)
+% (i,o)
+
+sortare([],[]).
+sortare([H|T],R1):-
+    sortare(T,R),
+    insert(R,H,R1).
+
+%subsets(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subsets(l2...ln), if n >= 1
+% = subsets(l2...ln), if n >= 1
+
+% subsets(L:list, R:result list)
+% (i,o)
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+% countOdd(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + countEven(l2...ln), if l1 % 2 == 
+% = countEven(l2...ln), otherwise
+
+% countOdd(L:list, R:number)
+% (i,o)
+
+countOdd([],0).
+countOdd([H|T],R1):-
+    H mod 2 =:= 1,
+    !,
+    countOdd(T,R),
+    R1 is R + 1.
+countOdd([_|T],R):-
+    countOdd(T,R).
+
+% checkOdd(l1l2...ln, n) = 
+% = true, if countOdd(l1l2...ln) = n
+% = false, otherwise
+
+% checkOdd(L:list, N:number)
+% (i)
+
+checkOdd(L, N):-
+    countOdd(L,R),
+    R =:= N.
+
+% progression(l1l2...ln) = 
+% = true, if n = 3 and l2 = (l1 + l2)/2
+% = progression(l2...ln), if l2 = (l1 + l2)/2
+% = false, otherwise
+
+% progression(L:list)
+% (i)
+
+progression([H1,H2,H3]):- H2 =:= (H1 + H3) /2.
+progression([H1,H2,H3|T]):-
+    H2 =:= (H1 + H3) /2,
+    progression([H2,H3|T]).
+
+% oneSol(l1l2...ln, k) = 
+% = subsets(l1l2...ln), if checkOdd(subsets(l1l2...ln), K) = true and 
+% progression(subsets(l1l2...ln)) = true
+
+% oneSol(L:list, K:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,R):-
+    subsets(L,R),
+    checkOdd(R,K),
+    progression(R).
+
+% allSols(L:list, K:number, R:result list)
+% (i,i,o)
+
+allSols(L,K,R):-
+    sortare(L,RL),
+    findall(RPartial, oneSol(RL,K,RPartial),R).

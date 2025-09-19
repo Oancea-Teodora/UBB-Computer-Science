@@ -1,0 +1,94 @@
+% B. Dându-se o listă formată din numere întregi, să se genereze ȋn PROLOG lista submulţimilor cu număr
+%    par de elemente. Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[2,3,4] ⇒ [[],[2,3],[2,4],[3,4]] (nu neapărat în această ordine)
+
+
+
+% insertFirst(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+
+% insertFirst(L:list, E:element, R:list)
+% (i,i,o)
+
+insertFirst(L,E,[E|L]).
+
+
+% insert(l1l2...ln, elem) =
+% = list(elem) , if n = 0
+% = l1l2...ln , if l1 = elem
+% = {elem} U l1l2...ln, if elem < l1
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert([],E,[E]).
+insert([H|_],E,[H|_]):-
+    H=:=E,
+    !.
+insert([H|T],E,R1):-
+    E < H,
+    !,
+    insertFirst([H|T],E,R1).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+% sortare(l1l2...ln) = 
+% = nil , if n = 0
+% = insert(sortare(l2...ln), l1) , otherwise
+
+% sortare(L:list, R:result)
+% (i,o)
+
+sortare([],[]).
+sortare([H|T],R1):-
+    sortare(T,R),
+    insert(R,H,R1).
+
+%subsets(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subsets(l2...ln), if n >= 1
+% = subsets(l2...ln), if n >= 1
+
+% subsets(L:list, R:result list)
+% (i,o)
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+
+% myLength(l1l2...ln) = 
+% = 0 , if n = 0
+% = 1 + myLength(l2...ln), otherwise
+
+% myLength(L:list, R:number)
+% (i,o)
+
+myLength([],0).
+myLength([_|T],R1):-
+    myLength(T,R),
+    R1 is R + 1.
+
+% checkEven(l1l2...ln) = 
+% = true, if myLength(l1l2...ln) % 2 = 0
+% = false, otherwise
+
+% checkEven(L:list)
+% (i)
+
+checkEven(L):-
+    myLength(L,R),
+    R mod 2 =:= 0.
+
+% oneSol(L:list, R:list)
+% (i,o)
+
+oneSol(L,R):-
+    subsets(L,R),
+    checkEven(R).
+
+allSols(L,R):-
+    findall(RPartial, oneSol(L,RPartial),R).

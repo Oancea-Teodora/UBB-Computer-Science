@@ -1,0 +1,16 @@
+11.2.1.1 Canalul ºi interacþiunea lui cu procesorul central 
+ 
+In sistemele seriale simple, procesorul central aºteaptã în general mult. Acest fapt se petrece 
+din cauza diferenþelor mari de vitezã dintre echipamentele electronice ale procesorului ºi 
+echipamentele, preponderent mecanice, ale dispozitivelor de I/O. Spre exemplu, un cititor 
+rapid de cartele citeºte 300 de cartele/minut. Un compilator traduce un program de 300 de 
+instrucþiuni în 6 secunde. De aici reiese cã procesorul este inactiv aproximativ 90% din timpul 
+total necesar compilãrii. Se impune (de fapt se impunea) creºterea eficienþei în exploatare a 
+procesorului. 
+ 
+ Dezvoltarea arhitecturii a condus la apariþia, odatã cu generaþia a II-a de calculatoare, a 
+canalului de intrare - ieºire. Acesta este un procesor specializat pe operaþii de I/O care poate 
+funcþiona în paralel cu procesorul central. Pentru a fi lansat în execuþie, canalul primeºte de la 
+procesor o comandã de efectuare a unei operaþii de I/O. Dupã lansare, cele douã procesoare îºi 
+continuã activitatea în paralel. La sfârºitul operaþiei de I/O, canalul anunþã acest fapt 
+procesorului central prin intermediul unei întreruperi.

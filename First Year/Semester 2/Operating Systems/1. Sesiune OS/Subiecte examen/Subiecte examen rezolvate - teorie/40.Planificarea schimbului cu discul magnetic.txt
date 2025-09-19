@@ -1,0 +1,11 @@
+
+Pentru a se avea acces la un anumit sector disc, unitatea de disc acþioneazã în trei etape: 
+? poziþionarea braþului pe cilindrul care conþine sectorul dorit; 
+? aºteptarea rotaþiei discului pânã când sectorul trece prin faþa capului de citire-scriere; 
+? schimbul propriu-zis de informaþie. 
+ 
+Dintre aceste etape, cea de poziþionare este cea mai lentã. La un moment dat, existã o coadã de 
+aºteptare pentru accese la disc, în special dacã discul este partajat între mai mulþi utilizatori. 
+Ordinea de servire este decisã de cãtre SO, astfel încât serviciile aceluiaºi utilizator sã se facã 
+în ordinea sosirii lor. Pe de altã parte, SO planificã serviciile între utilizatori astfel, încât 
+timpul total necesar poziþionãrilor sã fie cât mai mic. 

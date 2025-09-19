@@ -1,0 +1,10 @@
+(defun f(l k)
+  (cond 
+    ((null l) nil)
+    ((and (atom l) (eq k 0)) 0)
+    ((atom l) l)
+    (t (mapcar #'(lambda (newL) (f newL (- k 1))) l)) ;l is list
+  )
+)
+
+(print (f '(a (1 g (2 b)) (c (d))) 2))

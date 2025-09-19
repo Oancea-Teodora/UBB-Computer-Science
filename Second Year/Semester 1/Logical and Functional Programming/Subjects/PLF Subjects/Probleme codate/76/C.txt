@@ -1,0 +1,18 @@
+; C. Să se substituie valorile numerice cu o valoare e dată, la orice nivel
+;    al unei liste neliniare. Se va folosi o funcție MAP.
+
+; Exemplu, pentru lista (1 d (2 f (3))), e=0 rezultă lista (0 d (0 f (0))).
+
+
+; replaceNumbers(l, elem) = 
+; = elem, if l is a number
+; = l, if l is an atom
+; = replaceNumbers(l1, elem) U ... U replaceNumbers(ln, elem), otherwise (l = l1l2...ln)
+
+(defun replaceNumbers(l elem)
+  (cond
+    ((numberp l) elem)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceNumbers a elem)) l))
+  )
+)

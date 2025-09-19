@@ -1,0 +1,21 @@
+
+
+(defun fct(f l)
+  (cond
+    ((null l) nil)
+    (t  ((lambda (v)
+          (cond 
+            ((not (null v)) (cons v (fct f (cdr l))))
+            (t nil)
+          )
+        )
+        (funcall f (car l))
+        )
+    )
+  )
+)
+
+
+
+(print (fct '1+ '(1 2 3)))
+

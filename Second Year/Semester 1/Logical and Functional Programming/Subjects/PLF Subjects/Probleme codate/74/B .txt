@@ -1,0 +1,55 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor de sumă pară, cu elementele unei liste.
+% Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[2, 3, 4] ⇒ [[],[2],[4],[2,4]] (nu neapărat în această ordine)
+
+% subset(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subset(l2...ln), if n >= 1
+% = subset(l2...ln), if n >= 1
+
+% subset(L:list, R:result list)
+% (i,o)
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).
+
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+% checkSum(l1l2...ln) = 
+% = true, if computeSum(l1l2...ln) % 2 == 0
+% = false, otherwise
+
+% checkSum(L:list)
+% (i)
+
+checkSum(L):-
+    computeSum(L,RS),
+    RS mod 2 =:= 0.
+
+
+% oneSol(l1l2...ln) = 
+% subset(l1l2...ln), if checkSum(l1l2...ln) = true
+
+% oneSol(L:list, R:list)
+% (i,o)
+
+oneSol(L,R):-
+    subset(L,R),
+    checkSum(R).
+
+allSols(L,R):-
+    findall(RPartial,oneSol(L,RPartial),R).

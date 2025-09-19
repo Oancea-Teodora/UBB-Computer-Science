@@ -1,0 +1,135 @@
+MAC - Media access control  ( are 6 grupuri de cifre hexazecimale / 6 baiti )
+	identifica un device pe un network
+	este una pe placa de retea
+
+	cum functioneaza:
+	cand primeste date de ex placa de retea citeste adresa mac si daca e a ei le primeste daca nu nu.
+
+	primii 3 octeti indica producatorul, ultimii 3 dispozitivul
+
+	Ca sa comunice un device cu altul trebuie sa ii stie adresa mac
+
+	ARP - Da reqest la adresa mac stiind ip-ul (address resolution protocol)
+	RARP - invers
+
+
+
+
+TCP - Transmission Control Protocol                    	 UDP - User Datagram Protocol
+                                       Conexiune     
+										Nu stabileste conexiune
+			Pe un sock_stream                  		Pe un sock_dgram
+  Client:3 connect(ipserver,portserver)		       	  Server: Bind fara listen si accept!!!!	
+  Server: 1 bind (pune un port)							Client:sendto:
+  Server: 2 listen (cati oameni pot sa stau in coada),4 ACCEPT	 Server:recv from					
+  Client send -> servr:receive si close
+						    	
+TCP:Internet aplicatii ce trebuie sa fie sigure           	UDP:TRANSMISIE VIDEO, AUDIO JOCURI ONLINE ...
+
+
+Un network address trebuie sa inceapa cu un ultim byte divizibil cu 4.
+
+
+
+Sa sti range-ul networkului unei retele ip in care apare : 194.168.19.69/28
+32-28 = 4   ->>> 2^4
+Cel mai mic multiplu de 2^4 din 69 este 64
+asa ca stim ca incepe de la 64
+si merge 16 si atunci merge inclusiv la 194.168.19.79
+
+
+
+
+Ip addresses:
+         A	  	                                B                                       C                              D 
+1 octet retea - 3 adresa gazda       2 octeti retea - 2 adresa gazda              3 o r - 1 adresa gazda               Pentru multicast
+1.0.0.0 -> 127.255.255.255            128.0.0.0 ->> 191.255.255.255		 192.0.0.0 -> 223.255.255.255          224.0.0.0 -> 239.255.255.255
+ 
+un network e valid daca el si netmaskul da tot el.
+ 
+Netmaskul determina cate ip--uri pot fi folosite in network (Brodcast - network = netmask)
+	Prima (1) si ultima (2) adresa sunt rezervate mereu la un netmask
+	1) network address    (valid daca e divizibil cu 4)
+	2) bordcast address
+	NA: Network Address   (= IP Address and (pe biti) Netmask) - ip-urile unui network / subnetwork (un network address e valid daca untila chestie e divizibila cu 4)
+	BA: Bordcast address  ( = network address  || netamsk inversat ) - Adresa prin care trimiti la toate deviceurile din network
+    		Adresele de brodcast addres - impare 
+                                	    -  + 1 multiplu => de 4
+
+
+	minimul unui netmask care contine 2 adrrese ip este 32-(cati de 1 de la inceput au la fel)
+
+NAT: permite comunicarea de pe networkuri private la networkuri publice(ex: internetul)
+	hostul de pe asresa privata nu are nu ip unic (nu e real) 
+	Nat face adresa privata in una publica(unica)
+	Toate deviceurile de pe un private network au doar un ip public care comunica cu lumea.
+	foloseste PORT FORWARDING 
+
+
+Adrese private:
+	10.0.0.0 to 10.255.255.255 (class A)
+	172.16.0.0 to 172.31.255.255 (class B)
+	192.168.0.0 to 192.168.255.255 (class C)
+
+ip adreseel pot fi folosite doar pana la 223.255.255.255
+
+
+DNS: transforma nume in ip adrese  (ex: www.example.com -> 192....) (un ruter poate sa fie dns-ul)
+
+Ip address - Netmask (poate avea 1-nii doar consecutivi pusi in ea)
+E o combinatie valida daca ipAddress = Ip address and Netmask
+
+Default Gateway - de obicei ruterul - cand un device dintr-o retea vrea sa comunice inafara ei trimite un request gateway-ului care trasnimte mai departe requestul
+
+A proxy server: sta intre client si remote server ( client --- request --> proxy serever -- request --> remote server )
+
+Computer Network = pc & workstation && linkuri && ruterealte deviceuri interconectate
+Computer system = cpu ram mouse ....
+
+Cross over -  intre dispozitive de acelasi tip (orice pc e un ruter)
+Str8 trought - intre deviceuri diferite
+
+Firewall blocheaza anumite porturi ( alte pcuri din aceeasi retea)
+
+IP Protocol - unreliable - comunicare in internet
+
+Layere OSI: (7)
+	Toate mai lungi inafare de icmp sunt la APPLICATION LAYERS 
+	TRANPORT: TCP - UDP - SCTP (STREAM CONTROL TRANSMITION PROTOCOL)
+	NETWORK: LAYER - ICMP - ARP - RARP          
+	DATALINK: MAC SLIP
+	PHISICAL LAYER: INTERNET BLUTOOTH ETC
+	Presentation
+ 	Sesion
+
+dhcp seteaza ip, netmask alea la pc
+
+Layere tcp-ip: (5) fara presentation si station
+
+ip netmask valid daca and intre ele da ip-ul
+
+Comunicare:
+ Toate deviceurile din acelasi network pot comunica intre ele fara un router daca sunt pe acelaasi LAN(Local area network)
+
+snat -> o adresa falsa in una reala
+dnat -> o adresa reala in una falsa
+
+Smtp - mail transmitere
+pop3 - pt primit mailuri
+ftp - over a network
+ssh _secure shell
+dns domain name system
+
+address 84.176.0.0 
+176 in binar 1011 0000 asa ca netmaskul tre asa fie 1111 0000
+=> 255.240.0.0
+
+
+loopback (trimit de la mine la mine) 127.x.y.z 
+
+
+
+
+
+
+

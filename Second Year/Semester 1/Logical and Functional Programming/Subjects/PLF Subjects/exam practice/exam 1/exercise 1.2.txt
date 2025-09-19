@@ -1,0 +1,10 @@
+% finds the minimum between A and B
+% (i, i, o)
+aux(A, B, A):- A< B, !.
+aux(_, B, B).
+
+% finds the minimum element of the list
+% but returns 0 if there are no negative numbers in the list
+% (i, o)
+f([], 0).
+f([H|T], S):- f(T, S1), aux(H, S1, S).

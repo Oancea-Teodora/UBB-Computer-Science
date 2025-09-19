@@ -1,0 +1,10 @@
+(defun f (l)
+  (cond
+    ((null l) nil)
+    ((and (numberp l) (evenp l)) (1+ l))
+    ((atom l) l)
+    (t (mapcar #'f l))
+  )
+)
+
+(print (f '(1 s 4 (2 f (7)))))

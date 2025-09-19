@@ -1,0 +1,8 @@
+
+
+9.3.2.1 FCFS (First Come First Served)
+9.3.2.2 SJF (Shortest Job First). 
+9.3.2.3 Algoritmul bazat pe prioritãþi. 
+9.3.2.4 Algoritm bazat pe termene de terminare (deadline scheduling)
+9.3.2.5 Round-Robin (planificare circularã). 
+9.3.2.6 Algoritmul de cozi pe mai multe nivele

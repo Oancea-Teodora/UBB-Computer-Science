@@ -1,0 +1,49 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel (nod subarbore1 subarbore2 .....).
+;    Se cere să se determine lista nodurilor de pe nivelul k. 
+;    Nivelul rădăcinii se consideră 0. Se va folosi o funcție MAP.
+;    Exemplu pentru arborele (a (b (g)) (c (d (e)) (f)))
+; a) k=2 => (g d f)   b) k=5 => ()
+
+
+
+; nodesFromLevel(l, level, k) = 
+; = (list l), if l is an atom and level = k
+; = [], if l is an atom
+; = nodesFromLevel(l1, level + 1, k) U ... U nodesFromLevel(ln, level + 1, k) , otherwise (l = l1l2...ln)
+
+
+
+(defun nodesFromLevel(l level k)
+  (cond
+    ((and (atom l) (equal level k)) l)
+    ((atom l) nil)
+    (t (apply #' linearize (list (mapcar #'(lambda (a) (nodesFromLevel a (+ 1 level) k)) l))))
+  )
+)
+
+
+; linearize(l) = 
+; = l, if l is an atom
+; = linearize(l1) U ... U linearize(ln), otherwise (l = l1l2...ln)
+
+(defun linearize(l)
+  (cond
+    ((atom l) (list l))
+    (t (apply #' removeNil (list (mapcan #' linearize l))))
+  )
+)
+
+
+; removeNil(l1l2...ln) = 
+; = [], if n = 0
+; = removeNil(l2...ln), if l1 = []
+; = {l1} U removeNil(l2...ln), otherwise
+
+
+(defun removeNil(l)
+  (cond
+    ((null l) nil)
+    ((equal (car l) nil) (removeNil (cdr l)))
+    (t (cons (car l) (removeNil (cdr l))))
+  )
+)

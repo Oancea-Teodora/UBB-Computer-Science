@@ -1,0 +1,21 @@
+% A. Fie următoarea definiţie de predicat PROLOG f(integer, integer), având modelul de flux (i, o):
+
+f(0, 0):-!.
+f(I,Y):-J is I-1, f(J,V), V>1, !, K is I-2, Y is K.
+f(I,Y):-J is I-1, f(J,V), Y is V+1.
+
+% Rescrieți această definiție pentru a evita apelul recursiv f(J,V) în ambele clauze, fără a redefini logica clauzelor. 
+% Justificați răspunsul.
+
+f1(0, 0):-!.
+f1(I,Y):-
+    J is I-1,
+    f1(J,V),
+    aux(V,I,Y).
+
+aux(V,I,Y):-
+    V > 1,
+    !,
+    Y is I - 2.
+aux(V,_,Y):-
+    Y is V + 1.

@@ -1,0 +1,26 @@
+(defun f(l)
+  (cond
+    ((atom l) -1)
+    ((> (f (car l)) 0) (+ (car l) (f (car l)) (f(cdr l))))
+    (t (f (cdr l)))
+  )
+)
+
+
+(defun f(l)
+  (cond 
+    ((atom l) -1)
+    (t 
+    ((lambda (v) 
+        (cond
+          ((> v 0) (+ (car l) v (f(cdr l))))
+          (t (f (cdr l)))
+        )
+    )
+    (f (car l))
+    ))
+  )
+)
+
+
+(print (f '(1 a (4) 4 (a (a) (1 2 3)))))

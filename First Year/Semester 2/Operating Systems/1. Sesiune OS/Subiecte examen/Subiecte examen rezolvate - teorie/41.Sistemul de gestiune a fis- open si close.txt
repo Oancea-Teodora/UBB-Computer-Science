@@ -1,0 +1,21 @@
+2) Prin functii standardizate POSIX (open,close,read,write,lseek,dup,dup2,fcntl,etc) care repr
+puncte de intrare in nucleul Unix si ale caror prototipuri se afla de regula in fisierul header
+<unistd.h>, dar uneori se pot afla si in <sys/types.h> sau <fcntl.h> (nivelul inferior de prelucrare
+al fisierelor)
+*Functiile din aceasta categorie constituie apeluri sistem Unix pentru lucrul cu fisiere.
+Ele (antetul lor) sunt cuprinse in standardul POSIX.
+
+*int open (char *nume,int flag [,unsigned int drepturi]);
+->Functia open intoarce un intreg -handle sau descriptor de fisier,folosit ca prim argument de 
+catre celelalte functii POSIX de acces la fisier. In caz de esec, open intoarce val -1 
+si pozitioneaza corespunzator variabila errno (fie descr acest nr)
+->nume -specifica printr-un string C, calea si numele fisierului in conformitate cu standardul
+Unix.
+->modul de deschidere este precizat de parametrul de deschidere flag. Principalele lui valori 
+posibile: O_RDONLY, O_WRONLY, O_RDWR,O_APPEND,O_CREAT, O_TRUNC, O_EXCL,O_NDELAY.
+->parametrul drepturi este necesar doar la crearea fisierului si indica drepturile de acces 
+la fisier (prin cei 9 biti de protectie) si actioneaza in concordanta cu specificarea umask
+
+*int close (int descr); =inchiderea unui fisier
+->param descr este cel intors de apelul sistem open cu care s-s deschis fisierul
+->intoarce 0 la succes sau -1 in caz de esec

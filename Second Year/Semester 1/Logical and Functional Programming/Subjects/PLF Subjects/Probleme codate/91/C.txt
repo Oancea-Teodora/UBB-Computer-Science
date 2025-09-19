@@ -1,0 +1,23 @@
+; C. Se dă o listă neliniară și se cere înlocuirea valorilor numerice impare situate pe un nivel par,
+;    cu numărul natural succesor.
+;    Nivelul superficial se consideră 1. Se va folosi o funcție MAP.
+
+; Exemplu pentru lista (1 s 4 (3 f (7))) va rezulta (1 s 4 (4 f (7))).
+
+
+; replaceElems(l level) = 
+; = l + 1, if l is a number and l % 2 == 1 and level % 2 == 0
+; = l, if l is an atom
+; = replaceElems(l1, level + 1) U ... U replaceElems(ln, level + 1), otherwise (l = l1l2...ln)
+
+(defun replaceElems(l level)
+  (cond
+    ((and (and (numberp l) (eq (mod l 2) 1)) (eq (mod level 2) 0)) (+ 1 l))
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceElems a (+ 1 level))) l))
+  )
+)
+
+(defun main(l)
+  (replaceElems l 0)
+)

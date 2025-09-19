@@ -1,0 +1,21 @@
+9.1.2.3 Problema producãtorului ºi a consumatorului. 
+ 
+Sã presupunem cã existã unul sau mai multe procese numite producãtoare, ºi unul sau mai 
+multe procese numite consumatoare. De exemplu, conceptele de pipe ºi FIFO sunt de aceastã 
+naturã (vezi 5.3.2 ºi 5.3.4). Transmiterea informaþiilor de la producãtori spre consumatori se 
+realizeazã prin intermediul unui buffer cu n intrãri pentru n articole. Fiecare producãtor 
+depune câte un articol în buffer, iar fiecare consumator scoate câte un articol din buffer. 
+Problema constã în a dirija cele douã tipuri de procese astfel încât: 
+ sã existe acces exclusiv la buffer; 
+ consumatorii sã aºtepte când bufferul este gol; 
+ producãtorii sã aºtepte când bufferul este plin. 
+
+9.1.2.5 Problema citirilor ºi a scrierilor. 
+ 
+Problema a fost formulatã în 1971 de cãtre Courtois, Heymans ºi Parnas [4] [50]. Se 
+presupune cã existã douã tipuri de procese: cititor ºi scriitor. Ele partajeazã împreunã o 
+aceeaºi resursã, sã zicem un fiºier. Un proces scriitor modificã conþinutul fiºierului, iar unul 
+cititor consultã informaþiile din el. Spre deosebire de problema producãtorului ºi a 
+consumatorului (unde toate procesele aveau acces exclusiv la resursã), la acest tip de problemã 
+orice proces scriitor are acces exclusiv la resursã, în timp ce mai multe procese cititor pot 
+avea acces simultan la ea. 

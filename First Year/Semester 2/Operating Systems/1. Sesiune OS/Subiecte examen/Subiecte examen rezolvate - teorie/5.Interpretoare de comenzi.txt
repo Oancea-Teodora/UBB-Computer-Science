@@ -1,0 +1,51 @@
+10. Interpretoare shell, funcþionare, exemple de shell
+
+Shell-program special care furnizeaza o interfata intre nucleul SO Unix si utilizator
+     poate fi privit diferit
+       *limbaj de comanda (in momentul in care un utilizator isi deschide o sesiune de lucru, in mod implicit, un shell se instaleaza ca interpretor de comenzi
+       *limbaj de programare-are ca elem de baza comanda Unix 
+                            -ca si element primitiv de dirijare a succesiunii elem de baza este valoarea codului de retur al ultimei comenzi executate(0-true, nenul-altfel)
+
+  Principalele interpretoare de comenzi Shell
+
+Primele versiuni de Shell-uri au fost simple si restrictive-pt controlul succesiunii comenzilor erau folosite constructii if, goto si etichete
+*Primul interpretor de comenzii shell-Bourne Shell-este shell-ul implicit pe majoritatea versiunilor de Unix deoarece este compact, concis si foarte rapid. 
+Marea majoritate a scripturilor de initializare rc sunt scripturi shell Bourne. Prompterul implicit afisat este $.
+
+*csh(C shell)
+-extinde facilitatile oferite de shell-ul Bourne in ceea ce priveste interactiunea cu utilizatorul. El poseda un mecanism prin care retine un istoric(limitat) al ultimelor 
+comenzi emise de utilizator. Orice linie poate fi editata si reemisa sistemului. In ciuda acestor imbunatatiri, se considera ca scripturile scrise in C shell nu au 
+simplitatea si rapiditatea scripturilor shell Bourne echivalente. Prompterul implicit afisat este %.
+
+Alte variante de shell: Korn Shell, Job Shell, Restricted Shell(rsh)
+
+*Bash(Bourne Again Shell) -foarte raspandit azi, fiind shell-ul implicit pe majoritatea distributiilor de Linux
+ -dezvoltat sub auspiciile GNU
+ -bash mosteneste in intregime sh si se conformeaza cerintelor POSIX si specificatiilor IEEE privind shell-urile
+
+Aceasta proliferare a shell-urilor se datoreaza unui principiu simplu: un shell este tratat de catre nucleul SO Unix la fel ca orice alt proces utilizator neprivilegiat
+=>orice utilizator poate sa isi scrie propriul shell sau sa modifice unul existent
+
+Majoritatea shell-urilor ulterioare lui sh, ofera facilitati suplimentare:
+-posibilitatea definirii de alias-uri prin care utilizatorul isi poate redenumi comenzile mai des folosite 
+-posib. de definire a unor promptere dinamice care sa ofere info suplim
+-exploatarea istoriei comenzilor
+-controlul joburilor-dupa lansarea mai multor comenzi, unele pot fi suspendate si ulterior relansate in executie  
+
+Algoritmul dupa care functioneaza shell-ul Bourne:
+    cattimp (nu s-a inchis sesiunea)
+       afiseaza prompter
+       citeste linia de comanda;
+       daca (linia se termina cu '&') at
+            creeaza un proces si-i da sper executie comanda
+            nu asteapta ca executia sa se termine
+       altfel
+            creeaza un proces si-s da spre executie comanda
+            asteapta sa se termine executia comenzii
+       sfdaca
+    sfcattimp
+
+Executabilul acestuia se afla in directorul /bin si poarta numele sh
+Intr-o fereastra de lucru se pot rula oricate comenzi in background(sh lanseaza procesul care va executa comanda, dar nu mai asteapta terminarea ei ci af prompterul
+iar utilizatorul poate lansa imediat o noua comanda) si numai una in foreground(sh lanseaza ex comenzii, asteapta terminarea ei, dupa care af din nou prompterul pt o noua comanda
+)

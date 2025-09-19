@@ -1,0 +1,77 @@
+% B. Să se scrie un program PROLOG care generează lista combinărilor de k elemente
+%    cu numere de la 1 la N, având diferența între două numere consecutive din
+%    combinare număr par.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru N=4, k=2 ⇒ [[1,3],[2,4]] (nu neapărat în această ordine)
+
+% comb(l1l2...ln, k) = 
+% = l1, if k = 1 and n >= 1
+% = comb(l2...ln, k), if k >= 1
+% = {l1} U comb(l2...ln, k - 1), if k > 1
+
+% comb(L:list, K:number, R:list)
+% (i,i,o)
+
+comb([E|_],1,[E]).
+comb([_|T],K,R):-
+    comb(T,K,R).
+comb([H|T],K,[H|R]):-
+    K > 1,
+    K1 is K - 1,
+    comb(T, K1, R).
+
+% createList(n, i) = 
+% = [], if i = n + 1
+% = {i} U createList(n, i + 1), otherwise
+
+% createList(N:number, I:number, R:number)
+% (i,i,o)
+
+createList(N,I,[]):-
+    I =:= N + 1.
+createList(N,I,[I|R]):-
+    I1 is I + 1,
+    createList(N,I1,R).
+
+
+% absDiff(a, b) = 
+% = a - b, if a > b
+% = b - a, otherwise
+
+% absDiff(A:number, B:number, R:number)
+% (i,i,o)
+
+absDiff(A,B,R):-
+    A > B,
+    !,
+    R is A - B.
+absDiff(A,B,R):-
+    R is B - A.
+
+% checkAbsDiff(l1l2...ln) = 
+% = true, if n = 2 and absDiff(l1,l2) % 2 == 0
+% = checkAbsDiff(l2...ln), of absDiff(l1,l2) % 2 == 0
+% = false, otherwise
+
+% checkAbsDiff(L:list)
+% (i)
+
+checkAbsDiff([H1,H2]):-
+    absDiff(H1,H2,R),
+    R mod 2 =:= 0.
+checkAbsDiff([H1,H2|T]):-
+    absDiff(H1,H2,R),
+    R mod 2 =:= 0,
+    checkAbsDiff([H2|T]).
+
+% oneSol(L:list, K:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,R):-
+    comb(L,K,R),
+    checkAbsDiff(R).
+
+
+allSols(N,K,R):-
+    createList(N,1,L),
+    findall(RPartial, oneSol(L,K,RPartial), R).

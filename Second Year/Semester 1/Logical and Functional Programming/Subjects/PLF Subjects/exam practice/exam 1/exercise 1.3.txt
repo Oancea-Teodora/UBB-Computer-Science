@@ -1,0 +1,13 @@
+; example: (g '(a b c)) returns ((a b c) (b c) (c))
+(defun g(l)
+  (mapcon #'list l)
+)
+
+;(mapcon #'g '(1 2)) this works like this:
+; applies g on '(1 2) which returns ((1 2) (2))
+; applies g on '(2) which returns ((2))
+; concatetenes the two results with mapcan, so the final result is ((1 2) (2) (2)) 
+
+; this applies append on '(1 2) '(2) '(2) and returns '(1 2 2 2)
+(print (apply #'append (mapcon #'g '(1 2))))
+

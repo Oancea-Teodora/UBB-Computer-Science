@@ -1,0 +1,59 @@
+
+% [1 2 3 4] with k = 2
+% []
+% [1] [2] [3] [4]
+% [1 2] [1 3] [1 4] 
+% [2 3] [2 4] [3 4]
+
+comb(_, 0, []).
+comb([_|T], K, R):-
+    K>0,
+    comb(T, K, R).
+comb([H|T], K, [H|R1]):-
+    K>0,
+    K1 is K-1,
+    comb(T, K1, R1).
+
+% [1 2 3]
+% []
+% [3]
+% [2 3] [3 2]
+% [1 2 3] [2 1 3] [2 3 1]
+
+ins(E, [], [E]).
+ins(E, [H|T], [E, H|T]).
+ins(E, [H|T], [H|R1]):-
+    ins(E, T, R1).
+
+perm([], []).
+perm([H|T], R):-
+    perm(T, Perm),
+	ins(H, Perm, R).
+
+prod([], 1).
+prod([H|T], R):-
+    prod(T, R1),
+    R is R1*H.
+    
+cond(L, V):-
+    prod(L, Prod),
+    Prod<V.
+
+arr([], _, []).
+arr(L, K, R):-
+    comb(L, K, Comb),
+    perm(Comb, R).
+
+wrapper(L, K, V, Arr):-
+    arr(L, K, Arr),
+    cond(Arr, V).
+
+main(L, K, V, R):-
+    findall(Sol,wrapper(L, K, V, Sol),R).
+
+
+       
+       
+       
+
+    

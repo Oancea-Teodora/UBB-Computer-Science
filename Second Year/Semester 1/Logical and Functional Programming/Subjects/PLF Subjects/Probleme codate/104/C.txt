@@ -1,0 +1,20 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;    lista iniţială în care toate apariţiile unui element e au fost înlocuite cu o valoare e1.
+;    Se va folosi o funcție MAP.
+
+; Exemplu a) dacă lista este (1 (2 A (3 A)) (A)) e este A şi e1 este B => (1 (2 B (3 B)) (B))
+;         b) dacă lista este (1 (2 (3))) şi e este A => (1 (2 (3)))
+
+
+; replaceElems(l elem newElem)
+; = newElem, if l is an atom and l = elem
+; = l, if l is an atom
+; = replaceElems(l1, elem, newElem) U ... U replaceElems(ln, elem, newElem), otherwise
+
+(defun replaceElems(l elem newElem)
+  (cond
+    ((and (atom l) (eq elem l)) newElem)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceElems a elem newElem)) l))
+  )
+)

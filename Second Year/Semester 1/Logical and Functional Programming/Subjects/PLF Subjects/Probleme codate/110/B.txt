@@ -1,0 +1,68 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor cu suma număr impar,
+%  cu valori din intervalul [a, b]. Se vor scrie modelele matematice și modelele de flux pentru
+%   predicatele folosite.
+
+% Exemplu- pentru a=2 și b=4 ⇒ [[2,3],[3,4],[2,3,4]] (nu neapărat în această ordine)
+
+
+% subset(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subset(l2...ln), if n >= 1
+% = subset(l2...ln), if n >= 1
+
+% subset(L:list, R:result list)
+% (i,o)
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+% checkSum(l1l2...ln) = 
+% = true, if computeSum(l1l2...ln) % 2 == 1
+% = false, otherwise
+
+% checkSum(L:list)
+% (i)
+
+checkSum(L):-
+    computeSum(L,S),
+    S mod 2 =:= 1.
+
+
+% createList(a, b) =
+% = [], if a = b + 1
+% = {a} U createList(a + 1, b), otherwise
+
+% createList(A:number, B:number, R:list)
+% (i,i,o)
+
+createList(A,B,[]):-
+    A =:= B + 1.
+createList(A,B,[A|R]):-
+    A1 is A + 1,
+    createList(A1,B,R).
+
+% oneSol(L:list, R:list)
+% (i,o)
+
+oneSol(L,R):-
+    subset(L,R),
+    checkSum(R).
+
+allSols(A,B,R):-
+    createList(A,B,L),
+    findall(RPartial,oneSol(L,RPartial),R).

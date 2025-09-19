@@ -1,0 +1,17 @@
+4.1.1 Partiþii ºi blocuri 
+Un sistem de fiºiere Unix este gãzduit fie pe un periferic oarecare (hard-disc, CD, dischetã etc.), 
+fie pe o partiþie a unui hard-disc. Partiþionarea unui hard-disc este o operaþie (relativ) 
+independentã de sistemul de operare ce va fi gãzduit în partiþia respectivã. De aceea, atât 
+partiþiilor, cât ºi suporturilor fizice reale le vom spune generic, discuri Unix. 
+
+Unitatea de schimb dintre disc ºi memorie este blocul. La sistemele mai vechi acesta are 512 octeþi, 
+iar la cele mai noi poate avea ºi 1Ko sau 4Ko, pentru o mai eficientã gestiune a spaþiului
+
+4.1.3 Schema de alocare a blocurilor disc pentru un fiºier 
+ 
+Fiecare sistem de fiºiere Unix are câteva constante proprii, printre care amintim: 
+? lungimea unui inod, 
+? lungimea unui bloc, 
+? lungimea unei adrese disc (implicit câte adrese disc încap într-un bloc), 
+? câte adrese de prime blocuri se înregistreazã direct în inod, 
+? câte referinþe se trec în lista de referinþe indirecte. 

@@ -1,0 +1,13 @@
+
+Shell-urile Unix folosesc o serie de construcþii sintactice speciale în care sunt folosite 
+caractere sau succesiuni de caractere cu înþeles special.
+
+O succesiune de comenzi delimitatã de paranteze sau de acolade ºi separate prin punct-virgulã 
+conteazã sintactic ca o singurã comandã. Efectul execuþiei unei astfel de comenzi este diferit 
+
+în funcþie de delimitatorii folosiþi. Astfel, comenzile dintre paranteze nu afecteazã mediul 
+exterior Unix, pe când cele dintre acolade modificã acest mediu.
+
+Se poate observa cã în cazul grupãrii comenzilor cd ºi pwd între paranteze rotunde, acestea au 
+efect doar în interiorul acestora, în timp ce în cazul grupãrii comenzilor între acolade, 
+rezultatul execuþiei lor este global fiind vizibil ºi în exteriorul grupului. 

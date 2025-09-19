@@ -1,0 +1,143 @@
+I.1.
+Fie următoarea definiţie de funcţie LISP
+(DEFUN Fct(F L)
+  (COND
+    ((NULL L) NIL)
+    ((FUNCALL F (CAR L)) (CONS (FUNCALL F (CAR L)) (Fct F (CDR L))))
+  (T NIL)
+  )
+)
+
+(DEFUN Fct(F L)
+    ((lambda (v) 
+       (COND
+         ((NULL L) NIL)
+         (v (CONS v (Fct F (CDR L))))
+         (T NIL) 
+     	)
+      )
+      (FUNCALL F (CAR L))
+     )
+)
+ 
+(defun fct(f l)
+  ((lambda (a)
+    (cond
+      ((null l) nil)
+      (a (cons a (fct f (cdr l))))
+      (t nil)
+     )
+    ) (FUNCALL f (car l))
+  )
+)
+
+I.2
+
+f([], -1).
+f([H|T], S) :-
+    f(T, S1),
+    S1 >= H,
+    !,
+    S is S1.
+f([H|_], S) :-
+    S is H.
+
+I.3
+(A A)
+
+I.4
+EROARE! S NU ESTE DEFINIT LA S1 IS S-H. (eventual S IS S1-H).
+
+II.
+
+isPrime(N,N).
+isPrime(N,P):-
+    mod(N, P) == 0,
+    P1 is P+1,
+    isPrime(N,P1).
+
+generatePrimes(N, N, [N]) :-
+    isPrime(N, 2),!.
+generatePrimes(N, N, []):-!.
+generatePrimes(N,P, [P|C]):-
+    P < N,
+    isPrime(P, 2),
+    P1 is P+1,
+    generatePrimes(N, P1, C).
+generatePrimes(N,P, C):-
+    P < N,
+    P1 is P+1,
+    generatePrimes(N, P1, C).
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).
+
+sum([N], N).
+sum([H|T], S):-
+    sum(T, S1),
+    S is S1+H.
+
+generatePrimeCombinations(N, Combinations) :-
+    generatePrimes(N, 2, Primes),
+    subset(Primes, Combinations),
+    sum(Combinations, R),
+    R =:= N.
+
+III.
+
+(DEFUN replaceodd(tree N e)
+    (COND
+        ((ATOM tree) 
+           (COND
+              ((= (MOD N 2) 1) (LIST e))
+              (t (LIST tree))
+           )
+        )
+        (T
+           (LIST (MAPCAN #'(lambda (v) (replaceodd v (+ 1 N) e)) tree)) 
+        )
+    )
+)
+(PRINT (replaceodd '(a (b (g)) (c (d (e))) (f)) -1 'h))
+
+
+
+• (MAPLIST #'CAR '((A B C) (X Y Z))) is evaluated at ((A B C) (X Y Z))
+
+• (MAPLIST #'LIST '(A B C) '(1 2)) is evaluated at (((A B C) (1 2)) ((B C) (2)))
+
+• (MAPLIST #'LIST '(A B C)) is evaluated at (((A B C)) ((B C)) ((C)))
+
+• (MAPLIST #'EQUAL '(A (B C) D) '(Q (B C) D X)) is evaluated at (NIL NIL NIL)
+
+• (MAPLIST #'+ ‘(1 2 3) '(4 5 6)) will produce the error message: “+: wrong type 
+argument: (1 2 3); a NUMBER was expected ”.
+
+• (MAPCAR #’CAR ‘((A B C) (X Y Z))) is evaluated at (A X)
+
+• (MAPCAR #’EQUAL ‘(A (B C) D) '(Q (B C) D X)) is evaluated at (NIL T T)
+
+• (MAPCAR #’LIST ‘(A B C)) is evaluated at ((A) (B) (C))
+
+• (MAPCAR #’LIST ‘(A B C) '(1 2)) is evaluated at ((A 1) (B 2))
+
+• (MAPCAR #’+ ‘(1 2 3) '(4 5 6)) is evaluated at (5 7 9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

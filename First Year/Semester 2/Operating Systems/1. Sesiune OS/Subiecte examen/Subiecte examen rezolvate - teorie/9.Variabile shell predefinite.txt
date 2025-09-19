@@ -1,0 +1,11 @@
+Variabile shell predefinite, accesul la argumentele din linia de comanda
+
+Forma comenzii Unix: $ comanda arg1 arg2 arg3 ...argn
+Numele comenzii si primele 9 argumente pot fi utilizate directe in interiorul scriptului, in maniera parametrilor formali $0-desemneaza comanda, $i-argi
+$#  intoarce nr argumentelor comenzii
+$*  indica toate arg din linia de comanda, privite ca un singur string "$1 $2 ...$n"
+$@  indica toate arg din linia de comanda,ca succesiune de stringuri "$1" "$2"..."$n"
+$-  indica arg care contine optiunile liniei de comanda\
+$?  intoarce codul de retur al comenzii precedente
+$!  indica PID-ul ultimului proces lansat in background
+$$  indica PID-ul procesului parinte

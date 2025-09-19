@@ -1,0 +1,23 @@
+(defun f(l)
+  (cond
+    ((null l) nil)
+    ((and (numberp l) (equal (mod l 3) 0)) nil)
+    ((atom l) l)
+    (t (mapcar #'f l))
+  )
+)
+
+(defun removeNil(l)
+  (cond
+    ((null l) nil)
+    ((null (car l)) (removeNil (cdr l)))
+    ((listp (car l)) (cons (removeNil(car l)) (removeNil(cdr l))))
+    (t (cons (car l) (removeNil(cdr l)))) ;if car l is atom
+  )
+)
+
+(defun wrapper(l)
+  (removeNil (f l))
+)
+(print (wrapper '(1(2 a (3 a)) (6)) ))
+

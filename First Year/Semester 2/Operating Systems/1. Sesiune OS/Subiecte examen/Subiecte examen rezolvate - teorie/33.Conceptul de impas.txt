@@ -1,0 +1,46 @@
+9.1.3.1 Conceptul de impas. 
+ 
+Noþiunea de impas nu este specificã sistemelor de operare sau informaticii, ci este un fenomen 
+întâlnit în multe situaþii din viaþa de zi cu zi. In general, impasul poate fi definit ca o blocare a 
+actvitãþii normale a douã sau mai multe entitãþi ca urmare a efectului lor coroborat asupra 
+mediului. 
+
+9.1.3.2 Ieºirea din impas. 
+O primã variantã este reîncãrcarea sistemului de operare. Soluþia nu prea este de dorit, dar 
+este cea mai la îndemâna operatorului. Dacã pierderile nu sunt prea mari se poate adopta ºi o 
+astfel de strategie. 
+ 
+O a doua varintã este alegerea un proces "victimã", care este fie cel care a provocat impasul, 
+fie un altul de importanþã mai micã, astfel încât sã fie înlãturat impasul. Se distruge acest 
+proces ºi odatã cu el toþi descendenþii lui. Aceastã alegere este o parte importantã a 
+algortimilor automaþi de rezolvarea a impasului. In cazul abordãrii manuale, din pãcate, 
+criteriul de alegere a "victimei" este de multe ori departe de a fi obiectiv. 
+ 
+O a treia soluþie este creerea unui "punct de reluare", care este o fotografie a memoriei pentru 
+procesul victimã ºi pentru procesele cu care el colaboreazã. Apoi se distruge procesul victimã 
+ºi subordonaþii lui. Procesul victimã se reia ulterior. Crearea punctelor de reluare reclamã 
+consum de timp ºi complicaþii, motiv pentru care de multe ori nu se executã. 
+
+9.1.3.3 Detectarea impasului 
+ 
+Detectarea unui impas se face atunci când SO nu are un mecanism de prevenire a impasului. 
+Pentru a se reuºi detecþia este necesar ca SO sã aibã o evidenþã clarã, pentru fiecare proces, 
+privind resursele ocupate, precum ºi cele solicitate dar neprimite. Pentru aceasta, cel mai 
+potrivit model este graful alocãrii resurselor. 
+
+9.1.3.4 Evitarea (prevenirea apariþiei) impasului. 
+ 
+In 1971, Coffman, Elphic ºi Shoshani [4], [19] au indicat patru condiþii necesare pentru 
+apariþia impasului: 
+1. procesele solicitã controlul exclusiv asupra resurselor pe care le cer (condiþia de 
+excludere mutualã); 
+2. procesele pãstreazã resursele deja ocupate atunci când aºteaptã alocarea altor resurse 
+(condiþia de ocupã ºi aºteaptã); 
+3. resursele nu pot fi ºterse din procesele care le þin ocupate, pânã când ele nu sunt 
+utilizate complet (condiþia de nepreempþie); 
+4. existã un lanþ de procese în care fiecare dintre ele aºteaptã dupã o resursã ocupatã de 
+altul din lanþ (condiþia de aºteptare circularã). 
+ 
+Evitarea impasului presupune împiedicarea apariþiei uneia dintre aceste patru condiþii. Vom 
+lua fiecare condiþie pe rând ºi vom analiza modalitãþile în care ea poate fi împiedicatã ºi 
+efectele asupra funcþionãrii sistemului 

@@ -1,0 +1,80 @@
+% B. Să se scrie un program PROLOG care generează lista submulţimilor cu N elemente,
+%    cu elementele unei liste, astfel încât suma elementelor dintr-o submulțime să
+%    fie număr par. Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[1, 3, 4, 2] şi N=2 ⇒ [[1,3], [2,4]]
+
+
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+
+% insert(E:element, L:list, R:list)
+% (i,i,o)
+
+insert(E,L,[E|L]).
+
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k-1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([E|_],1,[E]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(H,R,R1).
+
+% checkIncreasing(l1l2...ln)
+% = true, if n = 2 and l1 < l2
+% = checkIncreasing(l2...ln), if l1 < l2
+% = false, otherwise
+
+% checkIncreasing(L:list)
+% (i)
+
+checkIncreasing([H1,H2]):-
+    H1 < H2.
+checkIncreasing([H1,H2|T]):-
+    H1 < H2,
+    checkIncreasing([H2|T]).
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+% checkSum(l1l2...ln) = 
+% = true, if computeSum(l1l2...ln) % 2 == 0
+% = false, otherwise
+
+% checkSum(L:list)
+% (i)
+
+checkSum(L):-
+    computeSum(L,RS),
+    RS mod 2 =:= 0.
+    
+
+% oneSol(L:list, K:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,R):-
+    arr(L,K,R),
+    checkIncreasing(R),
+    checkSum(R).
+
+allSols(L,K,R):-
+    findall(RPartial, oneSol(L,K,RPartial),R).
+    

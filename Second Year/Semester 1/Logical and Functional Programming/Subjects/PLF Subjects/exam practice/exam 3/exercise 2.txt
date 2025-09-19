@@ -1,0 +1,41 @@
+% [1 2 3]
+% []
+% [1] [2] [3]
+% [1 2] [1 3] [2 3]
+% [1 2 3]
+
+subs([], []).
+subs([H|T], [H|R1]):- 
+    subs(T, R1).
+
+subs([_|T], R1):- 
+    subs(T, R1).
+
+sum([], 0).
+sum([H|T], R):- 
+    sum(T, R1), R is R1+H.
+
+len([], 0).
+len([_|T], R):- 
+    len(T, R1), R is R1+1.
+
+filter(_, 0).
+filter(L, N):-
+    len(L, Len), 
+    Len >= N,
+    sum(L, Sum),
+    Sum mod 3 =:= 0.
+
+getSolution(L, N, Subset):-
+    subs(L, Subset),
+    filter(Subset, N).
+
+wrapper(L, N, R):-
+    findall(Subs,getSolution(L, N, Subs), R).
+    
+    
+    
+    
+
+
+

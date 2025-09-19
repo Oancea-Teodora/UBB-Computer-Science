@@ -1,0 +1,27 @@
+; A. Fie următoarea definiţie de funcţie LISP
+
+(DEFUN F(N)
+  (COND
+    ((= N 0) 0)
+    ((> (F (- N 1)) 1) (- N 2))
+    (T (+ (F (- N 1)) 1))
+  )
+)
+
+; Rescrieți această definiție pentru a evita dublul apel recursiv (F (- N 1)), fără a redefini logica clauzelor și fără a folosi o
+; funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+(defun f1(n)
+  (cond
+    ((= n 0) 0)
+    (t ((lambda (x)
+         (cond
+           ((> x 1) (- n 2))
+           (t (+ x 1))
+         )
+        )(f1 (- n 1))
+       )
+    )
+  )
+)

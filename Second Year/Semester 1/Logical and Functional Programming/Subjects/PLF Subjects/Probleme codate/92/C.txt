@@ -1,0 +1,25 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;  lista iniţială din care au fost eliminați toți atomii numerici multipli de 3.
+;  Se va folosi o funcție MAP.
+
+; Exemplu a) dacă lista este (1 (2 A (3 A)) (6)) => (1 (2 A (A)) NIL)
+;         b) dacă lista este (1 (2 (C))) => (1 (2 (C)))
+
+
+; removeElem(l, elem) = 
+; = nil, if l is number and l % 3 == 0
+; = list(l), if l is an atom
+; = removeElem(l1, elem) U ... U removeElem(ln, elem), otherwise (l = l1l2...ln)
+
+(defun removeElem(l)
+  (cond
+    ((and (numberp l) (equal (mod l 3) 0)) nil) 
+    ((atom l) (list l))
+    (t (list (mapcan #'removeElem l)))
+  )
+)
+
+
+(defun main(l)
+  (car (removeElem l))
+)

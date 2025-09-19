@@ -1,0 +1,69 @@
+% B. Să se scrie un program PROLOG care generează lista aranjamentelor de k elemente
+%    dintr-o listă de numere întregi, pentru care produsul elementelor e mai mic decât
+%    o valoare V dată. Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+%    
+% Exemplu- pentru lista [1, 2, 3], k=2 și V=7 ⇒ [[1,2],[2,1],[1,3],[3,1],[2,3],[3,2]] (nu neapărat în această ordine)
+
+
+% insert(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert(L,E,[E|L]).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l1l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k - 1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([H|_],1,[H]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(R,H,R1).
+
+% productElems(l1l2...ln) = 
+% = 1, if n = 0
+% = l1 * productElems(l2...ln), otherwise
+
+% productElems(L:list, R:number)
+% (i,o)
+
+productElems([],1).
+productElems([H|T],R1):-
+    productElems(T,R),
+    R1 is H*R.
+
+% checkProduct(l1l2...ln, v) = 
+% = true, if productElems(l1l2...ln) < v
+% = false, otherwise
+
+checkProduct(L,V):-
+    productElems(L,RP),
+    RP < V.
+
+% oneSol(L:list, K:number, V:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,V,R):-
+    arr(L,K,R),
+    checkProduct(R,V).
+
+% allSols(L:list, K:number, V:number, R:result list)
+% (i,i,i,o)
+
+allSols(L,K,V,R):-
+    findall(RPartial,oneSol(L,K,V,RPartial),R).
+

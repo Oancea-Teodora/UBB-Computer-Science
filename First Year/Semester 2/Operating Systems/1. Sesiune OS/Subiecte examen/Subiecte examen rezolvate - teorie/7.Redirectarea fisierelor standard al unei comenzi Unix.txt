@@ -1,0 +1,22 @@
+12.Redirectarea fiºierelor standard asociate unei comenzi
+
+Orice comanda Unix pp existenta a 3 fisiere standard cu care poate interactiona in mod implicit: fisierul standard de iesire, intrare, erori
+
+Intrarea standard-asociata cu terminalul curent,fiind preluata de la tast, dar poate fi redirectata pt a accepta si alte intrari.
+
+$comanda fisier (arg cu care va fi executata comanda vor fi luate din fis fisier si nu de la intrarea std)
+comanda <<cuvant
+...succesiune de linii...
+cuvant
+
+cuvant marcheaza inceputul intrarii std. Toate liniile introduse pana la urmatoarea sa aparitie la inceput de linie noua, vor constitui intrarea std pt comanda. Acest
+mecanism permite furnizarea de linii scurte, parametrizate la intrarea std a unei comenzi.
+
+Iesirea standard-asociata de obicei terminalului curent. Rezultatul executiei este furnizat intotdeauna la iesirea standard
+$comanda >Fisier (rezultatul executiei este pus intr-un fisier nou creat cu numele Fisier; daca in dir curent exista deja-continutul va fi suprascris)
+$comanda >>Fisier (rezultatul executiei va fi adaugat la sfarsitul fisierului; daca nu exista va fi creat automat)
+
+Pipe-mecanism de legare a iesirii standard a unei comenzi cu intrarea standard a comenzii urmatoare
+$com1 | com2   se creeaza in memoria interna o zona de tampon folosita in comun:com1 isi depune rez executiei in zona respectiva, iar com2 va considera liniile depuse date pt is
+               cele doua comenzi se executa in paralel, asteptandu-se reciproc cand este cazul
+

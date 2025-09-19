@@ -1,0 +1,84 @@
+% B. Pentru o valoare N dată, să se genereze lista permutărilor cu elementele N, N+1,….,2*N-1
+%   având proprietatea că valoarea absolută a diferenţei dintre două valori consecutive
+%   din permutare este <=2. Se vor scrie modelele matematice și modelele de
+%   flux pentru predicatele folosite.
+
+
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+
+% perm(l1l2...ln) = 
+% = [], if n = 0 
+% = insert(l1, perm(l2...ln)), otherwise
+
+% perm(L:list, R: result list)
+% (i,o)
+
+perm([],[]).
+perm([H|T],R1):-
+    perm(T,R),
+    insert(H,R,R1).
+
+% absDiff(a,b) = 
+% = a - b, if a >= b
+% = b - a, otherwise
+
+absDiff(A,B,R):-
+    A >= B,
+    R is A - B.
+absDiff(A,B,R):-
+    A < B,
+    R is B - A.
+
+% checkAbsDiff(l1l2...ln) = 
+% = true, if n = 2 and absDiff(l1,l2) <= 2
+% = checkAbsDiff(l2...ln), if absDiff(l1,l2) <= 2
+% = false, otherwise
+
+% checkAbsDiff(L:list)
+% (i)
+
+checkAbsDiff([H1,H2]):-
+    absDiff(H1,H2,R),
+    R =< 2.
+checkAbsDiff([H1,H2|T]):-
+    absDiff(H1,H2,R),
+    R =< 2,
+    checkAbsDiff([H2|T]).
+
+% createList(n,m) = 
+% = [], if n = m + 1
+% = {n} U createList(n+1, m), otherwise
+
+% createList(N:number, M:number, R:result list)
+% (i,i,o)
+
+createList(N,M,[]):- N =:= M + 1.
+createList(N,M,[N|R]):-
+    N1 is N + 1,
+    createList(N1,M, R).
+
+% oneSol(l1l2...ln, r1r2...rm) = 
+% = perm(l1l2...ln, r1r2...rm), if checkAbsDiff(l1l2...ln) = true
+
+oneSol(L,R):-
+    perm(L,R),
+    checkAbsDiff(R).
+
+%allSols(N:number, R:result list)
+% (i,o)
+
+allSols(N,R):-
+    M is 2 * N - 1,
+    createList(N,M,RL),
+    findall(RPartial,oneSol(RL,RPartial),R).

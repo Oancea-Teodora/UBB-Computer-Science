@@ -1,0 +1,42 @@
+f(1, 1):-!.
+f(K, X):- 
+    K1 is K-1, 
+    f(K1, Y),
+    Y>1,!,
+    K2 is K1-1,
+    X is K2.
+
+f(K, X):- 
+    K1 is K-1, 
+    f(K1, Y),
+    Y>0.5,!,
+    X is Y.
+
+f(K, X):- 
+    K1 is K-1, 
+    f(K1, Y),
+    X is Y-1.
+
+aux(Y, K1, X):-
+    Y>1,!,
+    K2 is K1-1,
+    X is K2.
+aux(Y, _, X):-
+    Y>0.5,!,
+    X is Y.
+aux(Y, _, X):-
+    X is Y-1.
+
+g(1, 1):-!.
+g(K, X):- K1 is K-1, f(K1, Y), aux(Y, K1, X).
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+14.Variabile shell: definire, moduri de obþinere a valorii unei variabile
+
+Variabilele shell-nume predefinite de shell-ul curent sau definite de catre utilizator, ale caror valori sunt siruri de caractere.Reprezentarea lor se face ca un sir de 
+cifre zecimale scrise in cod ASCII
+Definirea unei variabile coincide cu atribuirea unei valori initiale pt ea ($nume=cuvant). In urma evaluarii shellul creeaza o variabila denumita nume, avand ca valoare
+sirul de caractere indicat prin cuvant. 
+O variabila shell este locala procesului in care a fost definita. Exista posibilitatea ca ea sa fie "mostenita" de catre procesele fiu ale procesului curent, daca in 
+procesul care defineste variabila apare o declaratie de forma: $ export nume
+$nume   ${nume} -dau ca rezultat valoarea variabilei sau sirul vid, daca variabila nu este definita
+${nume-cuvant}   ${nume=cuvant}    ${nume+cuvant}   ${nume?cuvant}  -in cazul in care prima modalitate nu permite identificarea unica a numelui de variabila
+
+SHELL-are ca valoare tipul de interpretor shell folosit
+TERM-contine tipul de terminal folosit
+MAIL-indica fisierul care contine posta electronica a utilizatorului
+MAILCHECK-fixeaza intervalul de timp la care se face controlul existentei mesajelor primite prin posta electronica
+MAILPATH-permite precizarea unei liste de nume de fisiere separate prin caracterul : pe care shell-ul le va monitoriza pt a sesiza primirea unui mesaj nou
+IFS-contine separatorii shell pt cuvinte. spatiul, caracterul <TAB> si retur de car
+PS1-contine prompterul principal Unix(Bourne $-implicit, # pt superuser)
+PS2-contine prompterul secundar Unix (de regula este >)

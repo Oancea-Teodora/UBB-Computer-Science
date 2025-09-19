@@ -1,0 +1,18 @@
+
+(defun f (l k e)
+  (cond
+    ((null l) nil)
+    ((and (evenp k) (atom l)) l)
+    ((and (oddp k) (atom l)) e)
+    (t (mapcar #'(lambda (l1) (f l1 (1+ k) e)) l))
+  )
+)
+
+; Btw the example output from the exam is wrong, this is the correct output. 
+; Check it for yourself
+(print (f '(a (b(g)) (c (d(e)) (f))) -1 'h  ))
+
+
+
+
+

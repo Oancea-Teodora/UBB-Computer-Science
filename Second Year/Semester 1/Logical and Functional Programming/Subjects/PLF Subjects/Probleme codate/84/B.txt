@@ -1,0 +1,77 @@
+% B. Dându-se o listă formată din numere întregi, să se genereze ȋn PROLOG lista submulţimilor
+%    cu cel puţin N elemente având suma divizibilă cu 3. 
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+
+% Exemplu- pentru lista L=[2,3,4] și N=1 ⇒ [[3],[2,4],[2,3,4]] (nu neapărat în această ordine)
+
+
+% subsets(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subsets(l2...ln), if n >= 1
+% = subsets(l2...ln), if n >= 1
+
+% subsets(L:list, R:result list)
+% (i,o)
+
+subsets([],[]).
+subsets([H|T],[H|R]):-
+    subsets(T,R).
+subsets([_|T],R):-
+    subsets(T,R).
+
+% computeSum(l1l2...ln) = 
+% = 0, if n = 0
+% = l1 + computeSum(l2...ln), otherwise
+
+% computeSum(L:list, R:number)
+% (i,o)
+
+computeSum([],0).
+computeSum([H|T],R1):-
+    computeSum(T,R),
+    R1 is R + H.
+
+% checkSum(l1l2...ln) = 
+% = true, if computeSum(l1l2...ln) % 3 == 0
+% = false, otherwise
+
+% checkSum(L:list)
+% (i)
+
+checkSum(L):-
+    computeSum(L,RS),
+    RS mod 3 =:= 0.
+
+% myLength(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + myLength(l2...ln), otherwise
+
+% myLength(L:list, R:number)
+% (i,o)
+
+myLength([],0).
+myLength([_|T],R1):-
+    myLength(T,R),
+    R1 is R + 1.
+
+% checkLength(l1l2...lm, n) = 
+% = true, if myLength(l1l2...lm) >= n
+% = false, otherwise
+
+% checkLength(L:list, N:number)
+% (i,i)
+
+checkLength(L,N):-
+    myLength(L,RL),
+    RL >= N.
+
+% oneSol(L:list, N:number, R:list)
+% (i,i,o)
+
+oneSol(L,N,R):-
+    subsets(L,R),
+    checkSum(R),
+    checkLength(R,N).
+
+allSols(L,N,R):-
+    findall(RPartial, oneSol(L,N,RPartial),R).

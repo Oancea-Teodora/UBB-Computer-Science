@@ -1,0 +1,52 @@
+; C. Un arbore n-ar se reprezintă în LISP astfel ( nod subarbore1 subarbore2 .....).
+;    Se cere să se determine lista nodurilor de pe nivelurile pare din arbore
+;    (în ordinea nivelurilor 0, 2, …). Nivelul rădăcinii se consideră 0. 
+;    Se va folosi o funcție MAP.
+
+; Exemplu pentru arborele (a (b (g)) (c (d (e (h))) (f))) => (a g d f h)
+
+
+
+; myAppend(l1l2...ln, p1p2...pm) = 
+; = p1p2...pm, if n = 0
+; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+; getNodes(l k level)
+; = [l], if l is an atom an level = k
+; = [], if l is an atom
+; = getNodes(l1,k,level + 1) U ... U getNodes(ln, k, level + 1), otherwise (l = l1l2....ln)
+
+(defun getNodes(l k level)
+  (cond
+    ((and (atom l) (eq k level)) (list l))
+    ((atom l) nil)
+    (t (mapcan #' (lambda (a) (getNodes a k (+ 1 level))) l))
+  )
+)
+
+
+; getMain(l1l2...ln, level) = 
+; = [], if getNodes(l1l2...ln, level, - 1) is []
+; = myAppend(getNodes(l1l2...ln, level, -1), getMain(l1l2...ln, level + 2)), otherwise
+
+
+
+(defun getMain(l level)
+  (cond
+    ((null (getNodes l level -1)) nil)
+    (t (myAppend (getNodes l level -1) (getMain l (+ 2 level))))
+  )
+)
+
+
+(defun main(l)
+  (getMain l 0)
+)

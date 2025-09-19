@@ -1,0 +1,19 @@
+ Alocare paginata
+Termenul de memorie virtualã este de regulã asociat cu capacitatea de a adresa un spaþiu de 
+memorie mai mare decât este cel disponibil la memoria operativã a SC concret. Conceptul este 
+destul de vechi, el apãrând odatã cu SO ATLAS al Universitãþii Manchester, Anglia, 1960 
+[19]. Se cunosc douã metode de virtualizare, mult înrudite dupã cum vom vedea în continuare. 
+Este vorba de alocarea paginatã ºi alocarea segmentatã. Practic, toate sistemele de calcul 
+actuale folosesc, într-o formã sau alta, mecanisme de memorie virtualã. 
+
+
+Alocare segmentata
+Atunci când am vorbit despre alocarea realã, am vãzut cã fiecare proces trebuia sã ocupe un 
+spaþiu contiguu de memorie, numit partiþie. Ceea ce introduce nou mecanismul de alocare 
+segmentatã este faptul cã textul unui program poate fi plasat în zone de memorie distincte, 
+fiecare dintre ele conþinând o bucatã de program numitã segment. Singura deosebire 
+principialã dintre alocarea paginatã ºi cea segmentatã este aceea cã segmentele sunt de lungimi 
+diferite. In fig. 10.15 am ilustrat aceastã situaþie cu locurile ce vor fi ocupate de un program 
+format din trei segmente. 
+
+ 

@@ -1,0 +1,24 @@
+% A. Fie următoarea definiţie de predicat PROLOG f(list, integer), având modelul de flux (i, o):
+
+f([], -1):-!.
+f([_|T], Y):- f(T,S), S<1, !, Y is S+2.
+f([H|T], Y):- f(T,S), S<0, !, Y is S+H.
+f([_|T], Y):- f(T,S), Y is S.
+
+%Rescrieți această definiție pentru a evita apelul recursiv f(T,S) în clauze, fără a redefini logica clauzelor. Justificați răspunsul.
+
+f1([], -1):-!.
+f1([_|T], Y):- 
+    f1(T,S),
+    aux(S,_,Y).
+
+
+aux(S,_,Y):-
+    S < 1,
+    !,
+    Y is S + 2.
+aux(S,H,Y):-
+    S < 0,
+    !,
+    Y is S + H.
+aux(S,_,S).

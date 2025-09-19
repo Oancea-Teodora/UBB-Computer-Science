@@ -1,0 +1,9 @@
+(defun g(f l)
+  (funcall f l)
+)
+
+;(print(g 'cdr '(1 2 3)))
+
+(print(g #'(lambda (l) (g #'cdr l)) '(1 2 3)))
+
+

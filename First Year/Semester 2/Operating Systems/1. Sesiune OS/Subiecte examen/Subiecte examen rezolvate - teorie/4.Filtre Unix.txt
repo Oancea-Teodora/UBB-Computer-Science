@@ -1,0 +1,6 @@
+Operaþii de filtrare a unui fiºier. Prin filtru pentru un fiºier înþelegem un program care citeºte 
+un fiºier ºi creeazã din el un altul pe baza unor criterii. Iatã câteva astfel de criterii: 
+ sortarea articolelor într-o anumitã ordine; 
+ eliminarea liniilor care au un anumit conþinut; 
+ eliminarea unor caractere funcþionale dintr-un fiºier text; 
+ macroprocesarea unui text sursã pe baza unor machete. 

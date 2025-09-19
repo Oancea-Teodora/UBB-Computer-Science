@@ -1,0 +1,26 @@
+10.2.1 Clasificarea tehnicilor de alocare 
+ 
+Problema alocãrii memoriei se pune în special la sistemele multiutilizator, motiv pentru care 
+în continuare ne vom ocupa aproape exclusiv numai de aceste tipuri de sisteme. Tehnicile de 
+alocare utilizate la diferite SO se împart în douã mari categorii, fiecare categorie împãrþindu-se 
+la rândul ei în alte subcategorii, ca mai jos [19] [10]. 
+
+? alocare realã: 
+o la SO monoutilizator; 
+o la SO multiutilizator: 
+
+? cu partiþii fixe (staticã): 
+o absolutã; 
+o relocabilã; 
+
+? cu partiþii variabile (dinamicã); 
+? alocare virtualã: 
+? paginatã; 
+? segmentatã; 
+? segmentatã ºi paginatã
+
+Acest mod de alocare mai poartã numele de alocare staticã sau alocare MFT - Memory Fix 
+Tasks. El presupune decuparea memoriei în zone de lungime fixã numite partiþii. O partiþie 
+este alocatã unui proces pe toatã durata execuþiei lui, indiferent dacã o ocupã complet sau nu. 
+Un exemplu al acestui mod de alocare este descris în fig. 10.8. Zonele haºurate fac parte din 
+partiþii, dar procesele active din ele nu le utilizeazã. 

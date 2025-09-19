@@ -1,0 +1,70 @@
+% B. Dându-se o listă formată din numere întregi, să se genereze ȋn PROLOG lista permutărilor având proprietatea
+%   că valoarea absolută a diferenţei dintre două valori consecutive din permutare este <=3.
+%   Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[2,7,5] ⇒ [[2,5,7], [7,5,2]] (nu neapărat în această ordine)
+
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+
+% perm(l1l2...ln) = 
+% = [], if n = 0 
+% = insert(l1, perm(l2...ln)), otherwise
+
+% perm(L:list, R: result list)
+% (i,o)
+
+perm([],[]).
+perm([H|T],R1):-
+    perm(T,R),
+    insert(H,R,R1).
+
+% absDiff(a,b) = 
+% = a - b, if a >= b
+% = b - a, otherwise
+
+absDiff(A,B,R):-
+    A >= B,
+    R is A - B.
+absDiff(A,B,R):-
+    A < B,
+    R is B - A.
+
+% checkAbsDiff(l1l2...ln) = 
+% = true, if n = 2 and absDiff(l1,l2) <= 3
+% = checkAbsDiff(l2...ln), if absDiff(l1,l2) <= 3
+% = false, otherwise
+
+% checkAbsDiff(L:list)
+% (i)
+
+checkAbsDiff([H1,H2]):-
+    absDiff(H1,H2,R),
+    R =< 3.
+checkAbsDiff([H1,H2|T]):-
+    absDiff(H1,H2,R),
+    R =< 3,
+    checkAbsDiff([H2|T]).
+
+
+% oneSol(l1l2...ln, r1r2...rm) = 
+% = perm(l1l2...ln, r1r2...rm), if checkAbsDiff(l1l2...ln) = true
+
+oneSol(L,R):-
+    perm(L,R),
+    checkAbsDiff(R).
+
+%allSols(N:number, R:result list)
+% (i,o)
+
+allSols(L,R):-
+    findall(RPartial,oneSol(L,RPartial),R).

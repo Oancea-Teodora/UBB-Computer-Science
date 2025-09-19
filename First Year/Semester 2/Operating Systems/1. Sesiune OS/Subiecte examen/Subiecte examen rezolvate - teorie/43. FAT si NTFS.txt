@@ -1,0 +1,46 @@
+Aºa cum pentru Unix am prezentat în 4.2 structura internã a sistemului de fiºiere, acum vom 
+prezenta tructurile interne ale sistemelor de fiºiere de pe platformele Windows. Este vorba de 
+douã sisteme de fiºiere: 
+ FAT – (File Alocation Table) sistem de fiºiere preluat de la MS-DOS pentru pãstrrea 
+compatibilitãþii; 
+ NTFS – (NT File System) sistemul de fiºiere principal folosit la sistemele Windows 
+actuale. 
+
+4.2.1 Sistemul de fiºiere FAT 
+ 
+Acest sistem de fiºiere a apãrut la sistemul de operare MS-DOS. Din motive de compatibilitate, 
+el a fost preluat ºi de sistemele Windows. In cele ce urmeazã vom descrie principial acest sistem 
+de fiºiere, fãrã a-l diferenþia dacã este pentru DOS sau pentru Windows. 
+4.2.1.2 Tabela FAT 
+ 
+Tabela de alocare a fiºierelor (tabela FAT - File Alocation Table) conþine informaþii de alocare a 
+spaþiului pe disc pentru fiecare fiºier. Ea conþine atâtea intrãri câþi clusteri existã pe disc. Dacã 
+existã mai puþin de 4097 de clusteri, atunci fiecare intrare ocupã 12 biþi, în caz contrar ocupã 16 
+biþi, sau pentru Windows 32 de biþi. Astfel se explicã numele vehiculate pentru acest tip de 
+sistem de fiºiere: FAT12 (mai rar), FAT sau FAT16, FAT32 (numai pe Windows). Tabela FAT 
+este încãrcatã în memorie ºi este rescrisã pe disc la fiecare modificare a ei. Aºa cum se vede în 
+fig. 7.7, se întreþin ºi copii de siguranþã ale ei. 
+
+4.2.1.1 Structura unui disc 
+ 
+Un disc (numit generic disclogic) este fie o dischetã fizicã, fie o partiþie de hard disc, fie un 
+ramdrive (disc simulat în memoria RAM). Un disc logic este împãrþit în patru zone: zona de 
+boot, tabela de alocare a fiºierelor, directorul rãdãcinã ºi zona celorlalte fiºiere. In fig. 4.35 este 
+ilustratã aceastã structurã. 
+
+4.2.2 Sistemul de fisiere NTFS/Windows 
+ 
+Sistemul de fiºiere NTFS pentru Windows NT oferã o combinaþie de performanþã, încredere ºi 
+compatibilitate care nu este regãsitã la sistemul de fiºiere FAT. A fost proiectat sã ofere vitezã la 
+operaþiile standard de access la fiºiere: read, write, search ºi la operaþiile mai complicate cum ar 
+fii procedura de recuperare de date la discuri foarte mari. 
+
+4.2.2.1 Structura internã a discului NTFS 
+ 
+Prin formatarea unui disc folosind acest sistem de fiºiere obþinem câteva fiºiere sistem alãturi de 
+un fiºier special numit MFT-Master File Table. Acesta din urmã conþine informaþii despre toate 
+fiºierele si directoarele din volumul respectiv. 
+ 
+Prima informaþie pe care o regãsim pe un volum NTFS este Partition Boot Sector, care începe la 
+secotrul 0, poate avea maxim 16 sectoare lungime. Primul fiºier de pe volum este MFT. Figura 
+7.11 prezintã structura unui volum NTFS dupã formatare

@@ -1,0 +1,20 @@
+%nrOfOcc(C-number,L-list,C-counter)
+% flow (i,i,o)
+
+nrOfOcc(_,[],0).
+nrOfOcc(H,[H|T],C):-
+    nrOfOcc(H,T,C1),
+    C is C1+1.
+nrOfOcc(H,[_|T],C):-
+    nrOfOcc(H,T,C).
+
+%removeElem(L-list,B-Base List,R-list)
+%flow (i,i,o)
+removeElem([],_,[]).
+removeElem([H|T],BaseList,NewList):-
+    nrOfOcc(H,BaseList,Count),  % Count occurrences of X in EntireList
+    Count >= 2,   
+    !,
+	removeElem(T,BaseList,NewList).
+removeElem([H|T],BaseList, [H|NewList]) :-
+    removeElem(T,BaseList, NewList).

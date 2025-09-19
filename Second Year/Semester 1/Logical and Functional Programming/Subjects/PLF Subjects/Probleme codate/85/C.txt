@@ -1,0 +1,24 @@
+; C. Se consideră o listă neliniară. Să se scrie o funcţie care să aibă ca
+;    rezultat lista iniţială in care atomii de pe nivelurile pare au
+;    fost înlocuiți cu 0 (nivelul superficial se consideră 1). 
+;    Se va folosi o funcție MAP.
+
+; Exemplu pentru lista (a (1 (2 b)) (c (d))) se obține (a (0 (2 b)) (0 (d)))
+
+
+; replaceAtoms(l level) = 
+; = 0, if l is an atom and lvel % 2 == 0
+; = l, if l is an atom
+; = replaceAtoms(l1, level + 1) U replaceAtoms(ln, level + 1), otherwise (l = l1l2...ln)
+
+(defun replaceAtoms(l level)
+  (cond
+    ((and (atom l) (eq (mod level 2) 0)) 0)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceAtoms a (+ 1 level))) l))
+  )
+)
+
+(defun main(l)
+  (replaceAtoms l 0)
+)

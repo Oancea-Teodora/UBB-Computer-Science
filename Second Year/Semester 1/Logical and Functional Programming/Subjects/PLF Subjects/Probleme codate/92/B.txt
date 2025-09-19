@@ -1,0 +1,101 @@
+% B. Scrieţi un program PROLOG care determină dintr-o listă formată din numere întregi lista
+%    subşirurilor cu cel puțin 2 elemente, formate din elemente în ordine strict crescătoare.
+%    Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista [1, 8, 6, 4] ⇒ [[1,8],[1,6],[1,4],[6,8],[4,8],[4,6],[1,4,6],
+%                                      [1,4,8],[1,6,8],[4,6,8],[1,4,6,8]] (nu neapărat în această ordine)
+
+
+
+
+
+% insertFirst(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+
+% insertFirst(L:list, E:element, R:list)
+% (i,i,o)
+
+insertFirst(L,E,[E|L]).
+
+% insert(l1l2...ln, elem) =
+% = list(elem) , if n = 0
+% = l1l2...ln , if l1 = elem
+% = {elem} U l1l2...ln, if elem < l1
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert([],E,[E]).
+insert([H|_],E,[H|_]):-
+    H=:=E,
+    !.
+insert([H|T],E,R1):-
+    E < H,
+    !,
+    insertFirst([H|T],E,R1).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+% sortare(l1l2...ln) = 
+% = nil , if n = 0
+% = insert(sortare(l2...ln), l1) , otherwise
+
+% sortare(L:list, R:result)
+% (i,o)
+
+sortare([],[]).
+sortare([H|T],R1):-
+    sortare(T,R),
+    insert(R,H,R1).
+
+
+
+% subset(l1l2...ln) = 
+% = [], if n = 0
+% = {l1} U subset(l2...ln), if n >= 1
+% = subset(l2...ln), if n >= 1
+
+% subset(L:list, R:result list)
+% (i,o)
+
+subset([],[]).
+subset([H|T],[H|R]):-
+    subset(T,R).
+subset([_|T],R):-
+    subset(T,R).
+
+
+% myLength(l1l2...ln) = 
+% = 0, if n = 0
+% = 1 + myLength(l2...ln), otherwise
+
+% myLength(L:list, R:number)
+% (i,o)
+
+myLength([],0).
+myLength([_|T],R1):-
+    myLength(T,R),
+    R1 is R + 1.
+
+% checkLength(l1l2...ln) = 
+% = true, if myLength(l1l2...ln) >= 2
+% = false, otherwise
+
+% checkLength(L:list)
+% (i)
+
+checkLength(L):-
+    myLength(L,R),
+    R >= 2.
+
+
+% oneSol(L:list, R:list)
+% (i,o)
+
+oneSol(L,R):-
+    subset(L,R),
+    checkLength(R).
+
+allSols(L,R):-
+    sortare(L,LS),
+    findall(RPartial, oneSol(LS,RPartial),R).

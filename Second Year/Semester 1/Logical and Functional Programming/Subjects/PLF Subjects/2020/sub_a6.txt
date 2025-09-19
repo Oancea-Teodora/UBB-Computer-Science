@@ -1,0 +1,164 @@
+I.1
+
+(DEFUN F(L1 L2)
+	(APPEND (F (CAR L1) L2)
+		(COND
+		    ((NULL L1) (CDR L2))
+		    (T (LIST F(CAR L1) L2) (CAR L2)))
+		)
+	)
+)
+
+
+(DEFUN F(L1 L2)
+	(
+	(LAMBDA (V)
+	    (APPEND V
+	        (COND
+ 		    ((NULL L1) (CDR L2))
+		    (T (LIST V (CAR L2)))
+		)
+	    )	
+	) (F (CAR L1) L2))	
+)	
+
+A lambda expression is a list which defines an anonymous function usable only locally, a function that has the definition and the call concentrated in the same point of the program that uses them.
+The lambda has the parameter V (which in our case is (F (CAR L1) L2)) that is computed and then is replaced into the lambda function, so the recursive call is done only once. 
+
+
+I.2
+
+f([], 0).
+f([H|T], S) :-
+    f(T, S1),
+    S1 < H,
+    !,
+    S is H.
+f([_|T], S) :-
+    f(T, S1),
+    S is S1.
+
+
+aux(H, S1, S) :-
+    S1 < H,
+    !,
+    S is H.
+aux(_, S1, S) :-
+    S is S1.
+f([], 0).
+f([H|T], S) :-
+    f(T, S1),
+    aux(H, S1, S).
+
+We created an auxiliary function that assigns to S the value of H or S1, so the double recursive call is not necessary anymore as we have this function that does the logic and always has the needed value.
+
+I.3
+
+(DEFUN G(L)
+    (MAPCON #'LIST L)
+)
+(APPLY #'APPEND (MAPCON #'G '(1 2)))
+
+G('(1 2)) => ((1 2) (2))
+G('(2)) => ((2))
+MAPCON #'G '(1 2) => ((1 2) (2) (2))
+APPLY #'APPEND (MAPCON #'G '(1 2))) => (1 2 2 2)
+
+
+I.4
+
+f([], []).
+f([H|T], [H|S]) :-
+	f(T, S).
+f([H|T], S) :-
+	H mod 2 =:= 0,
+	f(T, S).
+
+f([1, 2, 3], L).
+
+L = [1, 2, 3]
+L = [1, 3]
+
+The function is doing a backtracking creating all the subsets (the head of the list is either being put or not in the current solution). The only exception is that for odd numbers, we cannot not add them since H mod 2 =:= 0 will fail. So, the odd numbers are always in our solution, and only the subsets of even numbers are generated, hence obtaining [1, 2, 3] and [1, 3].
+
+
+II.
+
+
+insert(E, L, [E|L]).
+insert(E, [H|T], [H|R]):-
+    insert(E, T, R).
+
+% (i, i, o)
+% insert(e, l1...ln) =
+% = {e} U l1...ln
+% = {l1} U insert(e, l2...ln)
+
+perm([], []).
+perm([H|T], R1):-
+    perm(T, R),
+    insert(H, R, R1).
+
+% (i, o)
+% perm(l1...ln) =
+% = {}, if l is empty
+% = insert(l1, perm(l2...ln)), otherwise
+
+verify([H1,H2]) :-
+	abs(H1-H2) =< 3.
+verify([H1,H2|T]) :-
+	abs(H1-H2) =< 3,
+	verify([H2|T]).	 
+
+% (i)
+% verify(l1...ln) =
+% = true, if n = 2 and abs(l1-l2) <= 3,
+% = false, if abs(l1-l2) <= 3,
+% = verify(l2...ln), otherwise
+
+generate(L, R) :-
+	perm(L, R),
+	verify(R).
+
+% (i, 0)
+% generate(l1...ln) = 
+% = perm(l1...ln), if verify(perm(l1...ln)) is true
+
+solve(L, R) :-
+	findall(C, generate(L, C), R).
+
+
+III.
+
+(DEFUN F(L)
+    (COND
+        ((ATOM L) 
+          (COND
+              ((AND (NUMBERP L) (= (MOD L 3) 0)) NIL)
+	      (T L)
+          )
+        )
+        (T (MAPCAR #'F L))  
+    )
+)
+(1 (2 A (3 A)) (6))
+(1 (2 (C)))
+
+% f(l) =
+% = (U f(li), i=1,n), if l is a list = {l1...ln}
+% = null, if l is number and l%3=0,
+% = l, otherwise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
