@@ -21,3 +21,13 @@
 | 4   | [Geometry](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%202/Geometry) | Affine Geometry, Euclidean Spaces, Affine Maps, Isometries, Quadratic Curves, Quaternions |
 | 5   | [Dynamical Systems](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%202/Dynamical%20Systems) | Maple, Sage, Linear Differential Equations And Systems, Phase Portrait |
 | 6   | [Graph Algorithms](https://github.com/915-Oancea-Teodora/UBB-Computer-Science/tree/main/First%20Year/Semester%202/Graph%20Algorithms) | Connectivity, Shortest Paths, Modeling Prerequisites, Flows, Traveling Salesman Problem, Planar Graphs |
+
+### 📂3rd Semester
+| No. | Course                           | Concepts and knowledge |
+|-----|----------------------------------|------------------------|
+| 1   | Advanced Programming Methods ()  |                        |
+| 2   | Computer Networks ()             |                        |
+| 3   | Databases ()                     |                        |
+| 4   | Logical and Functional Programming () |                  |
+| 5   | Probabilities and Statistics ()  |                        |
+
