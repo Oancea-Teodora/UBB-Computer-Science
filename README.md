@@ -25,7 +25,7 @@
 ### 📂3rd Semester
 | No. | Course                           | Concepts and knowledge |
 |-----|----------------------------------|------------------------|
-| 1   | Advanced Programming Methods ()  |                        |
+| 1   | Advanced Programming Methods (https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Advanced%20Programming%20Methods)  |                        |
 | 2   | Computer Networks ()             |                        |
 | 3   | Databases ()                     |                        |
 | 4   | Logical and Functional Programming () |                  |
