@@ -25,9 +25,9 @@
 ### 📂3rd Semester
 | No. | Course                           | Concepts and knowledge |
 |-----|----------------------------------|------------------------|
-| 1   | Advanced Programming Methods (https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Advanced%20Programming%20Methods)  |                        |
-| 2   | Computer Networks ()             |                        |
-| 3   | Databases ()                     |                        |
-| 4   | Logical and Functional Programming () |                  |
-| 5   | Probabilities and Statistics ()  |                        |
+| 1   | [Advanced Programming Methods](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Advanced%20Programming%20Methods)  |                        |
+| 2   | [Computer Networks](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Computer%20Networks)             |                        |
+| 3   | [Databases](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Databases)                     |                        |
+| 4   | [Logical and Functional Programming](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Logical%20and%20Functional%20Programming) |                  |
+| 5   | [Probabilities and Statistics](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Probabilities%20and%20Statistics)  |                        |
 
