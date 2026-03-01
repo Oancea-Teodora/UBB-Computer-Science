@@ -31,3 +31,11 @@
 | 4   | [Logical and Functional Programming](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Logical%20and%20Functional%20Programming) |                  |
 | 5   | [Probabilities and Statistics](https://github.com/Oancea-Teodora/UBB-Computer-Science/tree/main/Second%20Year/Semester%201/Probabilities%20and%20Statistics)  |                        |
 
+### 📂4th Semester
+| No. | Course | Concepts and knowledge |
+|-----|--------|------------------------|
+| 1 | [Artificial Intelligence](./Second%20Year/Semester%202/Artificial%20Intelligence) |                             |
+| 2 | [Database Management Systems](./Second%20Year/Semester%202/Database%20Management%20Systems) |                               |
+| 3 | [Software Engineering (ISS)](./Second%20Year/Semester%202/Software%20Engineering%20%28ISS%29) |                               |
+| 4 | [Systems for Design & Implementation (MPP)](./Second%20Year/Semester%202/Systems%20for%20Design%20%26%20Implementation%20%28MPP%29) |                               |
+| 5 | [Web Programming](./Second%20Year/Semester%202/Web%20Programming) |                               |
