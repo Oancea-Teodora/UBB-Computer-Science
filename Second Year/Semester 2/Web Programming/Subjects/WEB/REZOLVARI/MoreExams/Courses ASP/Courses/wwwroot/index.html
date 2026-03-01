@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+Participants:
+<ul class="participants">
+</ul>
+
+<p>
+    Search participants to a specific course:
+    <input type="text" id="course">
+    <button onclick="searchParticipants()">Search</button>
+</p>
+<br>
+<p>
+    Search the courses to which a student participates:
+    <input type="text" id="student">
+    <button onclick="searchCourses()">Search</button>
+</p>
+<br>
+
+Courses:
+<ul class="courses">
+</ul>
+
+<br>
+<p>
+    Assign grade to a student:
+    <br>
+    Name of the student:
+    <input type="text" id="studentForGrade">
+    <br>
+    Name of the course:
+    <input type="text" id="courseForGrade">
+    <br>
+    Grade:
+    <input type="text" id="grade">
+    <button onclick="assignGrade()">Assign Grade</button>
+</p>
+
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function populate(data){
+        console.log(data);
+
+        var participants = "";
+        
+        console.log(data);
+        
+        participants += "<li>";
+            
+        participants += data;
+
+        participants +=  "</li>";
+        
+        $(".participants").html(participants);
+    }
+
+    function displayCourses(data){
+        console.log(data);
+
+        var courses = "";
+        console.log(data);
+        for(let course of data) {
+
+
+            courses += "<li>";
+            courses +="Course Name: " + course["coursename"] + "| Course grades: " + course["grades"];
+            courses += "</li>";
+        }
+        $(".courses").html(courses);
+    }
+
+    function searchParticipants(){
+        var name = $("#course").val();
+
+        $.get("api/Course/" + name, data => populate(data));
+    }
+    
+    function searchCourses(){
+        var name = $("#student").val();
+        
+        $.get("api/Course/Courses/" + name, data => displayCourses(data));
+    }
+    
+    function assignGrade(){
+        var studentName = $("#studentForGrade").val();
+        var courseName = $("#courseForGrade").val();
+        var grade = $("#grade").val();
+
+        $.post("api/Course",{"studentName": studentName, "courseName": courseName, "grade": grade}, data => displayCourses(data));
+    }
+    
+</script>

@@ -1,0 +1,25 @@
+Write a web application in PHP/JSP/ASP.NET which uses the following 2
+database tables:
+- table Users: id (int), username (string), password (string)
+- table Assets: id (int), userid (int), name (string), description (string), value (int)
+
+The user should authenticate prior to using the application. After the
+user is succesfully authenticated, a web page with all the assets belonging
+to that user will be displayed. The assets that have a value higher than 10
+should be displayed with red background color. 
+The user then should be able to add 1 or many assets (using one single 
+HTTP Request) using Ajax and Json HTTP requests.
+
+Grading scale:
+- 1 point by default (oficiu)
+- configure web environment, create DB, authentication              : 2
+- show all assets of the user; red color assets with value > 10     : 3
+- add 1 or many assets using Ajax and Json   	                    : 4
+  (javascript code for adding many assets + server-side code)
+
+--------------------------------------------------------------------------
+Obs: The server-side technology (PHP or JSP or ASP.NET) is not at your
+choice, it will be fixed by the exam subject. However, you can change
+this technology to another one of your preference, but in this case
+the final grade that you receive will be cut at 6 (i.e. the maximum
+grade that you can get for this practical exam is 6).

@@ -1,0 +1,296 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\views\\keyword\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\views\\keyword\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\controllers\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\controllers\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Migrations\\20250619140235_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ASP - EXAM\\Migrations\\20250619140235_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\models\\blockedwords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\models\\blockedwords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp - exam\\asp - exam\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DC6E4C8-FD71-4280-8407-9F500239F7DC}|ASP - EXAM\\ASP - EXAM.csproj|solutionrelative:asp - exam\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "ASP - EXAM\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:30:31.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASP - EXAM\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA3wCYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:30:34.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Feedback\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Views\\Feedback\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Feedback\\Index.cshtml",
+              "RelativeToolTip": "ASP - EXAM\\Views\\Feedback\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T09:32:23.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KeywordController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\KeywordController.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Controllers\\KeywordController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\KeywordController.cs",
+              "RelativeToolTip": "ASP - EXAM\\Controllers\\KeywordController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:30:15.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Controllers\\DocumentController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "ASP - EXAM\\Controllers\\DocumentController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:31:06.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASP - EXAM\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T09:29:52.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Keyword\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Views\\Keyword\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Keyword\\Index.cshtml",
+              "RelativeToolTip": "ASP - EXAM\\Views\\Keyword\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T09:32:46.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\Feedback.cs",
+              "RelativeToolTip": "ASP - EXAM\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:32:00.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASP - EXAM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T09:29:08.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\appsettings.json",
+              "RelativeDocumentMoniker": "ASP - EXAM\\appsettings.json",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\appsettings.json",
+              "RelativeToolTip": "ASP - EXAM\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-19T09:34:13.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\Customer.cs",
+              "RelativeToolTip": "ASP - EXAM\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:31:54.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BlockedWords.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\BlockedWords.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Models\\BlockedWords.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Models\\BlockedWords.cs",
+              "RelativeToolTip": "ASP - EXAM\\Models\\BlockedWords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:32:02.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250619140235_mig.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Migrations\\20250619140235_mig.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Migrations\\20250619140235_mig.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Migrations\\20250619140235_mig.cs",
+              "RelativeToolTip": "ASP - EXAM\\Migrations\\20250619140235_mig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:02:35.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "ASP - EXAM\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T13:48:14.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ASP - EXAM\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:27:46.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SessionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Helpers\\SessionHelper.cs",
+              "RelativeDocumentMoniker": "ASP - EXAM\\Helpers\\SessionHelper.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP - EXAM\\ASP - EXAM\\Helpers\\SessionHelper.cs",
+              "RelativeToolTip": "ASP - EXAM\\Helpers\\SessionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:31:45.937Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

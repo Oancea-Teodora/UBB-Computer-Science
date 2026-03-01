@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\dbms\\lab1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\lab1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.Designer.cs",
+              "RelativeToolTip": "Lab1\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:48:31.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.cs",
+              "RelativeToolTip": "Lab1\\Form1.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:16:33.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Lab1\\Lab1\\Form1.cs [Design]",
+              "RelativeToolTip": "Lab1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T08:46:30.017Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

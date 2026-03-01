@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Order>
+@{
+    Layout = "_Layout";
+}
+<h2>Order </h2>
+<table>
+    <tr><th>userID</th><th>totalPrice</th><th></th></tr>
+    @foreach (var f in Model)
+    {
+           <tr>
+           <td>@f.userID</td>
+            <td>@f.totalPrice</td>
+        </tr>
+    }
+</table>

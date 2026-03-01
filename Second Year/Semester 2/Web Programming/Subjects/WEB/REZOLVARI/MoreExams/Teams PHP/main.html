@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<ul class="teams">
+</ul>
+
+Display your teams:
+
+<button onclick="displayTeams()">Go</button>
+<br>
+
+Display all teams:
+
+<button onclick="displayAllTeams()">Go</button>
+
+<p>
+  Assign member to teams:
+  <br>
+  Name of the player:
+  <input type="text" id="player">
+  <br>
+  Age of the member:
+  <input type="text" id="age">
+  <br>
+  Teams:
+  <input type="text" id="teamsString">
+  <button onclick="addMemberToTeam()">Assign Member</button>
+</p>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  function populate(data){
+    console.log(data);
+    data = $.parseJSON(data);
+
+    var teams = "";
+    console.log(data);
+    for(let team of data) {
+
+
+      teams += "<li>";
+      teams += team["captainId"] + " " + team["name"] + " " + team["description"] + " " + team["members"];
+      teams += "</li>";
+    }
+    $(".teams").html(teams);
+  }
+
+  $(document).ready(function () {
+    $.get("getAllTeams.php", data => populate(data));
+  });
+
+  function displayTeams(){
+    $.get("getUserTeams.php", data => populate(data));
+  }
+
+  function displayAllTeams(){
+    $.get("getAllTeams.php", data => populate(data));
+  }
+
+  function addMemberToTeam(){
+    var playerName = $("#player").val();
+    var teamsName = $("#teamsString").val();
+    var age = $("#age").val();
+
+    $.ajax({
+      type: "POST",
+      url: "addPlayer.php",
+      data: { playerName: playerName, teamsName: teamsName }
+    }).done(data => populate(data));
+  }
+
+
+
+
+</script>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASP.NET - User-Product-Order-Item.props" />
+</Project>

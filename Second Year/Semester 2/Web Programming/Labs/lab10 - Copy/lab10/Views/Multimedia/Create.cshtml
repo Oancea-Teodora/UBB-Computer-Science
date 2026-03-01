@@ -1,0 +1,35 @@
+@model lab10.Models.MultimediaFile
+
+@{
+    ViewData["Title"] = "Add New Multimedia";
+}
+
+<h1>Add New Multimedia</h1>
+
+<form asp-action="Create">
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input asp-for="Title" /></td>
+        </tr>
+        <tr>
+            <td>Format:</td>
+            <td><input asp-for="Format" /></td>
+        </tr>
+        <tr>
+            <td>Genre:</td>
+            <td><input asp-for="Genre" /></td>
+        </tr>
+        <tr>
+            <td>Path:</td>
+            <td><input asp-for="Path" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Create" />
+                <a href="@Url.Action("Index")">Back to List</a>
+            </td>
+        </tr>
+    </table>
+</form> 

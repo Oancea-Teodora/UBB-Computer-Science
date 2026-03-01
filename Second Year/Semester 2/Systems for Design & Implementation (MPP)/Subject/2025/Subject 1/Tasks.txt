@@ -1,0 +1,15 @@
+pt cei interesati la mpp sa si creasca
+azi o dat de facut un mmorpg fiecare task un punct
+0. hardcodata lista de caractere de au id poza nume si abilitati care s tinute ca floaturi(eu am pus de ex health armor si mana plm). master/detail form e.g. cand intri pe un caracter din lista vezi datele lui
+1.  dupa fu sa faci restul de cruduri
+2. ⁠statistici + generare random
+3. ⁠mutat in backend
+4. ⁠deploy/sa pui intr un VM sa vezi ca poate accesa in LAN sau WAN plm
+5. ⁠cand dai pe detail la un caracter o sa poti da click pe un buton si dupa mergi in alta pagina unde e o harta(poti sa o tii ca un grid cu coordonate sau tii gen direct da fu mult mai ok grid) si se spawneaza acolo random pe un patratel. o cerut sa facem si persistenta amu si sa avem un tabel cu pozitiile si plm
+6. ⁠sa poti sa ti misti caracterul tau sus jos stanga dreapta (eu am zis ca , caracterul meu = ultimul caracter de am introdus, tineam id ul in local storage la browser)
+7. ⁠sa ai collision radius adica daca te apropii de un inamic sa se coloreze grid ul in jurul tau de ex rosu
+8. ⁠inamicii sa se miste random sus jos stanga dreapta n jur
+9. ⁠sa poti sa ataci inamicii si sa i omori si sa i scoti de pe harta. calculezi damage ul cu o formula inventata de tn (eu de ex am pus ca damage ul la o lovitura e cata mana am * 0.35)
+10. ⁠sa arati un scoreboard cu ce caracter are mai multe killuri
+
+

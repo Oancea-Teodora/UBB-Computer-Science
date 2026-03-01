@@ -1,0 +1,20 @@
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.AssemblyReference.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.Form1.resources
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.Properties.Resources.resources
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.GenerateResource.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.CoreCompileInputs.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\bin\Debug\SCHITA.exe.config
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\bin\Debug\SCHITA.exe
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\bin\Debug\SCHITA.pdb
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.exe
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA\SCHITA\SCHITA\obj\Debug\SCHITA.pdb
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\bin\Debug\SCHITA.exe.config
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\bin\Debug\SCHITA.exe
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\bin\Debug\SCHITA.pdb
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.AssemblyReference.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.Form1.resources
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.Properties.Resources.resources
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.GenerateResource.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.csproj.CoreCompileInputs.cache
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.exe
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\DBMS\Practice Exam\SCHITA - Copy\SCHITA\SCHITA\obj\Debug\SCHITA.pdb

@@ -1,0 +1,90 @@
+<!--<button (click) = loadWebsites()>View websites</button>
+-->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+<div *ngIf="websites">
+<table id = "table-container" class = "table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Url</th>
+    <th>Document Count</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let log of websites">
+    <td *ngFor="let cell of log">{{cell}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<!--
+
+create a dropdown of documents
+
+  <label class = "add" for="typeID">Recipe Type:</label><br>
+  <select class = "add" id = "typeID" name = "type" #model = "ngModel" [(ngModel)]="typeId" ngModel>
+    <option *ngFor = "let type of types">{{type.ID + "." + type.type}}</option>
+  </select>
+  <br>
+
+  <option *ngFor = "let genre of genres" [ngValue]="genre">
+    {{genre.name}}
+  </option>
+
+-->
+
+<label>Choose a document: </label><br>
+<select class = "dropdown-header" [(ngModel)]="document">
+  <option class = "dropdown-item" *ngFor = "let document of documents" [ngValue]="document">
+    {{document}}
+  </option>
+</select>
+<button (click)="updateDocument()">Update</button>
+<br><br>
+<label>Keyword search:  <input type="text" name="key" class="form-control" #keyword></label><br>
+<button (click) = findMatches(keyword.value)>Find Matches</button>
+
+<div *ngIf="matchingDocs">
+  <table id = "table-docs" class = "table">
+    <thead>
+    <tr>
+      <th>Keyword 1</th>
+      <th>Keyword 2</th>
+      <th>Keyword 3</th>
+      <th>Keyword 4</th>
+      <th>Keyword 5</th>
+      <th>Id</th>
+      <th>Website Id</th>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of matchingDocs">
+      <td *ngFor="let cell of log">{{cell}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<div *ngIf="webPage">
+  <table id = "table" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Url</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of webPage">
+      <td *ngFor="let cell of log">{{cell}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button id = "prev" (click)="pressPrevious()">Previous</button>
+  <button id = "next" (click)="pressNext()">Next</button>
+</div>

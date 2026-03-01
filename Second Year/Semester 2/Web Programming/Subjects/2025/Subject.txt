@@ -1,0 +1,23 @@
+Write a web application in php that uses the following 4 tables:
+ table User: id(int), username(string)
+ table Product: id(int), name(string), price(decimal)
+ (the category of a producft is specified as a prefix in its name, eg "BOOK-Math","TOY-Car")
+ table Order: id(int), userId(int),totalPrice(decimal)
+ table OrderItem: id(int), orderId(int), productId(int)
+
+The user should specify his name prior to using the application (no authentification or other checks are required, you should assume that the user exists in the User tbale) After logging in, the user can begin building an order by selecting products. The selected products are added to a new order (they are saved in the database only when the user confirms the order)
+
+Discount Logic:
+Before confirming the order, the total price is computed based n the following dynamic discount rules:
+0 if the order contains 3 or morre products, apply a 10% discount
+0 if 2 or more products share the same category(derived from the product name prefix), apply an additinonal 5% discount
+Discounts are applied only onnce per condition and cannot be combined multiple times (maximum 2 discounts can be applied)
+
+The category is not stored in a separate column. It must be extracted from the product name (eg. "BOOK-History" -> "BOOK")
+
+ONLY When the user confirms the order:
+	a) the dicounted price is computed
+	b) the Order and related OrderItem entries are saved in the database 
+	c) the final total (without discount applied) is displayed
+
+	The application should track the last 3 orders from this user. If the user tries to add (in the current order) a product whoce category already exists in all of the last 3 orders, the system should warn the user that they are not diversifying their product choices)

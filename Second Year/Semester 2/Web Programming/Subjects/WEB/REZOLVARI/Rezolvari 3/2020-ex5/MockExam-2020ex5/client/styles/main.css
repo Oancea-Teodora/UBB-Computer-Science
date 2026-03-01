@@ -1,0 +1,17 @@
+#login-div {
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+    width: 50%;
+    height: 30%;
+    border: 2px solid black;
+}
+
+#user-name {
+    margin-bottom: 2%;
+}
+
+button {
+    width: 25%;
+}

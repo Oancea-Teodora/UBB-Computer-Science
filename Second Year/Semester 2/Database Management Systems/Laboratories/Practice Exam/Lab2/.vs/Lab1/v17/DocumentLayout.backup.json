@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\dbms\\practice exam\\lab2\\lab1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Lab1||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\lab1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{019B3DFE-2CAF-4830-9A5E-264C336D8698}|Lab1\\Lab1.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\dbms\\practice exam\\lab2\\lab1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lab1",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Lab1.csproj",
+              "RelativeDocumentMoniker": "Lab1\\Lab1.csproj",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Lab1.csproj",
+              "RelativeToolTip": "Lab1\\Lab1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T17:42:18.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.cs",
+              "RelativeToolTip": "Lab1\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T09:16:33.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\App.config",
+              "RelativeDocumentMoniker": "Lab1\\App.config",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\App.config",
+              "RelativeToolTip": "Lab1\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-08T11:51:16.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.cs [Design]",
+              "RelativeToolTip": "Lab1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T08:46:30.017Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\DBMS\\Practice Exam\\Lab2\\Lab1\\Form1.Designer.cs",
+              "RelativeToolTip": "Lab1\\Form1.Designer.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAUwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:48:31.415Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

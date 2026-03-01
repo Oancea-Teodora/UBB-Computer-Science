@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\controllers\\multimediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\controllers\\multimediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\views\\multimedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\views\\multimedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\views\\multimedia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\views\\multimedia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\models\\multimediafile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\models\\multimediafile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\views\\multimedia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\views\\multimedia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\data\\migrations\\20250526122949_addmultimediafiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\data\\migrations\\20250526122949_addmultimediafiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\lab10 - copy\\lab10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8714EA4-C024-48D5-8D5E-1EFC033F9198}|lab10\\lab10.csproj|solutionrelative:lab10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "lab10\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:22:30.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "lab10\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:22:28.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Index.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Views\\Multimedia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Index.cshtml*",
+              "RelativeToolTip": "lab10\\Views\\Multimedia\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:21:10.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Edit.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Views\\Multimedia\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Edit.cshtml",
+              "RelativeToolTip": "lab10\\Views\\Multimedia\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:21:05.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Create.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Views\\Multimedia\\Create.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Views\\Multimedia\\Create.cshtml",
+              "RelativeToolTip": "lab10\\Views\\Multimedia\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:20:57.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MultimediaFile.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Models\\MultimediaFile.cs",
+              "RelativeDocumentMoniker": "lab10\\Models\\MultimediaFile.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Models\\MultimediaFile.cs",
+              "RelativeToolTip": "lab10\\Models\\MultimediaFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:20:52.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MultimediaController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Controllers\\MultimediaController.cs",
+              "RelativeDocumentMoniker": "lab10\\Controllers\\MultimediaController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Controllers\\MultimediaController.cs",
+              "RelativeToolTip": "lab10\\Controllers\\MultimediaController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:12:49.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "lab10\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "lab10\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-30T08:12:44.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "lab10\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "lab10\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:00:17.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250526122949_AddMultimediaFiles.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\20250526122949_AddMultimediaFiles.cs",
+              "RelativeDocumentMoniker": "lab10\\Data\\Migrations\\20250526122949_AddMultimediaFiles.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\20250526122949_AddMultimediaFiles.cs",
+              "RelativeToolTip": "lab10\\Data\\Migrations\\20250526122949_AddMultimediaFiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:00:09.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "00000000000000_CreateIdentitySchema.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeDocumentMoniker": "lab10\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeToolTip": "lab10\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:59:56.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "lab10\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "lab10\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:59:52.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Program.cs",
+              "RelativeDocumentMoniker": "lab10\\Program.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\Program.cs",
+              "RelativeToolTip": "lab10\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:58:43.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\appsettings.json",
+              "RelativeDocumentMoniker": "lab10\\appsettings.json",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\lab10 - Copy\\lab10\\appsettings.json",
+              "RelativeToolTip": "lab10\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-24T13:24:32.189Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

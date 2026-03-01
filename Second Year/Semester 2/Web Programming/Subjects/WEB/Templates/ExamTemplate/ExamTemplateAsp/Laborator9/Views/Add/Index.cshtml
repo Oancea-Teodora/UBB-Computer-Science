@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+    if (Session["userId"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add student</title>
+    <style>
+        body {
+            margin: 0 auto 0 auto;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        #welcome {
+            font-size: 3em;
+        }
+
+        #error {
+            font-size: 1em;
+            color: red;
+        }
+
+        .button {
+            width: 125px;
+        }
+
+        #maindiv {
+            width: 350px;
+            margin: 0 auto 0 auto;
+            padding: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+
+        table {
+            margin: 0 auto 0 auto;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .main-form {
+            margin: 0 auto 0 auto;
+        }
+
+        #sname {
+            width: 70px;
+        }
+
+        #sgrade {
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="welcome">Welcome back, @Session["userName"]</h1>
+        <h6 id="error">@TempData["error"]</h6>
+    </div>
+
+    <div id="maindiv">
+
+        <form method="post" class="main-form">
+            <label>Name:</label>
+            <input type="text" id="sname" name="sname" value="" /><br />
+            <label>Grade:</label>
+            <input type="text" id="sgrade" name="sgrade" value="" /><br /><br />
+            <input type="submit" name="add" value="Add" formaction="/Add/Add" />
+        </form>
+
+    </div><br />
+
+    <br />
+    <br />
+
+    <a style="text-decoration: none" class="button" href="@Url.Action("LogOut", "Login")"><button>Logout</button></a>
+    <a style="text-decoration: none" class="button" href="@Url.Action("Index", "Home")"><button>Go back</button></a>
+
+    <br />
+</body>
+</html>
+
+

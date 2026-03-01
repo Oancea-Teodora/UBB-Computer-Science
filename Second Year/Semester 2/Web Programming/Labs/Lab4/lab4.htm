@@ -1,0 +1,74 @@
+<html>
+
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br>
+<a href="https://www.youtube.com/"> youtube</a>
+<br> <br>
+
+<button onclick="backgroundFunction()">Change background</button>
+<button onclick="linksFunction()">Change links format</button>
+
+<style>
+    body {
+        background-image: url("");
+    }
+</style>
+
+<script>
+    let index = 0;
+    let index2 = 0;
+    let interval;
+    //   function timeFunction() {
+    //      let timeout = setTimeout(backgroundFunction, 3000)
+    //  }
+    function backgroundFunction() {
+        const images = ["https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg",
+            "https://wallpapers.com/images/featured/ultrawide-7qegghybz7ab8a7q.jpg",
+            "https://wallpapers.com/images/featured/widescreen-background-3ao0esn9qknhdudj.jpg",
+            "https://wallpapergod.com/images/hd/wide-3440X1440-wallpaper-qus5eeqx3jrzaea5.jpeg",
+            "https://plus.unsplash.com/premium_photo-1701534008693-0eee0632d47a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
+        ]
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            document.body.style.backgroundImage = `url('${images[index]}')`;
+        }, 3000);
+
+        //   document.body.style.backgroundImage = `url('${images[index]}')`;
+
+    }
+
+    function linksFunction() {
+        const fonts = ["Arial, sans-serif", "Verdana, sans-serif", "Georgia, serif", "Times New Roman, serif", "Courier New, monospace", "Tahoma, sans-serif",]
+        const colours = ["red", "yellow", "blue", "orange", "purple", "green"]
+        if (index2 == 6)
+            index2 = 0;
+        // document.body.style.color = colours[index2];
+        const nodeList = document.querySelectorAll("a");
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style.color = colours[index2];
+        }
+        document.body.style.fontFamily = fonts[index2];
+        index2++;
+
+    }
+</script>
+
+
+</html>

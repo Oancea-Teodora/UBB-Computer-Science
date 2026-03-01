@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+  }
+  label {
+    display: block;
+    margin: 0.5em 0;
+  }
+  input, select, button {
+    padding: 0.3em;
+  }
+  .errors {
+    border: 1px solid #c00;
+    padding: 0.5em;
+    background: #fee;
+  }
+  ul { list-style: none; padding:0; }
+  ul li { margin: 0.5em 0; }
+  

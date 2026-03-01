@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Emanuel-Vasile Putura">
+        <meta name="description" content="Web Exam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Exam</title>
+
+        <link rel="stylesheet" href="../styles/user.css">
+        <script src="../scripts/user.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <div>
+                <label>
+                    Course name: <input type="text" id="course-name" name="course-name"><br>
+                </label>
+                <br>
+                <label>
+                    Participants: <input type="text" id="participants" name="participants" readonly><br>
+                </label>
+                <button onclick="onSubmitCourseNameBtnClicked()">View participants to course</button><br>
+            </div>
+            <hr>
+
+            <div>
+                <label>
+                    Student name: <input type="text" id="student" name="student"><br>
+                </label>
+                <button onclick="onSubmitStudentNameBtnClicked()">Display courses for student</button><br>
+            </div>
+            <hr>
+
+            <div>
+                <label>
+                    Course name: <input type="text" id="assign-course" name="assign-course"><br>
+                </label>
+                <label>
+                    Student name: <input type="text" id="assign-student" name="assign-student"><br>
+                </label>
+                <label>
+                    Grade: <input type="text" id="assign-grade" name="assign-grade"><br>
+                </label>
+                <button onclick="onSubmitAssignBtnClicked()">Assign grade</button><br>
+            </div>
+        </main>
+    </body>
+</html>

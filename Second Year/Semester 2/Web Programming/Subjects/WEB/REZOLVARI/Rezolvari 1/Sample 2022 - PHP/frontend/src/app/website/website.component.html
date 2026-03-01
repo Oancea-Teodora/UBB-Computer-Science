@@ -1,0 +1,28 @@
+<div class="justify-content-center" style="height: 300px">
+  <br>
+  <h4> Add a keyword </h4><br>
+  <label>Key:  <input type="text" name="username" class="form-control" #key></label><br>
+  <label>Value:  <input type="text" name="username" class="form-control" #value></label><br>
+  <button (click)="addKeyword(key.value, value.value)">Add keyword</button>
+</div>
+
+<div>
+  <label>Title filter:  <input type="text" name="username" class="form-control" #title></label><br>
+  <button (click)="filterDocuments(title.value)">Filter documents by title</button>
+</div>
+
+<div class = "doclist" *ngIf = "filteredDocuments">
+  <li *ngFor = "let d of filteredDocuments index as i; let even = even; let odd = odd"
+  [ngClass]="{'red': even}"
+      [class.selected] = "d === selectedDocument"
+      (click) = "onSelect(d)"
+  >
+    {{d.title + " " + d.listOfTemplates}}
+
+  </li>
+</div>
+<button (click)="renderDocument()">Render Document</button>
+
+<div *ngIf = documentText>
+  {{documentText}}
+</div>

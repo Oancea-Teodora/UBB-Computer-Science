@@ -1,0 +1,9 @@
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\js\site.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+C:\Users\teodo\Desktop\Teo\Facultate\Anul 2\Semestru 2\Web\lab10\lab10\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

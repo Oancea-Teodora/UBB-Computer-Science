@@ -1,0 +1,28 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+<label>Choose a journal: </label><br>
+<select class = "dropdown-header" [(ngModel)]="chosenJournal">
+  <option class = "dropdown-item" *ngFor = "let j of journals" [ngValue]="j">
+    {{j.name}}
+  </option>
+</select>
+<button (click)="loadUserArticles()">See Articles</button>
+<div *ngIf = "userArticles">
+  <li class="list-group" *ngFor="let j of userArticles">
+    {{j.summary + " " + j.date}}
+  </li>
+</div>
+
+<!--
+add article -> journal, summary - id, user, date are automatically computed
+-->
+<div class="justify-content-center" style="height: 600px">
+
+  <label>Journal:  <input type="text" name="username" class="form-control" #journal></label><br>
+<br>
+  <label>Summary:  <input type="text" name="username" class="form-control" #summary></label><br>
+<br>
+<button (click)="addArticle(summary.value, journal.value)">Add article</button>
+</div>

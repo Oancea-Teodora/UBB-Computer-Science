@@ -1,0 +1,23 @@
+﻿    @model IEnumerable<Feedback>
+    @{
+        Layout = "_Layout";
+    }
+
+        <table>
+            <tr><th>Key</th><th>Value</th><th></th></tr>
+            @foreach (var f in Model)
+            {
+                <tr>
+                    <td>@f.text</td>
+                    <td>@f.timestamp</td>
+                </tr>
+            }
+        </table>
+
+
+
+    <h2>Add feedback </h2>
+    <form asp-action="Add" method="post">
+        <label>Message: <input name="mess" required /></input></label> <br />
+        <button type="submit">Add</button>
+    </form>

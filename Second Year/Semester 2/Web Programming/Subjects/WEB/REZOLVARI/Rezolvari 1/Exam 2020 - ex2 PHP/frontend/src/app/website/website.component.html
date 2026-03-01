@@ -1,0 +1,39 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+<!--
+
+people dropdown
+
+-->
+<label>Choose a person: </label><br>
+<select class = "dropdown-header" [(ngModel)]="person">
+  <option class = "dropdown-item" *ngFor = "let p of people" [ngValue]="p">
+    {{p.name + " " + p.age}}
+  </option>
+</select>
+
+<button (click) = getChannel()>Get Channels</button>
+<div *ngIf="Channels">
+  <li class="list-group" *ngFor = "let c of Channels">
+    {{c.id + " " + c.ownerId + " " + c.name + " " + c.description + " " + c.subscribers}}
+  </li>
+</div>
+
+<button (click) = getSubscribed()>Get Subscribed Channels</button>
+
+<div *ngIf="channels">
+  <li class = "list-inline justify-content-center" *ngFor = "let c of channels">
+    {{c}}
+  </li>
+</div>
+
+<label>Choose a channel: </label><br>
+<select class = "dropdown-header" [(ngModel)]="chosenChannel">
+  <option class = "dropdown-item" *ngFor = "let c of channelDr" [ngValue]="c">
+    {{c.name}}
+  </option>
+</select>
+
+<button (click)="subscribe()">Subscribe</button>

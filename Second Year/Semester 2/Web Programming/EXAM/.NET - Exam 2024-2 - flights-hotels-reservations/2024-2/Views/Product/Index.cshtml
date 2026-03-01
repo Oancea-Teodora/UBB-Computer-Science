@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Product>
+@{
+    Layout = "_Layout";
+}
+<h2>Available Products </h2>
+<table>
+    <tr><th>Name</th><th>Price</th><th></th></tr>
+    @foreach (var f in Model)
+    {
+        <tr>
+            <td>@f.name</td>
+            <td>@f.price</td>
+            <td>
+                <a asp-action="Reserve" asp-route-id="@f.id">Add to cart</a>
+            </td>
+
+        </tr>
+    }
+</table>
+<a asp-action="Submit">Submit</a>
+
+@* right at the bottom of the page *@
+@if (TempData["ShowWarning"] as bool? == true)
+{
+    <script>
+        alert('@(TempData["WarningText"] as string)');
+    </script>
+}

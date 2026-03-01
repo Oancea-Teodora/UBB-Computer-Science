@@ -1,0 +1,7 @@
+.red{
+  background-color:red;
+}
+
+.doclist:nth-child(even){
+  background-color: red;
+}

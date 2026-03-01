@@ -1,0 +1,91 @@
+# PostgreSQL Database Service
+databases:
+  - name: movieapp-database
+    plan: free
+    region: frankfurt
+
+services:
+  # Backend API Service
+  - type: web
+    name: movieapp-backend
+    runtime: docker
+    repo: https://github.com/Oancea-Teodora/MovieManagementApp.git
+    rootDir: backend
+    branch: main
+    plan: free
+    region: frankfurt
+    buildCommand: ""
+    startCommand: ""
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: movieapp-database
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: movieapp-frontend
+          property: host
+      - key: PORT
+        value: "3000"
+      - key: CORS_ORIGIN
+        fromService:
+          type: web
+          name: movieapp-frontend
+          property: host
+      # 2FA Email Configuration (using Gmail SMTP as example)
+      # You can replace these with your preferred email service
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        value: your-email@gmail.com  # Replace with your Gmail address
+      - key: SMTP_PASS
+        value: your-app-password     # Replace with Gmail App Password
+      - key: SMTP_FROM
+        value: "MovieApp <noreply@movieapp.com>"
+
+  # Frontend Web Service
+  - type: web
+    name: movieapp-frontend
+    runtime: docker
+    repo: https://github.com/Oancea-Teodora/MovieManagementApp.git
+    rootDir: frontend
+    branch: main
+    plan: free
+    region: frankfurt
+    buildCommand: ""
+    startCommand: ""
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: movieapp-backend
+          property: host
+      - key: NODE_ENV
+        value: production
+
+# Optional: Add domains configuration (for custom domains)
+# domains:
+#   - name: movieapp-frontend
+#     service: movieapp-frontend
+#   - name: api.movieapp-frontend
+#     service: movieapp-backend
+
+# Optional: Add environment groups for shared configs
+# envGroups:
+#   - name: shared-config
+#     envVars:
+#       - key: LOG_LEVEL
+#         value: info
+#       - key: APP_NAME
+#         value: MovieApp 

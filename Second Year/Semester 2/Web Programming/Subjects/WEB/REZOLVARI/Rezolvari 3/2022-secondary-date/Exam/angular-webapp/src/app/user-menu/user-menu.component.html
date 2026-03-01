@@ -1,0 +1,44 @@
+<p>user-menu works!</p>
+
+<button (click)="getProjects()">Display all projects</button>
+<button (click)="getProjectsUserIsMemberOf()">Display all projects user is member of</button>
+<button (click)="getDevs()">Display all devs</button>
+
+<hr>
+
+<ol class="all-projects">
+  <h3>Projects:</h3>
+  <li *ngFor="let project of projects">
+<!--      [class.selected]="client === selectedClient"-->
+<!--      (click)="onSelect(client)">-->
+      {{project.id}} <---> {{project.managerId}} <---> {{project.name}} <---> {{project.desc}} <---> {{project.members}}
+  </li>
+</ol>
+
+<hr>
+
+<ol class="all-devs">
+  <h3>Devs:</h3>
+  <li *ngFor="let dev of devs">
+    <!--      [class.selected]="client === selectedClient"-->
+    <!--      (click)="onSelect(client)">-->
+      {{dev.id}} <---> {{dev.name}} <---> {{dev.age}} <---> {{dev.skills}}
+  </li>
+</ol>
+
+<hr>
+
+<label>
+  Dev skil: <input type="text" #skill><br>
+</label>
+<button (click)="filterDevsBySkill(skill.value)">Filter devs by skill</button><br>
+
+<hr>
+
+<label>
+  Dev name: <input type="text" #dev><br>
+</label>
+<label>
+  Projects: <input type="text" #pr><br>
+</label>
+<button (click)="assignDevsToProjects(dev.value, pr.value)">Assign dev to projects</button><br>

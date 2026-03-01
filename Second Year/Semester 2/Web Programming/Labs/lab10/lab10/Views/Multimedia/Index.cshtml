@@ -1,0 +1,98 @@
+@model IEnumerable<lab10.Models.MultimediaFile>
+
+@{
+    ViewData["Title"] = "Browse Multimedia Collection";
+}
+
+<h1>Browse Multimedia Collection</h1>
+
+Choose a genre:
+<select id="genreFilter" onchange="filterByGenre()">
+    <option value="All">All</option>
+    @foreach (var genre in ViewBag.Genres)
+    {
+        <option value="@genre">@genre</option>
+    }
+</select>
+
+<p>Previous filter: <span id="previousFilter">None</span></p>
+
+<button onclick="location.href='@Url.Action("Create")'">Add New Multimedia</button>
+
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Format</th>
+        <th>Genre</th>
+        <th>Path</th>
+        <th>Actions</th>
+    </tr>
+    <tbody id="filesTable">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Format</td>
+                <td>@item.Genre</td>
+                <td>@item.Path</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.Id })">Edit</a> |
+                    <button onclick="deleteFile(@item.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    var previousFilter = "None";
+    var currentFilter = "All genres";
+    
+    function filterByGenre() {
+        var genre = document.getElementById('genreFilter').value;
+        
+        fetch('@Url.Action("GetByGenre")?genre=' + genre)
+            .then(response => response.json())
+            .then(data => {
+                var tbody = document.getElementById('filesTable');
+                tbody.innerHTML = '';
+                
+                data.forEach(function(item) {
+                    var row = '<tr>' +
+                        '<td>' + item.title + '</td>' +
+                        '<td>' + item.format + '</td>' +
+                        '<td>' + item.genre + '</td>' +
+                        '<td>' + item.path + '</td>' +
+                        '<td><a href="@Url.Action("Edit")/' + item.id + '">Edit</a> | ' +
+                        '<button onclick="deleteFile(' + item.id + ')">Delete</button></td>' +
+                        '</tr>';
+                    tbody.innerHTML += row;
+                });
+                
+                document.getElementById('previousFilter').innerText = currentFilter;
+                currentFilter = genre === 'All' ? 'All genres' : genre;
+            });
+    }
+    
+    function deleteFile(id) {
+        if (confirm('Are you sure you want to delete this file?')) {
+            var form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '@Url.Action("Delete")';
+            
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'id';
+            input.value = id;
+            form.appendChild(input);
+            
+            var token = document.querySelector('input[name="__RequestVerificationToken"]');
+            if (token) {
+                form.appendChild(token.cloneNode());
+            }
+            
+            document.body.appendChild(form);
+            form.submit();
+        }
+    }
+</script> 

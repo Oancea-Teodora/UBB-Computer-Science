@@ -1,0 +1,13 @@
+﻿    @model IEnumerable<string>
+@{
+    Layout = "_Layout";
+}
+
+<h2>Available Documents </h2>
+
+    <ul>
+    @foreach (var text in Model)
+    {
+        <li>@text</li>
+    }
+    </ul>

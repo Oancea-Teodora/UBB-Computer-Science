@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.LoginController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.LogoutController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.ReadController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DeleteController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.DeleteController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.AddController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.UpdateController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.UpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SearchController</servlet-name>
+        <servlet-class>mvcIntelliJIdea.controller.SearchController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ReadController</servlet-name>
+        <url-pattern>/ReadController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteController</servlet-name>
+        <url-pattern>/DeleteController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddController</servlet-name>
+        <url-pattern>/AddController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/AddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateController</servlet-name>
+        <url-pattern>/UpdateController</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SearchController</servlet-name>
+        <url-pattern>/SearchController</url-pattern>
+    </servlet-mapping>
+
+</web-app>

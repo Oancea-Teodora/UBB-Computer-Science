@@ -1,0 +1,13 @@
+{
+    "AWSEBDockerrunVersion": 1,
+    "Image": {
+        "Name": "789536877951.dkr.ecr.eu-north-1.amazonaws.com/movie-app-backend:latest",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "3000"
+        }
+    ],
+    "Logging": "/var/log/app"
+}

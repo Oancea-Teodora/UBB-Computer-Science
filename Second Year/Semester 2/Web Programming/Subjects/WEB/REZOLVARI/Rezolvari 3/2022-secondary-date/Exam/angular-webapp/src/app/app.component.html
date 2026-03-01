@@ -1,0 +1,8 @@
+<h1>Exam App</h1>
+
+<label>
+  Name: <input type="text" id="user-name" name="user-name" #user><br>
+</label>
+<button (click)="onSubmitNameBtnClicked(user.value)">Submit name</button><br>
+
+<router-outlet></router-outlet>

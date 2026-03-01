@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<ul class="channels">
+</ul>
+
+Channels owned by:
+<input type="text" id="name">
+<button onclick="searchChannels()">Search</button>
+
+<br>
+
+Get channels you are subscribed to:
+<button onclick="searchSubscribedChannels()">Subscribed</button>
+
+<br>
+
+<p>
+  Subscribe to a channel:
+  <input type="text" id="channel">
+  <button onclick="subscribeToChannel()">Subscribe</button>
+</p>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  function populate(data){
+
+    data = $.parseJSON(data);
+
+    var channels = "";
+    console.log(data);
+    for(let channel of data) {
+
+
+      channels += "<li>";
+
+      channels += channel["ownerid"] + " " + channel["name"] + " " + channel["description"] + " " + channel["subscribers"] + "</li>";
+    }
+    $(".channels").html(channels);
+  }
+
+  function searchChannels(){
+    var name = $("#name").val();
+
+    //$.get("searchChannels.php" + name, data => populate(data));
+    $.ajax({
+      type: "GET",
+      url: "searchChannels.php",
+      data: { name: name }
+    }).done(data => populate(data));
+  }
+
+  function searchSubscribedChannels() {
+    $.get("searchSubscribed.php", data => populate(data));
+  }
+
+  function subscribeToChannel(){
+    var channelName = $("#channel").val();
+
+   // $.post("subscribeToChannel",{"channelName": channelName});
+    $.ajax({
+      type: "POST",
+      url: "subscribeToChannel.php",
+      data: { channelName: channelName }
+    }).done(data => populate(data));
+  }
+
+
+
+</script>

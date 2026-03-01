@@ -1,0 +1,9 @@
+<div class="justify-content-center align-content-center" style="height: 600px">
+  <label>User:  <input type="text" name="username" class="form-control" #user></label><br>
+  <br>
+  <button (click) = "clickLogin(user.value)">Log in</button>
+  <span [innerHTML]="loginResponse" class="alert-info" style="margin-left: 5px"></span>
+
+</div>
+
+

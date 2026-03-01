@@ -1,0 +1,68 @@
+{
+    "family": "movie-app",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::YOUR_ACCOUNT_ID:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "movie-app-backend",
+            "image": "YOUR_ECR_REPO/movie-app-backend:latest",
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "environment": [
+                {
+                    "name": "NODE_ENV",
+                    "value": "production"
+                },
+                {
+                    "name": "JWT_SECRET",
+                    "value": "YOUR_SECRET_VALUE"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/movie-app",
+                    "awslogs-region": "YOUR_AWS_REGION",
+                    "awslogs-stream-prefix": "backend"
+                }
+            }
+        },
+        {
+            "name": "movie-app-frontend",
+            "image": "YOUR_ECR_REPO/movie-app-frontend:latest",
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "dependsOn": [
+                {
+                    "containerName": "movie-app-backend",
+                    "condition": "START"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/movie-app",
+                    "awslogs-region": "YOUR_AWS_REGION",
+                    "awslogs-stream-prefix": "frontend"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "2048"
+}

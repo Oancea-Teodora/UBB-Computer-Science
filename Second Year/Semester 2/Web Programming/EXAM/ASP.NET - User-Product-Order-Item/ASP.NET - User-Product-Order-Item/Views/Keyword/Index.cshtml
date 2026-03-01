@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Keyword>
+@{
+    Layout = "_Layout";
+}
+<h2>Available Keywords </h2>
+<table>
+    <tr><th>Key</th><th>Value</th><th></th></tr>
+    @foreach (var f in Model)
+    {
+        <tr>
+            <td>@f.key</td>
+            <td>@f.value</td>
+        </tr>
+    }
+</table>
+
+
+<h1>Add keyword</h1>
+
+<form asp-action="Add" method="post">
+    <label>Key: <input name="key" required /></input></label> <br />
+    <label>Value: <input name="value" required></input></label> <br />
+    <button type="submit"> Add keyword</button>
+</form>

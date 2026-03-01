@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+<h4>Update document {{document.name}}</h4>
+
+<div>
+  <label>ID: </label> {{document.id}}
+</div>
+<div>
+  <label>Name: </label> {{document.name}}
+</div>
+<div>
+  <label>Keyword1: </label>
+  <input [(ngModel)]="document.keyword1" placeholder= "...">
+</div>
+<div>
+  <label>Keyword2: </label>
+  <input [(ngModel)]="document.keyword2" placeholder= "...">
+</div>
+<div>
+  <label>Keyword3: </label>
+  <input [(ngModel)]="document.keyword3" placeholder= "...">
+</div>
+<div>
+  <label>Keyword4: </label>
+  <input [(ngModel)]="document.keyword4" placeholder= "...">
+</div>
+<div>
+  <label>Keyword5: </label>
+  <input [(ngModel)]="document.keyword5" placeholder= "...">
+</div>
+<button (click)="updateDocument()">Update</button>

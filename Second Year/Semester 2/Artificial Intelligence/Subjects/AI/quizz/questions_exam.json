@@ -1,0 +1,507 @@
+﻿[
+  {
+    "question": "How is the objective of a machine learning algorithm typically represented?",
+    "answers": [
+      "A database table",
+      "Numeric functions",
+      "Distributions of probability",
+      "A set of non-symbolic rules"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "In order to overcome the perceptron's limits, we can",
+    "answers": [
+      "Installing additional RAM directly engances the neuron's processing power",
+      "These limits can't be overcome",
+      "Use neurons with a continuous threshold",
+      "Applying the glitter property to the perceptron's activation function improves its ability to learn"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "The vanishing gradients during backpropagation is:",
+    "answers": [
+      "An advantage in the training process that leads to faster convergence",
+      "Since the derivative is zero, in this case on most of the domain, it does not affect us",
+      "A problem typical when the network has too many hidden layers",
+      "None of the above"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What problems can be solved with machine learning?",
+    "answers": [
+      "Ethical and moral considerations",
+      "Planning and classifications",
+      "Creative problems that require innovation",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "The harmonic mean between precision and recall is",
+    "answers": [
+      "A measure for distance in certain clustering algorithms",
+      "The F1 score, which combines precision and recall into a single value",
+      "A metric used to evaluate the trade-off between precision and recall in deterministic algorithms",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "The information gain ratio",
+    "answers": [
+      "It aims to reduce a bias towards mutlivalued attributes.",
+      "Is the ratio between the information gain and the split information",
+      "It penalises an attribute by integrating a new term that depends on spreading degree",
+      "None of the above"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "We can implement the infinite summation as a sum over a finite number of array elements",
+    "answers": [
+      "Such implementation is not possible in practice",
+      "In practice, we have two tensors: the input and the padding",
+      "By using a convolution operation",
+      "The input, the padding, and the kernel contain random numbers everywhere in the beginning"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "For unsupervised learning, choose an appropritate statement",
+    "answers": [
+      "The training data comes in pairs of (attibutes, outputs)",
+      "It finds an unknown function that groups the training data into several classes",
+      "The goal is to find a model or structure inside the data that is useful",
+      "None of the above"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "The ReLu function",
+    "answers": [
+      "Provides sparsity since y = 0 when x > 0",
+      "Does not correct the problems that occur at sigmoid functionn",
+      "It is a linear activation function",
+      "Does not have a vanishing gradient x > 0"
+    ],
+    "correct": "d"
+  },
+  {
+    "question": "What elements determine the new velocity of a particle in a PSO algorithm?",
+    "answers": [
+      "The current position of the weakest particle",
+      "Inertia, social coefficent",
+      "The old velocity of the best particle",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "In computer vision, we apply a filter over an image",
+    "answers": [
+      "By using a convolution operation with a kernel",
+      "Moving the kernel and adding to the part of the image that the kernel is hovering over",
+      "In order to preprocess the input by subtracting some features from the initial image",
+      "None of the above"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "Choose the correct statement",
+    "answers": [
+      "Backpropagation is insesitive to the choice of activation functions and can perform equally well with any activation function",
+      "The gradient descent is based on the error associate with the entire set of train data",
+      "Adding more training data will always result in better generalization and performance for the ANN",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "What is standardization?",
+    "answers": [
+      "A data transformation that introduces the scale effect",
+      "The process by which raw values are transformed into z-scores",
+      "The operation that transforms continuous values into discrete ones",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "What crossover method(s) are correct for a binary representation in an GA?",
+    "answers": [
+      "Uniform",
+      "There is no cross over for this representation",
+      "Average crossover",
+      "Insertion mutation"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "Using a feed forward ANN we want to determine if a shape from a black and white image is a square or not. How is the error computed?",
+    "answers": [
+      "Based on the output of the hidden layer",
+      "Based on an induction formula",
+      "Based on the difference between the real output of the network and the desired output",
+      "None of the above"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "Which factor is the primary consideration when selecting an appropriate learning algorithm?",
+    "answers": [
+      "Ability to predict cluster membership",
+      "Minimization of error through a cost function or loss function",
+      "Alignment with the desired data",
+      "Computational complexity of the target objective"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "Choose the right compatibility between the output layer's activation function and error function",
+    "answers": [
+      "Mean square error with the linear function",
+      "Binary cross entropy with logistic error with the sigmoid activation function",
+      "Cross entropy error with arctangent",
+      "None of the above"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "In an artificial neuron, the transfer function",
+    "answers": [
+      "Represents the equation of a hyperplane",
+      "Utilizes entanglement to calculate the output",
+      "Required the neuron to perform complex mathematical operations with imaginary numbers",
+      "Is the sigmoid function"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "The Perceptron's algorithm",
+    "answers": [
+      "It changes the weights based on the inverse error associated with a train data instance",
+      "Is based on maximizing the error for a given set of train data",
+      "The error is the difference between what the real output y is and what the peceptron's output o is for a given input",
+      "None of the above"
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What is the relationship between the training and testing data?",
+    "answers": [
+      "The test data should reflect real-life experiences, while the training data can be based on theoretical experiences",
+      "The should follow the same distribution",
+      "The two sets must overlap",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "What sort of problems can a perceptron solve",
+    "answers": [
+      "Linear separations of elements from the domain",
+      "It depends on the structure",
+      "XOR Problem",
+      "None of the above"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "The limited model capacity of ANNs is overcome by",
+    "answers": [
+      "Reducing the number of ariticial neurons",
+      "Adding nonlinearity to the model",
+      "Adding more layers at the output level",
+      "None of the above"
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "Select the correct statement for supervised learning",
+    "answers": [
+      "The aim is to provide an arbitrary output for a new input",
+      "The training data comes in an unpaired format: only attributes or only outputs",
+      "We search for a known function that maps the input attributes to the outputs",
+      "None of the above"
+    ],
+    "correct": "d"
+  },
+  {
+    "question": "How are the neurons connected into a feed forward ANN?",
+    "answers": [
+      "Through a backward signal",
+      "Through an output with a neuron from the same layer",
+      "They are not connected",
+      "Through weighted links"
+    ],
+    "correct": "d"
+  },
+  {
+    "question": "Which of the following statements is true when we apply a max polling transofrmation over a tensor:",
+    "answers": [
+      "We return the maximum value from the portion of the image covered by the kernel",
+      "We handle inputs of different types",
+      "We emphasize the features",
+      "We make the representation dependent on small translations of the input"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "What are the correct statements about Decision Trees?",
+    "answers": [
+      "The decision nodes are located at the terminal levels of the tree, while the result nodes are at the internal levels.",
+      "Each leaf of the tree corresponds to a specific attribute or feature.",
+      "They are used to divide a collection of articles into smaller sets by successively applying decision rules.",
+      "Decision trees contain four types of nodes: decision nodes, hazard nodes, class nodes, and result nodes."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "The activation logistic function:",
+    "answers": [
+      "Suffers from a vanishing gradient.",
+      "Is a linear function.",
+      "Has limitations regarding the input domain.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "Clustering is:",
+    "answers": [
+      "A one step process: testing",
+      "Another name for unsupervised learning.",
+      "Using a labeled database.",
+      "None of the above."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "What is the feature of the database in training with indirect experience:",
+    "answers": [
+      "It is based on useful feedback for some objective function.",
+      "It comes in pairs (in/out).",
+      "Is it based on independent data with annotated content.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "An ANN has a structure of 26:15:10:2 with a sigmoid activation function. How many weights will have the first neuron from the first hidden layer?",
+    "answers": ["2", "15", "26", "10"],
+    "correct": "c"
+  },
+  {
+    "question": "When constructing a decision tree, the attribute selection can be:",
+    "answers": [
+      "In preorder",
+      "Random.",
+      "Based on the top parent",
+      "None of the above."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "The induction phase of the process of building a DT is:",
+    "answers": [
+      "It labels the new data with the build rules.",
+      "It eliminates the branches that reflect noise or exceptions.",
+      "Based on the training data.",
+      "Works bottom to bottom or top to top."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "The back-propagation algorithm:",
+    "answers": [
+      "Is a training algorithm for ANNs.",
+      "Guarantees finding the optimal set of weights and biases in a finite number of iterations.",
+      "Can only be applied to shallow neural networks and is not suitable for deep learning architectures.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "Select the correct statements for Cross-Entropy loss:",
+    "answers": [
+      "Is never used when we apply the softmax transformation to the network's output.",
+      "Is used in regressions",
+      "Is the difference between two probability distributions for a provided set of occurrences or random variables.",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What are the characteristics of the back-propagation algorithm?",
+    "answers": [
+      "It is crossing easy plateaus in the error function landscape.",
+      "Does not require the derivatives of activation functions to be known at network design time.",
+      "Is guaranteed to find the global minimum of the error function, not only the local minimum.",
+      "None of the above."
+    ],
+    "correct": "d"
+  },
+  {
+    "question": "What is the proper encoding for an individual in ANNs?",
+    "answers": [
+      "A computer program that learns to classify and performs regressions.",
+      "A set of weights used to propagate a signal.",
+      "There are no individuals in ANN.",
+      "An array of bits that encode proper information related to the solution."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "On a ConvNet the feature learning:",
+    "answers": [
+      "Allows a suite of tens or even hundreds of other small filters to be erased in order to detect more complex features in the image.",
+      "Is performed before training the conv-layers.",
+      "Will minimize the loss function by extracting the features that are most useful for classifying the images.",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "The 'dying ReLU' problem refers to:",
+    "answers": [
+      "The values of the derivative.",
+      "The values of the function.",
+      "The vanishing gradient.",
+      "None of the above."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "The universal approximation theorem states that:",
+    "answers": [
+      "Any function can be approximated with a proper neural network.",
+      "There should be enough neurons on the hidden layer in order to do the approximation.",
+      "The condition to approximate the function include the continuity of the function.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "What is a tensor?",
+    "answers": [
+      "A generalization of scalars, vectors, and matrices to an arbitrary number of indices.",
+      "A mathematical object that contains a one dimension ",
+      "A black and white image with multi-channels",
+      "None of the above"
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "How does a ConvNet figure out what is in an image?",
+    "answers": [
+      "Automatically detecting the weights for the kernels during training.",
+      "By decomposing the features.",
+      "There are usually three stages: several convolutions, a decomposing stage, a flatten stage.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "The softmax function:",
+    "answers": [
+      "Transforms in probabilities the output scores for the classes.",
+      "It incorporates the cross entropy function.",
+      "Is used in regressions.",
+      "None of the above."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "Select the correct combination:",
+    "answers": [
+      "Output type: Discrete; Output Distribution: Multinoulli; Output Layer: Linear; Cost Function: Cross Entropy;",
+      "Output type: Binary; Output Distribution: Bernoulli; Output Layer: Sigmoid; Cost Function: Binary Cross Entropy;",
+      "Output type: Continuous; Output Distribution: Gaussian; Output Layer: Softmax; Cost Function: MSE;",
+      "None of the above."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "The L1 loss is:",
+    "answers": [
+      "It computes the average of the sum of absolute differences between actual values and predicted ones.",
+      "Used for classification problems.",
+      "Is also called the softmax loss.",
+      "Is never used when the distribution has outliers."
+    ],
+    "correct": "a"
+  },
+  {
+    "question": "What is the difference between Particle Swarm Optimization (PSO) and Genetic Algorithms (GA)?",
+    "answers": [
+      "PSO runs free until it converges to the solution, while GA never reach the solution.",
+      "The particles have a memory, while the individuals don't.",
+      "GA has particles, and PSO has individuals.",
+      "GA uses a fitness function, and PSO doesn't."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "How does the artificial neuron process the information?",
+    "answers": [
+      "Based on back propagation.",
+      "Based on the activation function.",
+      "Based on the error.",
+      "None of the above."
+    ],
+    "correct": "b"
+  },
+  {
+    "question": "What are the main advantages of Deep Convolutional Neural Networks?",
+    "answers": [
+      "The architecture of a ConvNet is analogous to that of the connectivity pattern of Neurons in an Artificial Cortex.",
+      "A ConvNet captures the feature gradient dependencies in a time series.",
+      "The pre-processing required in a ConvNet is much lower as compared to other classification algorithms.",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What can be used when comparing two algorithms?",
+    "answers": [
+      "The divergence of accuracy.",
+      "Overconfidence intervals.",
+      "Performance measures.",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What are the advantages of going in depth in an ANN?",
+    "answers": [
+      "To avoid overfitting.",
+      "To speed up the network's evaluation.",
+      "We avoid underfitting the model.",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "What are the differences and similarities between the perceptron rule and the delta rule?",
+    "answers": [
+      "The perceptron rule and the delta rule always converge to the global optimum and do not depend to the local minima",
+      "The perceptron rule and the delta rule do not require any iterative optimization process and can achieve optimal weights in a single pass",
+      "They both start with some random weights",
+      "None of the above."
+    ],
+    "correct": "c"
+  },
+  {
+    "question": "There is a set of M cards printed with integer numbers from -10 to 10. Select 2 subsets (that have no common elements and do not form necessary a partition) using a GA, in such a way that they have the same sum of elements. What is the fitness function for the following problem?",
+    "answers": [
+      "The absolute value of the sum of the selected elements from the first set / the number of elements from the second set",
+      "The difference in absolute value between the sum of the subset elements and thei divisors",
+      "The difference in absolute value between the sums of elements from each subset",
+      "The number of elements"
+    ],
+    "correct": "c"
+  }
+]

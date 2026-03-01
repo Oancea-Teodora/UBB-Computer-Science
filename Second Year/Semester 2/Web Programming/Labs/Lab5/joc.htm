@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="basket"></div>
+    <div id="score">Score: 0</div>
+    <div id="lives">Lives: 3</div>
+</body>
+
+<style>
+    #basket {
+        width: 100px;
+        height: 20px;
+        background: black;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .shapes {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        top: 0px
+    }
+
+    .square {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        position: absolute;
+        top: 0px
+    }
+</style>
+
+<script>
+    var score = 0;
+    var lives = 3;
+    var form = 0;
+    $(document).mousemove(function (e) {
+        $("#basket").css('left', e.pageX)
+
+    })
+
+    function fall() {
+        var randomLeft = Math.random() * ($(window).width());
+        if (form == 0) {
+            var s = $('<div class="shapes"></div>').css('left', randomLeft + "px");
+            $("body").append(s);
+            form = 1;
+        }
+        else if (form == 1) {
+            var s = $('<div class="square"></div>').css('left', randomLeft + "px");
+            $("body").append(s);
+            form = 0;
+        }
+
+        function move() {
+            s.css('top', s.position().top + 3);
+
+            var basketTop = $("#basket").position().top;
+            var bLeft = $('#basket').position().left;
+            var bRight = bLeft + 100;
+            var sLeft = s.position().left;
+            var sRight = sLeft + 20;
+            var sBottom = s.position().top + 20;
+
+            if (sLeft < bRight && sRight > bLeft && sBottom >= basketTop) {
+                if (s.css("background-color") == 'rgb(255, 0, 0)') {
+                    s.remove();
+                    score++;
+                    $("#score").text("Score: " + score);
+                    return;
+                }
+                else {
+                    s.remove();
+                    score = score + 3;
+                    $("#score").text("Score: " + score);
+                    return;
+                }
+            }
+
+            if (s.position().top >= $(window).height() - 20) {
+                s.remove();
+                lives--;
+                $("#lives").text("Lives: " + lives);
+                if (lives == 0) {
+                    alert("Game over!");
+                    location.reload();
+                }
+                return;
+            }
+
+            requestAnimationFrame(move);
+        }
+        move();
+    }
+    setInterval(fall, 1500);
+</script>
+
+</html>

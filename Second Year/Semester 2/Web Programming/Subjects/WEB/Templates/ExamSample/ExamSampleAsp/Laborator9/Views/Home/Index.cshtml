@@ -1,0 +1,119 @@
+﻿@model List<ExamTemplateAsp.Models.Asset>
+@{
+    Layout = null;
+    if (Session["userId"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset database</title>
+    <style>
+
+        body {
+            margin: 0 auto 0 auto;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        #welcome {
+            font-size: 3em;
+        }
+
+        #error {
+            font-size: 1em;
+            color: red;
+        }
+
+        .button {
+            width: 125px;
+        }
+
+        #maindiv {
+            width: 350px;
+            margin: 0 auto 0 auto;
+            padding: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+
+        table {
+            margin: 0 auto 0 auto;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .main-form {
+            margin: 0 auto 0 auto;
+        }
+
+        #sname {
+            width: 70px;
+        }
+
+        #sgrade {
+            width: 25px;
+        }
+    </style>
+
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <script>
+
+    </script>
+
+
+</head>
+<body>
+    <div>
+        <h1 id="welcome">Welcome back, @Session["userName"]</h1>
+        <h6 id="error">@TempData["error"]</h6>
+    </div>
+
+    <a style="text-decoration: none" class="button" href="@Url.Action("Index", "Add")"><button>Add new assets</button></a>
+    <br />
+    <br />
+    <br />
+    <div id="maindiv">
+        <table>
+            <!--Header-->
+            <tr>
+                <th>Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>Name&nbsp;&nbsp;&nbsp;</th>
+                <th>Description&nbsp;</th>
+                <th>Value&nbsp;</th>
+            </tr>
+
+            <!--Rows-->
+            @foreach (var asset in Model)
+            {
+        <tr>
+            <td>@Html.DisplayFor(m => asset.Id)</td>
+            <td>@Html.DisplayFor(m => asset.Name)</td>
+            <td>@Html.DisplayFor(m => asset.Description)</td>
+            @if (asset.Value > 10)
+            {
+                <td style="color: red;">@Html.DisplayFor(m => asset.Value)</td>
+            }
+            else
+            {
+                <td>@Html.DisplayFor(m => asset.Value)</td>
+            }
+
+        </tr>
+            }
+        </table>
+
+    </div><br />
+
+    <br />
+    <br />
+
+    <a style="text-decoration: none" class="button" href="@Url.Action("LogOut", "Login")"><button>Logout</button></a>
+
+    <br />
+
+</body>
+</html>
+

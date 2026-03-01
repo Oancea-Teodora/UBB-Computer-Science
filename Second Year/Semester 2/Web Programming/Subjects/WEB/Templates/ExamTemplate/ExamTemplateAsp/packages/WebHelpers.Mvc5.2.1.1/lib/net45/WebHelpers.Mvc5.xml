@@ -1,0 +1,1701 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebHelpers.Mvc5</name>
+    </assembly>
+    <members>
+        <member name="T:WebHelpers.Mvc5.CssRewriteUrlTransformAbsolute">
+            <summary>
+            Rewrites URLs to be absolute so assets will still be found after bundling.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.CssRewriteUrlTransformAbsolute.Process(System.String,System.String)">
+            <summary>
+            Converts any URLs in the input to absolute using the application's base directory.
+            </summary>
+            <param name="includedVirtualPath">The virtual path that was included in the bundle for this item that is being transformed.</param>
+            <param name="input">
+            The input to be rewritten. For example, url(../fonts/glyphicons.woff) is rewritten as
+            url(Contoso/Content/fonts/glyphicons.woff) for an application whose base directory is Contoso.
+            </param>
+        </member>
+        <member name="T:WebHelpers.Mvc5.Enum.EnumCollection">
+            <summary>
+            The collection of enums to include and exclude.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumCollection.Include(System.Type)">
+            <summary>
+            Include the specified enum type to be exposed in JavaScript.
+            </summary>
+            <param name="enumType">The enum to be exposed.</param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumCollection.Exclude(System.Type)">
+            <summary>
+            Exclude the specified enum type from the JavaScript.
+            </summary>
+            <param name="enumType">The enum to exclude from being exposed.</param>
+        </member>
+        <member name="T:WebHelpers.Mvc5.Enum.EnumHandler">
+            <summary>
+            ASP.NET handler that renders Enums as a frozen object in JavaScript to promote re-usability
+            between the server and client.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.Enum.EnumHandler.IsReusable">
+            <summary>
+            Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler"/> instance.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.Enum.EnumHandler.HandlerUrl">
+            <summary>
+            Gets the URL to the <see cref="T:WebHelpers.Mvc5.Enum.EnumHandler"/>, with a unique hash in the URL.
+            The hash will change every time an Enum changes.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.Enum.EnumHandler.EnumsToExpose">
+            <summary>
+            Allows you to fluently declare which enums should be exposed or excluded instead of decorating the enum with
+            the <see cref="T:WebHelpers.Mvc5.Enum.ExposeInJavaScriptAttribute"/>. This is useful for enums that reside in other
+            libraries that you can't add the attribute to.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.Enum.EnumHandler.GlobalVariableName">
+            <summary>
+            Allows you change the name of the global variable that is created for the enums.
+            It is Enums by default.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Handles a HTTP request.
+            </summary>
+            <param name="context">
+            An <see cref="T:System.Web.HttpContext" /> object that provides references to the intrinsic server objects
+            (for example, Request, Response, Session, and Server) used to service HTTP requests.
+            </param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumHandler.SetCachingHeaders(System.Web.HttpContext,System.String)">
+            <summary>
+            Set the HTTP headers to cache the response.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <param name="output">The output of the handler.</param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumHandler.GetLoadableTypes(System.Reflection.Assembly)">
+            <summary>
+            The call to <see cref="M:System.Reflection.Assembly.GetTypes"/> sometimes throws a <see cref="T:System.Reflection.ReflectionTypeLoadException"/>
+            when one or more of the inner types reference an assembly that isn't loaded and can't be found.
+            This works around that by only finding types that are loadable at runtime.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumHandler.Hash(System.String)">
+            <summary>
+            Calculate the SHA1 hash of the specified content.
+            </summary>
+            <param name="content">The content to hash.</param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.Enum.EnumHandler.GetHandlerUrl">
+            <summary>
+            Gets the URL to the <see cref="T:WebHelpers.Mvc5.Enum.EnumHandler"/>, with a unique hash in the URL.
+            The hash will change every time an Enum changes.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.Enum.ExposeInJavaScriptAttribute">
+            <summary>
+            Exposes enums in the <c>Enums</c> frozen object in JavaScript.
+            Enums that are not decorated with this attribute are not exposed.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.HtmlHelperExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Web.Mvc.HtmlHelper"/>.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.HtmlHelperExtensions.WebHelpers``1(System.Web.Mvc.HtmlHelper{``0})">
+            <summary>
+            Constructs a new WebHelpers instance using the type of this view's model.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.HtmlHelperExtensions.WebHelpers``1(System.Web.Mvc.HtmlHelper)">
+            <summary>
+            Constructs a new WebHelpers instance using the type specified by <typeparamref name="T"/>.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.HttpRequestExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Web.HttpRequest"/>.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.HttpRequestExtensions.ClientIP(System.Web.HttpRequest)">
+            <summary>
+            Gets the IP address of the client sending the request. This method will return the originating
+            IP if specified by a proxy but makes no guarantee that this is the client's true IP address.
+            Since these headers can be spoofed, you are encouraged to perform additional validation if
+            you are using the IP in a sensitive context.
+            </summary>
+            <param name="httpRequest">
+            The incoming request to get the client's IP address from.
+            This is typically from HttpContext.Current.Request or similar.
+            </param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.HttpRequestExtensions.ClientIP(System.Web.HttpRequestBase)">
+            <summary>
+            Gets the IP address of the client sending the request. This method will return the originating
+            IP if specified by a proxy but makes no guarantee that this is the client's true IP address.
+            Since these headers can be spoofed, you are encouraged to perform additional validation if
+            you are using the IP in a sensitive context.
+            </summary>
+            <param name="httpRequest">
+            The incoming request to get the client's IP address from.
+            This is typically from HttpContext.Current.Request or similar.
+            </param>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.Converters.LiteralEnumConverter">
+            <summary>
+            Outputs the string value as a JavaScript function or variable without quotes in JSON.
+            e.g. VirtualScrollMode: "true" becomes VirtualScrollMode: true
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.Converters.LiteralNameConverter">
+            <summary>
+            Outputs the string value as a JavaScript function or variable without quotes in JSON.
+            e.g. OnEditEventName: "MyJsFuncName" becomes OnEditEventName: MyJsFuncName
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.Column">
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/basic-grid/#colmodel-options
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Align">
+            <summary>
+            The alignment of the cell in the data rows. The header cell is not affected.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Class">
+            <summary>
+            CSS classes to be added to the column. Separate classes with a space (e.g. class1 class2).
+            To show an ellipsis when the text overflows the cell, specify the <code>ui-ellipsis</code> class.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsMenuVisible">
+            <summary>
+            Enables or disables the column menu in the grid header.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.CanEdit">
+            <summary>
+            Specifies whether or not the field is editable in inline edit and form edit modes.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.EditAttributes">
+            <summary>
+            The allowed options for the editable column. This property is only valid if
+            <see cref="P:WebHelpers.Mvc5.JqGrid.Column.CanEdit"/> is true.
+            </summary>
+            <example>new { cacheDataUrl = true, delimiter = "|" }</example>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.EditType">
+            <summary>
+            The type of input element to create when the cell is in edit mode.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.ShouldExport">
+            <summary>
+            Specifies whether or not the column should be exported when using the export methods.
+            Hidden columns are excluded from the export.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.DefaultSortOrder">
+            <summary>
+            The sort order that will be used on first sort. Subsequent sorts will toggle, as usual.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsFixedWidth">
+            <summary>
+            Specifies whether or not recalculation of the width of the column is allowed if the
+            <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldShrinkToFit"/> option is true. The width also doesn't change if the <code>setGridWith</code>
+            method is used to change the grid's with.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.FormEditOptions">
+            <summary>
+            Controls how the column is rendered in form edit mode.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.FormatterName">
+            <summary>
+            Controls the formatting of the column.
+            Can be a predefined type (e.g. <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.IntegerColumnFormatOptions.Name"/>) or a custom function name.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/formatters/
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.UnFormatterName">
+            <summary>
+            The name of a function that is called to un-format a cell to get the original value back.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/formatters/#custom-formatter
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.FormatOptions">
+            <summary>
+            Overrides the default formatting options from the language file for the specified formatter.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsFrozen">
+            <summary>
+            Specifies whether or not the column will be frozen once the setFrozenColumns method is called.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsHiddenInDialogs">
+            <summary>
+            Specifies whether or not the column will be hidden from the column chooser and column menu dialogs.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsHidden">
+            <summary>
+            Specifies whether or not the column is hidden at initialization. If true, the column is not editable
+            and will not show in the form edit dialog.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Index">
+            <summary>
+            The index name to use when sorting. If set, this field is used in searching.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.JsonMap">
+            <summary>
+            Defines the JSON mapping for the column.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/basic-grid/#json-data
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsPrimaryKey">
+            <summary>
+            Overwrite the defined primary key returned from the server or array data.
+            Only one column can have this property set to true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Label">
+            <summary>
+            The header caption for the column. If this property isn't set, the heading for the column
+            is the value of the <see cref="P:WebHelpers.Mvc5.JqGrid.Column.Name"/> property.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.MinResizeWidth">
+            <summary>
+            The minimum re-sizing width. When set greater than 0, this option has a higher priority
+            than the grid's minimum column width option.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Name">
+            <summary>
+            The unique name of the column in the grid. This property is required.
+            Reserved property names, event names, and words including subgrid, sb, and rn
+            are not allowed.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.IsResizable">
+            <summary>
+            Specifies whether or not the column can be resized with the mouse or resizeColumn method.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.CanSearch">
+            <summary>
+            Specifies whether or not searching is enabled for the column.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/searching/#configuration
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.CanSort">
+            <summary>
+            Specifies whether or not the column can be sorted.
+            If false, clicking the column header has no action.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.SortType">
+            <summary>
+            The sort method to use for the values in the column for searching and sorting
+            when the <see cref="T:WebHelpers.Mvc5.JqGrid.DataType"/> is local.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.SearchType">
+            <summary>
+            The search input type of the field. If <see cref="F:WebHelpers.Mvc5.JqGrid.SearchType.Custom"/> is specified, use the
+            custom element and value properties.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Template">
+            <summary>
+            A set of valid properties for the column model. This can be used if you want to overwrite a lot
+            of default values in the column model with ease.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.ShouldDisplayTitleOnHover">
+            <summary>
+            Specifies whether or not the title is displayed in the column when the mouse hovers over a cell.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.Width">
+            <summary>
+            The initial width of the column, in pixels.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.OriginalWidth">
+            <summary>
+            The initial width set, in pixels. This value doesn't change during resizing of the grid.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.XmlMap">
+            <summary>
+            Defines the XML mapping for the column.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/basic-grid/#xml-data
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Column.CanView">
+            <summary>
+            Specifies whether or not the column appears in the view form when the viewGridRow method is called.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.IsKeyBindingEnabled">
+            <summary>
+            Specifies whether or not pressing the Esc key exits edit mode without saving and pressing
+            the Enter key saves the current field. If the field is a textarea, pressing enter will not save
+            the field.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.UseFormEditDialog">
+            <summary>
+            Specifies whether or not the for edit dialog is used instead of the inline form.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.OnEditEventName">
+            <summary>
+            The name of the function to call after successfully accessing the row for editing prior to allowing
+            user access to the input fields. The row id is passed to this function.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.OnSuccessEventName">
+            <summary>
+            The name of the function to call immediately after the request to save the data to the server is successful.
+            The data returned from the server is passed to this function. Depending on the server's response, this function
+            should return true or false.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.Url">
+            <summary>
+            The URL to call to save the data.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.Parameters">
+            <summary>
+            Additional parameters to send to the server.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.AfterSaveEventName">
+            <summary>
+            The name of the function to call after the data is saved to the server. The row id and the server's response are
+            passed to this function. The function is called even when the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.Url"/> is set to clientArray.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.OnErrorEventName">
+            <summary>
+            The name of the function to call after an AJAX error or the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.OnSuccessEventName"/> returned false.
+            The row id and the server's response are passed to this function.
+            The function is called even when the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.Url"/> is set to clientArray.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.OnEscapeEventName">
+            <summary>
+            The name of the function to call after restoring the row by pressing the Esc key or the cancel button.
+            The row id is passed to this function.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.HttpMethod">
+            <summary>
+            The HTTP method to use when saving data to the server.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.EditOptions">
+            <summary>
+            The edit grid row options when <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.UseFormEditDialog"/> is true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ActionColumnFormatOptions.DeleteOptions">
+            <summary>
+            The delete grid row options.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.CheckBoxColumnFormatOptions.IsDisabled">
+            <summary>
+            Specifies whether or not the checkbox can be changed.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.DateColumnFormatOptions.SourceFormat">
+            <summary>
+            The format of the date that should be converted.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.DateColumnFormatOptions.OutputFormat">
+            <summary>
+            The new output format.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.DateColumnFormatOptions.ParseRegex">
+            <summary>
+            Regular expression for parsing date strings.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.DateColumnFormatOptions.ShouldReformatAfterEdit">
+            <summary>
+            Specifies whether or not the date should be reformatted after edited
+            (i.e. after the user changes the date and saves it to the grid).
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.DateColumnFormatOptions.IncludeLocalTimeOffset">
+            <summary>
+            Specifies whether or not the local time offset should be calculated and
+            included in the date when the date is inserted into the grid.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.LinkColumnFormatOptions.Target">
+            <summary>
+            Specifies where to open the linked document.
+            See <see cref="T:WebHelpers.Mvc5.LinkTarget"/> for built-in browser targets, or specify a custom named frame.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.SelectColumnFormatOptions.Delimiter">
+            <summary>
+            The delimiter used when the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.SelectColumnFormatOptions.Value"/> is a string to separate the key-value pairs.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.SelectColumnFormatOptions.Separator">
+            <summary>
+            The separator used to distinguish the keys from the values in the pairs.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.BaseUrl">
+            <summary>
+            The base URL of the link, e.g. "http://myserver.com/"
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.Action">
+            <summary>
+            The value that is added after the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.BaseUrl"/>, e.g. "Edit"
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.Parameters">
+            <summary>
+            Additional query string parameters, e.g. "&amp;status=change"
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.FirstParameter">
+            <summary>
+            The first parameter that is added after the <see cref="P:WebHelpers.Mvc5.JqGrid.ColumnFormatOptions.ShowLinkColumnFormatOptions.Action"/>.
+            The default is the row id.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.DataType.XmlLocalData">
+            <summary>
+            Use along with <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LocalData"/>.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.DataType.JsonLocalData">
+            <summary>
+            Use along with <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LocalData"/>
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.DataType.LocalDataArray">
+            <summary>
+            Use along with <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LocalDataArrayName"/>.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.EditType">
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/editing/#edittype
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.ColumnPosition">
+            <summary>
+            The ordinal column position of the element in the form, starting from 1.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.InputPrefix">
+            <summary>
+            Text or HTML content to show before the input element.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.InputSuffix">
+            <summary>
+            Text or HTML content to show after the input element.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.Label">
+            <summary>
+            Replaces the name of the column displayed in the form.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.ShowTextAboveInput">
+            <summary>
+            Enables adding the text specified in <see cref="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.TextAboveInput"/> above the input element.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.TextAboveInput">
+            <summary>
+            The text the appears above the input element. Only shown if <see cref="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.ShowTextAboveInput"/> is true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.FormEditOptions.RowPosition">
+            <summary>
+            The ordinal row position of the element in the form, starting from 1.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.Grid">
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/basic-grid/#options
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Name">
+            <summary>
+            The name of the grid. The rendered elements will use this name as a prefix.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldAlternateRowStyle">
+            <summary>
+            Specifies whether or not to zebra stripe alternate rows.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldAutoEncode">
+            <summary>
+            Specifies whether or not request and response data should be HTML encoded.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IsInitialWidthAutomatic">
+            <summary>
+            Specifies whether or not the grid's width is calculated automatically to the width
+            of the parent element on initial grid creation. In order to resize the grid when the
+            parent element or window changes, use the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.IsResponsive"/> parameter instead.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Caption">
+            <summary>
+            The caption for the grid that appears above the column headers.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/#how-it-works
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CellLayoutSize">
+            <summary>
+            The padding + border width of the cell. Usually this should not be changed, but if custom
+            changes to the td element are made in the grid CSS, this will need to be adjusted.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CanEdit">
+            <summary>
+            Specifies whether or not cell editing is enabled.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CellSubmitDestination">
+            <summary>
+            Specifies where the contents of the cell should be saved.
+            In the case of <see cref="F:WebHelpers.Mvc5.JqGrid.DataDestination.Remote"/>, the data is saved via an AJAX call.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CellSubmitUrl">
+            <summary>
+            The URL where the cell is saved when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.CellSubmitDestination"/> is set
+            to <see cref="F:WebHelpers.Mvc5.JqGrid.DataDestination.Remote"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ColumnTemplate">
+            <summary>
+            Defines a template of properties that override the default values for all columns.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowColumnMenu">
+            <summary>
+            Specifies whether or not the column menu is enabled. The column menu creates a button
+            on the header of allowed columns and provides a context menu when clicked.
+            </summary>
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/colmenu/
+            </remarks>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.LocalData">
+            <summary>
+            The string of data to use when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.DataType"/> parameter is set to
+            <see cref="F:WebHelpers.Mvc5.JqGrid.DataType.XmlLocalData"/> or <see cref="F:WebHelpers.Mvc5.JqGrid.DataType.JsonLocalData"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.DataType">
+            <summary>
+            The data format expected to fill the grid.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.UseJqueryEmpty">
+            <summary>
+            Specifies whether or not jQuery empty is used for the row and all child elements.
+            This option should be set to true if an event or plugin is attached to the table cell.
+            TODO: Set to true if sortable rows and/or columns are activated
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldDeselectAfterSort">
+            <summary>
+            Specifies whether or not the currently selected row(s) are deselected when a sort is applied.
+            This option is only applicable when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.DataType"/> is set to <see cref="F:WebHelpers.Mvc5.JqGrid.DataType.LocalDataArray"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.TextDirection">
+            <summary>
+            The direction of the text in the grid. The grid will automatically change the direction of the text
+            depending on this option.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.EmptyResultSetMessage">
+            <summary>
+            The message to display when the returned or current number of records in the grid is zero.
+            This option is only valid when <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.ShowPagerRowCount"/> is true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldToggleOnColumnClick">
+            <summary>
+            Specifies whether or not the tree grid is expanded or collapsed when the user clicks anywhere
+            on the text in the expanded column. It is not necessary, then, to click exactly on the icon.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ColumnToExpand">
+            <summary>
+            Indicates which column should be used to expand the tree grid. The first column is the default.
+            TODO: only when treegrid is true
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowFooter">
+            <summary>
+            Specifies whether or not to show a footer row below the grid records and above the pager.
+            The number of columns equal those specified in <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.Columns"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldForceFit">
+            <summary>
+            Specifies whether or not the adjacent column to the right will resize when a column's width
+            is changed so that the overall grid width is maintained. For example, reducing the width
+            of column 2 by 30px will increase the size of column 3 by 30px. There is no horizontal
+            scroll bar in this case. This option is not compatible with TODO: ShrinkToFit (ignore this if that one is true)
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.UseOptimizedRendering">
+            <summary>
+            Specifies whether or not all the data is built and appended to the grid in the DOM in a single
+            bulk operation as opposed to row-by-row. It is enabled by default for best performance, but
+            it will not fire the afterInsertRow event. To use that event, set this option to false.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CanGroup">
+            <summary>
+            Specifies whether or not grouping is enabled.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowLabelOnColumnHeaderHover">
+            <summary>
+            Specifies whether or not the title attribute with the text from the column's label
+            is added to the column headers.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Height">
+            <summary>
+            The height of the grid. Can be defined in pixels or as 100%. If 100% is specified,
+            the vertical scrollbar doesn't appear. To change the height dynamically, use the
+            setGridHeight method.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IsHidden">
+            <summary>
+            Specifies whether or not the grid is initially hidden. Data is not loaded and only the
+            caption layer is shown. This option is only valid when <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.Caption"/> and
+            <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.ShowGridToggleButton"/> are set.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowGridToggleButton">
+            <summary>
+            Specifies whether or not the grid show/hide toggle button appears to the right side of the
+            caption layer. This option only has an effect when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.Caption"/> option is set.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.UseHoverRowEffect">
+            <summary>
+            Specifies whether or not the hover effect is enabled when the mouse is hovered over a row.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IconSet">
+            <summary>
+            The icon set to use. This option is only valid when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.Style"/> is
+            <see cref="F:WebHelpers.Mvc5.JqGrid.Style.Bootstrap4"/>. The appropriate icon set CSS file must be loaded for this to work.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IdPrefix">
+            <summary>
+            The string to add as a prefix to the ID of every grid row upon construction.
+            This option is useful if two or more grids are rendered on the same page and there is
+            the possibility of them having ID collisions and equal grid names.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IsCaseInsensitive">
+            <summary>
+            Local searching is case-sensitive by default. To make local searching and sorting
+            case-insensitive, set this option to true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldLoadOnce">
+            <summary>
+            Specifies whether or not the grid loads the data from the server only once and automatically
+            changes to <see cref="F:WebHelpers.Mvc5.JqGrid.DataDestination.Local"/> afterwards. All further manipulations
+            are then done on the client side and the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LocalDataArrayName"/> is filled with
+            the response data from the server.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.LoadingText">
+            <summary>
+            The text to display in the progress indicator when requesting and sorting data.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.LoadIndicator">
+            <summary>
+            Controls the load indicator when an AJAX operation is in progress.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowMenuBar">
+            <summary>
+            Specifies whether or not an icon is shown that allows user-defined actions.
+            To add or remove actions from the menubar, use the menubarAdd and menubarDelete methods.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.HttpMethod">
+            <summary>
+            The HTTP method to use when requesting data from the server.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.MinColumnWidth">
+            <summary>
+            The minimum width of all grid columns when resizing.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.SelectOnCheckBoxClickOnly">
+            <summary>
+            Specifies whether or not multi-selection is only done when the checkbox is clicked.
+            Clicking on any other row deselects all rows and selects the current row.
+            This option is only valid when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.CanMultiSelect"/> option is true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.MultiSelectKey">
+            <summary>
+            The key that should be pressed to select multiple rows. This option is only valid
+            when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.CanMultiSelect"/> option is true.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CanMultiSelect">
+            <summary>
+            Specifies whether or not the selection of multiple rows is enabled.
+            A new column with checkboxes is added to the left-most side of the grid.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CanMultiSort">
+            <summary>
+            Specifies whether or not sorting more than one field is enabled. If the data is
+            obtained from a remote server, the // TODO: SIDX parameter contains the order clause.
+            It is a comma-separated list (e.g. field1 asc, field2 desc, field3). Note that the
+            sort order of the last column is specified in the // TODO: SORD parameter.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.InitialPageNumber">
+            <summary>
+            The initial page number used when the request is made to retrieve data.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowPager">
+            <summary>
+            Specifies whether or not the pager bar is shown.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Pager">
+            <summary>
+            The HTML ID reference to the pager bar used to navigate through the records.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.PagerNavigationAlign">
+            <summary>
+            The position of the pager navigation buttons and record selection box in the grid.
+            The pager element is divided into 3 positions and only one element can be in a single
+            position. When changing this option, the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.PagerRecordAlign"/> must be changed as well.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowPagerButtons">
+            <summary>
+            Specifies whether or not the pager buttons should be shown if the pager is shown.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowPagerTextBox">
+            <summary>
+            Specifies whether or not the textbox that allows the user to enter the page number
+            to view is shown. The textbox appears between the pager buttons.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.PagerNavigationLabelTemplate">
+            <summary>
+            The template for the current page status text. The default is "Page {0} of {1}".
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.UrlParameters">
+            <summary>
+            The data appended directly to the // TODO: URL.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.PagerRecordAlign">
+            <summary>
+            The position of the record information in the pager. The pager element is divided
+            into 3 positions and only one element can be in a single position.
+            When changing this option, the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.PagerNavigationAlign"/> must be changed as well.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.PagerRecordLabelTemplate">
+            <summary>
+            The template for the record information text. This text is only displayed if the
+            number of records is greater than zero. The default is "View {0} - {1} of {2}".
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Locale">
+            <summary>
+            The locale to use that corresponds to the localization file (grid.locale-xx.js).
+            The language file must be loaded for this option to work.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.IsResponsive">
+            <summary>
+            Specifies whether or not the grid is resized automatically to its parent container
+            when the width of the viewport is changed.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldRestoreCellOnFailure">
+            <summary>
+            Specifies whether or not the cell should be set or restored to its initial state
+            on failure.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.PagerRowOptions">
+            <summary>
+            The list of row count choices in the pager drop-down list. For example, if this option is
+            set to [10, 20, 50] and 20 is selected, it will set the // TODO: rownum to 20.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowRowNumberColumn">
+            <summary>
+            Specifies whether or not a new column is shown as the leftmost column in the grid containing
+            the row number, starting from one. The <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.Columns"/> model is automatically extended
+            with the new column with the reserved name "rn", hence columns in the model should not be named "rn".
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.MaxRows">
+            <summary>
+            The number of rows to view in the grid. This option is passed to the server when requesting data.
+            If this option is set to 10 and the server returns 15 rows, only 10 rows will be loaded.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.TotalRows">
+            <summary>
+            The total number of rows on which the grid can operate. If specified, an additional parameter
+            "totalrows" is set to the server
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.VirtualScrollMode">
+            <summary>
+            Specifies whether or not to use a dynamic virtual scroll mode.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ScrollMaxRows">
+            <summary>
+            The maximum rows the grid can load when the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.VirtualScrollMode"/> is set to <see cref="F:WebHelpers.Mvc5.JqGrid.VirtualScrollMode.OnlyVisibleRows"/>.
+            It is recommended that you set this value greater than <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.MaxRows"/>, otherwise it will
+            default to the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.MaxRows"/> value.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.VerticalScrollbarWidth">
+            <summary>
+            The width of the vertical scrollbar.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.VerticalScrollbarTopOffset">
+            <summary>
+            The top offset from the upper position of the scroll element.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowVirtualScrollInfoPopUp">
+            <summary>
+            Specifies whether or not a pop-up with page information is displayed when virtual scrolling is enabled.
+            The pop-up changes its position relative to the position of the scroll element.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldScrollToSelectedRow">
+            <summary>
+            Specifies whether or not the grid is scrolled so that the selected row is visible when
+            a row is selected via setSelection.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldShrinkToFit">
+            <summary>
+            Specifies whether or not automatic resizing takes place in proportion to each columns' width
+            to fit within the bounds of the grid's width.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.CanReorderColumns">
+            <summary>
+            Specifies whether or not reordering columns by dragging and dropping them with the mouse
+            is enabled.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.InitialColumnToSort">
+            <summary>
+            The column according to which the data is to be sorted when the grid is initially loaded.
+            Use in conjunction with <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.InitialColumnSortOrder"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.InitialColumnSortOrder">
+            <summary>
+            The sort order to use when the grid is initially loaded and sorted by the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.InitialColumnToSort"/>.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldStoreNavigationOptions">
+            <summary>
+            Specifies whether or not the navigation options are stored in the grid options when
+            the grid state is saved or restored.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.DataUrl">
+            <summary>
+            The URL that returns the data needed to populate the grid.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.UseNameForLocalSearch">
+            <summary>
+            Specifies whether or not the grid performs the search by <see cref="P:WebHelpers.Mvc5.JqGrid.Column.Name"/> instead
+            of by <see cref="P:WebHelpers.Mvc5.JqGrid.Column.Index"/> when the data type is local.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.ShowPagerRowCount">
+            <summary>
+            Specifies whether or not "View X to Y out of Z" is shown in the pager bar.
+            </summary>
+        </member>
+        <member name="P:WebHelpers.Mvc5.JqGrid.Grid.Width">
+            <summary>
+            The width of the grid, in pixels. If this option is not set, the width of the grid is the sum
+            of the widths of the columns. If this option is set, the initial width of each column is set
+            according to the value of the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.ShouldShrinkToFit"/> option.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.JqGrid.JqGridBuilder`1.Render(WebHelpers.Mvc5.JqGrid.Grid)">
+            <summary>
+            Renders the grid container.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.JqGrid.JqGridBuilder`1.Initialize(WebHelpers.Mvc5.JqGrid.Grid)">
+            <summary>
+            Initializes the grid via JavaScript after the page has loaded.
+            jQuery must be defined before this method in your view or layout for this to work.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.JqGrid.JqGridBuilder`1.RenderAndInitialize(WebHelpers.Mvc5.JqGrid.Grid)">
+            <summary>
+            Renders the grid container and initializes the grid all at once.
+            jQuery must be defined before this method in your view or layout for this to work.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.LoadIndicator.Disable">
+            <summary>
+            Disables the jqGrid progress indicator. This allows you to use your own indicator.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.LoadIndicator.Enable">
+            <summary>
+            Shows the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LoadingText"/> in the center of the grid.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.LoadIndicator.Block">
+            <summary>
+            Shows the <see cref="P:WebHelpers.Mvc5.JqGrid.Grid.LoadingText"/> in the center of the grid
+            and blocks all actions in the grid until the AJAX request completes.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JqGrid.SearchType">
+            <remarks>
+            http://www.guriddo.net/documentation/guriddo/javascript/user-guide/searching/#configuration
+            </remarks>>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.VirtualScrollMode.Infinite">
+            <summary>
+            The pager buttons and select box are disabled and the vertical scrollbar is used
+            to load data. The grid will always hold all the rows from the start to the latest
+            point visited.
+            </summary>
+        </member>
+        <member name="F:WebHelpers.Mvc5.JqGrid.VirtualScrollMode.OnlyVisibleRows">
+            <summary>
+            The grid will only load the visible rows without having to care about memory leaks.
+            </summary>
+        </member>
+        <member name="T:WebHelpers.Mvc5.JsonNetResult">
+            <summary>
+            Represents a class that is used to send JSON-formatted content to the response using Json.NET.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.JsonNetResult.#ctor(System.Object)">
+            <summary>
+            Creates a <see cref="T:WebHelpers.Mvc5.JsonNetResult"/> object that serializes the specified object to JSON.
+            </summary>
+            <param name="data">The JavaScript object graph to serialize.</param>
+        </member>
+        <member name="T:WebHelpers.Mvc5.UrlHelperExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Web.Mvc.UrlHelper"/>.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.UrlHelperExtensions.IsLinkActive(System.Web.Mvc.UrlHelper,System.String,System.String)">
+            <summary>
+            Gets the CSS class to use for the link state of the specified <paramref name="actionName"/>.
+            If the current request route matches the <paramref name="actionName"/> and <paramref name="controllerName"/>,
+            the "active" class is returned.
+            </summary>
+            <param name="url">The <see cref="T:System.Web.Mvc.UrlHelper"/>.</param>
+            <param name="actionName">The action of the link to compare to the current request.</param>
+            <param name="controllerName">The controller of the link to compare to the current request.</param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.UrlHelperExtensions.IsTreeviewActive(System.Web.Mvc.UrlHelper,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Gets the CSS class to use for the treeview state. If the current request route matches
+            any of the <paramref name="actions"/>, the "active" class is returned.
+            </summary>
+            <param name="url">The <see cref="T:System.Web.Mvc.UrlHelper"/>.</param>
+            <param name="actions">A collection of KeyValuePairs, where the key is the action and the value is the controller.</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebHelpers.Mvc5.VersionExtensions">
+            <summary>
+            Extensions for generating a version query parameter for content.
+            </summary>
+        </member>
+        <member name="M:WebHelpers.Mvc5.VersionExtensions.AddVersion(System.String)">
+            <summary>
+            Adds a cache-busting query parameter to the URL.
+            The version is the number of ticks since the last write time of the file.
+            </summary>
+            <param name="contentPath">The application absolute path to the file.</param>
+        </member>
+        <member name="M:WebHelpers.Mvc5.VersionExtensions.AddVersion(System.Web.Optimization.Bundle)">
+            <summary>
+            Adds a cache-busting query parameter to the URL of the bundle.
+            The version is the number of ticks since the last write time of the file.
+            </summary>
+            <param name="bundle">The bundle (e.g. StyleBundle) to add the version to.</param>
+        </member>
+        <member name="T:WebHelpers.Mvc5.WebHelpers`1">
+            <summary>
+            Custom HtmlHelpers encapsulated in the WebHelpers namespace. This provides a layer
+            to group the helpers to prevent polluting the base <see cref="T:System.Web.Mvc.HtmlHelper"/> class.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+        </member>
+        <member name="T:JetBrains.Annotations.CanBeNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could be <c>null</c> sometimes,
+            so the check for <c>null</c> is necessary before its usage.
+            </summary>
+            <example><code>
+            [CanBeNull] object Test() => null;
+            
+            void UseTest() {
+              var p = Test();
+              var s = p.ToString(); // Warning: Possible 'System.NullReferenceException'
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.NotNullAttribute">
+            <summary>
+            Indicates that the value of the marked element could never be <c>null</c>.
+            </summary>
+            <example><code>
+            [NotNull] object Foo() {
+              return null; // Warning: Possible 'null' assignment
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.ItemNotNullAttribute">
+            <summary>
+            Can be appplied to symbols of types derived from IEnumerable as well as to symbols of Task
+            and Lazy classes to indicate that the value of a collection item, of the Task.Result property
+            or of the Lazy.Value property can never be null.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.ItemCanBeNullAttribute">
+            <summary>
+            Can be appplied to symbols of types derived from IEnumerable as well as to symbols of Task
+            and Lazy classes to indicate that the value of a collection item, of the Task.Result property
+            or of the Lazy.Value property can be null.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.StringFormatMethodAttribute">
+            <summary>
+            Indicates that the marked method builds string by format pattern and (optional) arguments.
+            Parameter, which contains format string, should be given in constructor. The format string
+            should be in <see cref="M:System.String.Format(System.IFormatProvider,System.String,System.Object[])"/>-like form.
+            </summary>
+            <example><code>
+            [StringFormatMethod("message")]
+            void ShowError(string message, params object[] args) { /* do something */ }
+            
+            void Foo() {
+              ShowError("Failed: {0}"); // Warning: Non-existing argument in format string
+            }
+            </code></example>
+        </member>
+        <member name="M:JetBrains.Annotations.StringFormatMethodAttribute.#ctor(System.String)">
+            <param name="formatParameterName">
+            Specifies which parameter of an annotated method should be treated as format-string
+            </param>
+        </member>
+        <member name="T:JetBrains.Annotations.ValueProviderAttribute">
+            <summary>
+            For a parameter that is expected to be one of the limited set of values.
+            Specify fields of which type should be used as values for this parameter.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.InvokerParameterNameAttribute">
+            <summary>
+            Indicates that the function argument should be string literal and match one
+            of the parameters of the caller function. For example, ReSharper annotates
+            the parameter of <see cref="T:System.ArgumentNullException"/>.
+            </summary>
+            <example><code>
+            void Foo(string param) {
+              if (param == null)
+                throw new ArgumentNullException("par"); // Warning: Cannot resolve symbol
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.NotifyPropertyChangedInvocatorAttribute">
+             <summary>
+             Indicates that the method is contained in a type that implements
+             <c>System.ComponentModel.INotifyPropertyChanged</c> interface and this method
+             is used to notify that some property value changed.
+             </summary>
+             <remarks>
+             The method should be non-static and conform to one of the supported signatures:
+             <list>
+             <item><c>NotifyChanged(string)</c></item>
+             <item><c>NotifyChanged(params string[])</c></item>
+             <item><c>NotifyChanged{T}(Expression{Func{T}})</c></item>
+             <item><c>NotifyChanged{T,U}(Expression{Func{T,U}})</c></item>
+             <item><c>SetProperty{T}(ref T, T, string)</c></item>
+             </list>
+             </remarks>
+             <example><code>
+             public class Foo : INotifyPropertyChanged {
+               public event PropertyChangedEventHandler PropertyChanged;
+             
+               [NotifyPropertyChangedInvocator]
+               protected virtual void NotifyChanged(string propertyName) { ... }
+            
+               string _name;
+             
+               public string Name {
+                 get { return _name; }
+                 set { _name = value; NotifyChanged("LastName"); /* Warning */ }
+               }
+             }
+             </code>
+             Examples of generated notifications:
+             <list>
+             <item><c>NotifyChanged("Property")</c></item>
+             <item><c>NotifyChanged(() =&gt; Property)</c></item>
+             <item><c>NotifyChanged((VM x) =&gt; x.Property)</c></item>
+             <item><c>SetProperty(ref myField, value, "Property")</c></item>
+             </list>
+             </example>
+        </member>
+        <member name="T:JetBrains.Annotations.ContractAnnotationAttribute">
+            <summary>
+            Describes dependency between method input and output.
+            </summary>
+            <syntax>
+            <p>Function Definition Table syntax:</p>
+            <list>
+            <item>FDT      ::= FDTRow [;FDTRow]*</item>
+            <item>FDTRow   ::= Input =&gt; Output | Output &lt;= Input</item>
+            <item>Input    ::= ParameterName: Value [, Input]*</item>
+            <item>Output   ::= [ParameterName: Value]* {halt|stop|void|nothing|Value}</item>
+            <item>Value    ::= true | false | null | notnull | canbenull</item>
+            </list>
+            If method has single input parameter, it's name could be omitted.<br/>
+            Using <c>halt</c> (or <c>void</c>/<c>nothing</c>, which is the same) for method output
+            means that the methos doesn't return normally (throws or terminates the process).<br/>
+            Value <c>canbenull</c> is only applicable for output parameters.<br/>
+            You can use multiple <c>[ContractAnnotation]</c> for each FDT row, or use single attribute
+            with rows separated by semicolon. There is no notion of order rows, all rows are checked
+            for applicability and applied per each program state tracked by R# analysis.<br/>
+            </syntax>
+            <examples><list>
+            <item><code>
+            [ContractAnnotation("=&gt; halt")]
+            public void TerminationMethod()
+            </code></item>
+            <item><code>
+            [ContractAnnotation("halt &lt;= condition: false")]
+            public void Assert(bool condition, string text) // regular assertion method
+            </code></item>
+            <item><code>
+            [ContractAnnotation("s:null =&gt; true")]
+            public bool IsNullOrEmpty(string s) // string.IsNullOrEmpty()
+            </code></item>
+            <item><code>
+            // A method that returns null if the parameter is null,
+            // and not null if the parameter is not null
+            [ContractAnnotation("null =&gt; null; notnull =&gt; notnull")]
+            public object Transform(object data) 
+            </code></item>
+            <item><code>
+            [ContractAnnotation("=&gt; true, result: notnull; =&gt; false, result: null")]
+            public bool TryParse(string s, out Person result)
+            </code></item>
+            </list></examples>
+        </member>
+        <member name="T:JetBrains.Annotations.LocalizationRequiredAttribute">
+            <summary>
+            Indicates that marked element should be localized or not.
+            </summary>
+            <example><code>
+            [LocalizationRequiredAttribute(true)]
+            class Foo {
+              string str = "my string"; // Warning: Localizable string
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.CannotApplyEqualityOperatorAttribute">
+            <summary>
+            Indicates that the value of the marked type (or its derivatives)
+            cannot be compared using '==' or '!=' operators and <c>Equals()</c>
+            should be used instead. However, using '==' or '!=' for comparison
+            with <c>null</c> is always permitted.
+            </summary>
+            <example><code>
+            [CannotApplyEqualityOperator]
+            class NoEquality { }
+            
+            class UsesNoEquality {
+              void Test() {
+                var ca1 = new NoEquality();
+                var ca2 = new NoEquality();
+                if (ca1 != null) { // OK
+                  bool condition = ca1 == ca2; // Warning
+                }
+              }
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.BaseTypeRequiredAttribute">
+            <summary>
+            When applied to a target attribute, specifies a requirement for any type marked
+            with the target attribute to implement or inherit specific type or types.
+            </summary>
+            <example><code>
+            [BaseTypeRequired(typeof(IComponent)] // Specify requirement
+            class ComponentAttribute : Attribute { }
+            
+            [Component] // ComponentAttribute requires implementing IComponent interface
+            class MyComponent : IComponent { }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.UsedImplicitlyAttribute">
+            <summary>
+            Indicates that the marked symbol is used implicitly (e.g. via reflection, in external library),
+            so this symbol will not be marked as unused (as well as by other usage inspections).
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.MeansImplicitUseAttribute">
+            <summary>
+            Should be used on attributes and causes ReSharper to not mark symbols marked with such attributes
+            as unused (as well as by other usage inspections)
+            </summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseKindFlags.Access">
+            <summary>Only entity marked with attribute considered used.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseKindFlags.Assign">
+            <summary>Indicates implicit assignment to a member.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseKindFlags.InstantiatedWithFixedConstructorSignature">
+            <summary>
+            Indicates implicit instantiation of a type with fixed constructor signature.
+            That means any unused constructor parameters won't be reported as such.
+            </summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature">
+            <summary>Indicates implicit instantiation of a type.</summary>
+        </member>
+        <member name="T:JetBrains.Annotations.ImplicitUseTargetFlags">
+            <summary>
+            Specify what is considered used implicitly when marked
+            with <see cref="T:JetBrains.Annotations.MeansImplicitUseAttribute"/> or <see cref="T:JetBrains.Annotations.UsedImplicitlyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseTargetFlags.Members">
+            <summary>Members of entity marked with attribute are considered used.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.ImplicitUseTargetFlags.WithMembers">
+            <summary>Entity marked with attribute and all its members considered used.</summary>
+        </member>
+        <member name="T:JetBrains.Annotations.PublicAPIAttribute">
+            <summary>
+            This attribute is intended to mark publicly available API
+            which should not be removed and so is treated as used.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.InstantHandleAttribute">
+            <summary>
+            Tells code analysis engine if the parameter is completely handled when the invoked method is on stack.
+            If the parameter is a delegate, indicates that delegate is executed while the method is executed.
+            If the parameter is an enumerable, indicates that it is enumerated while the method is executed.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.PureAttribute">
+            <summary>
+            Indicates that a method does not make any observable state changes.
+            The same as <c>System.Diagnostics.Contracts.PureAttribute</c>.
+            </summary>
+            <example><code>
+            [Pure] int Multiply(int x, int y) => x * y;
+            
+            void M() {
+              Multiply(123, 42); // Waring: Return value of pure method is not used
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.MustUseReturnValueAttribute">
+            <summary>
+            Indicates that the return value of method invocation must be used.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.ProvidesContextAttribute">
+            <summary>
+            Indicates the type member or parameter of some type, that should be used instead of all other ways
+            to get the value that type. This annotation is useful when you have some "context" value evaluated
+            and stored somewhere, meaning that all other ways to get this value must be consolidated with existing one.
+            </summary>
+            <example><code>
+            class Foo {
+              [ProvidesContext] IBarService _barService = ...;
+            
+              void ProcessNode(INode node) {
+                DoSomething(node, node.GetGlobalServices().Bar);
+                //              ^ Warning: use value of '_barService' field
+              }
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.PathReferenceAttribute">
+            <summary>
+            Indicates that a parameter is a path to a file or a folder within a web project.
+            Path can be relative or absolute, starting from web root (~).
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.SourceTemplateAttribute">
+            <summary>
+            An extension method marked with this attribute is processed by ReSharper code completion
+            as a 'Source Template'. When extension method is completed over some expression, it's source code
+            is automatically expanded like a template at call site.
+            </summary>
+            <remarks>
+            Template method body can contain valid source code and/or special comments starting with '$'.
+            Text inside these comments is added as source code when the template is applied. Template parameters
+            can be used either as additional method parameters or as identifiers wrapped in two '$' signs.
+            Use the <see cref="T:JetBrains.Annotations.MacroAttribute"/> attribute to specify macros for parameters.
+            </remarks>
+            <example>
+            In this example, the 'forEach' method is a source template available over all values
+            of enumerable types, producing ordinary C# 'foreach' statement and placing caret inside block:
+            <code>
+            [SourceTemplate]
+            public static void forEach&lt;T&gt;(this IEnumerable&lt;T&gt; xs) {
+              foreach (var x in xs) {
+                 //$ $END$
+              }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="T:JetBrains.Annotations.MacroAttribute">
+            <summary>
+            Allows specifying a macro for a parameter of a <see cref="T:JetBrains.Annotations.SourceTemplateAttribute">source template</see>.
+            </summary>
+            <remarks>
+            You can apply the attribute on the whole method or on any of its additional parameters. The macro expression
+            is defined in the <see cref="P:JetBrains.Annotations.MacroAttribute.Expression"/> property. When applied on a method, the target
+            template parameter is defined in the <see cref="P:JetBrains.Annotations.MacroAttribute.Target"/> property. To apply the macro silently
+            for the parameter, set the <see cref="P:JetBrains.Annotations.MacroAttribute.Editable"/> property value = -1.
+            </remarks>
+            <example>
+            Applying the attribute on a source template method:
+            <code>
+            [SourceTemplate, Macro(Target = "item", Expression = "suggestVariableName()")]
+            public static void forEach&lt;T&gt;(this IEnumerable&lt;T&gt; collection) {
+              foreach (var item in collection) {
+                //$ $END$
+              }
+            }
+            </code>
+            Applying the attribute on a template method parameter:
+            <code>
+            [SourceTemplate]
+            public static void something(this Entity x, [Macro(Expression = "guid()", Editable = -1)] string newguid) {
+              /*$ var $x$Id = "$newguid$" + x.ToString();
+              x.DoSomething($x$Id); */
+            }
+            </code>
+            </example>
+        </member>
+        <member name="P:JetBrains.Annotations.MacroAttribute.Expression">
+            <summary>
+            Allows specifying a macro that will be executed for a <see cref="T:JetBrains.Annotations.SourceTemplateAttribute">source template</see>
+            parameter when the template is expanded.
+            </summary>
+        </member>
+        <member name="P:JetBrains.Annotations.MacroAttribute.Editable">
+            <summary>
+            Allows specifying which occurrence of the target parameter becomes editable when the template is deployed.
+            </summary>
+            <remarks>
+            If the target parameter is used several times in the template, only one occurrence becomes editable;
+            other occurrences are changed synchronously. To specify the zero-based index of the editable occurrence,
+            use values >= 0. To make the parameter non-editable when the template is expanded, use -1.
+            </remarks>>
+        </member>
+        <member name="P:JetBrains.Annotations.MacroAttribute.Target">
+            <summary>
+            Identifies the target parameter of a <see cref="T:JetBrains.Annotations.SourceTemplateAttribute">source template</see> if the
+            <see cref="T:JetBrains.Annotations.MacroAttribute"/> is applied on a template method.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcActionAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC action. If applied to a method, the MVC action name is calculated
+            implicitly from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcAreaAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC area.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcControllerAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter is
+            an MVC controller. If applied to a method, the MVC controller name is calculated
+            implicitly from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.ChildActionExtensions.RenderAction(HtmlHelper, String, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcMasterAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC Master. Use this attribute
+            for custom wrappers similar to <c>System.Web.Mvc.Controller.View(String, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcModelTypeAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC model type. Use this attribute
+            for custom wrappers similar to <c>System.Web.Mvc.Controller.View(String, Object)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcPartialViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter is an MVC
+            partial view. If applied to a method, the MVC partial view name is calculated implicitly
+            from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcSuppressViewErrorAttribute">
+            <summary>
+            ASP.NET MVC attribute. Allows disabling inspections for MVC views within a class or a method.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcDisplayTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC display template.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.Mvc.Html.DisplayExtensions.DisplayForModel(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcEditorTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC editor template.
+            Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Html.EditorExtensions.EditorForModel(HtmlHelper, String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcTemplateAttribute">
+            <summary>
+            ASP.NET MVC attribute. Indicates that a parameter is an MVC template.
+            Use this attribute for custom wrappers similar to
+            <c>System.ComponentModel.DataAnnotations.UIHintAttribute(System.String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component. If applied to a method, the MVC view name is calculated implicitly
+            from the context. Use this attribute for custom wrappers similar to
+            <c>System.Web.Mvc.Controller.View(Object)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcViewComponentAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component name.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcViewComponentViewAttribute">
+            <summary>
+            ASP.NET MVC attribute. If applied to a parameter, indicates that the parameter
+            is an MVC view component view. If applied to a method, the MVC view component view name is default.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AspMvcActionSelectorAttribute">
+            <summary>
+            ASP.NET MVC attribute. When applied to a parameter of an attribute,
+            indicates that this parameter is an MVC action name.
+            </summary>
+            <example><code>
+            [ActionName("Foo")]
+            public ActionResult Login(string returnUrl) {
+              ViewBag.ReturnUrl = Url.Action("Foo"); // OK
+              return RedirectToAction("Bar"); // Error: Cannot resolve action
+            }
+            </code></example>
+        </member>
+        <member name="T:JetBrains.Annotations.RazorSectionAttribute">
+            <summary>
+            Razor attribute. Indicates that a parameter or a method is a Razor section.
+            Use this attribute for custom wrappers similar to 
+            <c>System.Web.WebPages.WebPageBase.RenderSection(String)</c>.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.CollectionAccessAttribute">
+            <summary>
+            Indicates how method, constructor invocation or property access
+            over collection type affects content of the collection.
+            </summary>
+        </member>
+        <member name="F:JetBrains.Annotations.CollectionAccessType.None">
+            <summary>Method does not use or modify content of the collection.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.CollectionAccessType.Read">
+            <summary>Method only reads content of the collection but does not modify it.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.CollectionAccessType.ModifyExistingContent">
+            <summary>Method can change content of the collection but does not add new elements.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.CollectionAccessType.UpdatedContent">
+            <summary>Method can add new elements to the collection.</summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AssertionMethodAttribute">
+            <summary>
+            Indicates that the marked method is assertion method, i.e. it halts control flow if
+            one of the conditions is satisfied. To set the condition, mark one of the parameters with 
+            <see cref="T:JetBrains.Annotations.AssertionConditionAttribute"/> attribute.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AssertionConditionAttribute">
+            <summary>
+            Indicates the condition parameter of the assertion method. The method itself should be
+            marked by <see cref="T:JetBrains.Annotations.AssertionMethodAttribute"/> attribute. The mandatory argument of
+            the attribute is the assertion type.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.AssertionConditionType">
+            <summary>
+            Specifies assertion type. If the assertion method argument satisfies the condition,
+            then the execution continues. Otherwise, execution is assumed to be halted.
+            </summary>
+        </member>
+        <member name="F:JetBrains.Annotations.AssertionConditionType.IS_TRUE">
+            <summary>Marked parameter should be evaluated to true.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.AssertionConditionType.IS_FALSE">
+            <summary>Marked parameter should be evaluated to false.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.AssertionConditionType.IS_NULL">
+            <summary>Marked parameter should be evaluated to null value.</summary>
+        </member>
+        <member name="F:JetBrains.Annotations.AssertionConditionType.IS_NOT_NULL">
+            <summary>Marked parameter should be evaluated to not null value.</summary>
+        </member>
+        <member name="T:JetBrains.Annotations.TerminatesProgramAttribute">
+            <summary>
+            Indicates that the marked method unconditionally terminates control flow execution.
+            For example, it could unconditionally throw exception.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.LinqTunnelAttribute">
+            <summary>
+            Indicates that method is pure LINQ method, with postponed enumeration (like Enumerable.Select,
+            .Where). This annotation allows inference of [InstantHandle] annotation for parameters
+            of delegate type by analyzing LINQ method chains.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.NoEnumerationAttribute">
+            <summary>
+            Indicates that IEnumerable, passed as parameter, is not enumerated.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.RegexPatternAttribute">
+            <summary>
+            Indicates that parameter is regular expression pattern.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.NoReorderAttribute">
+            <summary>
+            Prevents the Member Reordering feature from tossing members of the marked class.
+            </summary>
+            <remarks>
+            The attribute must be mentioned in your member reordering patterns
+            </remarks>
+        </member>
+        <member name="T:JetBrains.Annotations.XamlItemsControlAttribute">
+            <summary>
+            XAML attribute. Indicates the type that has <c>ItemsSource</c> property and should be treated
+            as <c>ItemsControl</c>-derived type, to enable inner items <c>DataContext</c> type resolve.
+            </summary>
+        </member>
+        <member name="T:JetBrains.Annotations.XamlItemBindingOfItemsControlAttribute">
+            <summary>
+            XAML attribute. Indicates the property of some <c>BindingBase</c>-derived type, that
+            is used to bind some item of <c>ItemsControl</c>-derived type. This annotation will
+            enable the <c>DataContext</c> type resolve for XAML bindings for such properties.
+            </summary>
+            <remarks>
+            Property should have the tree ancestor of the <c>ItemsControl</c> type or
+            marked with the <see cref="T:JetBrains.Annotations.XamlItemsControlAttribute"/> attribute.
+            </remarks>
+        </member>
+    </members>
+</doc>

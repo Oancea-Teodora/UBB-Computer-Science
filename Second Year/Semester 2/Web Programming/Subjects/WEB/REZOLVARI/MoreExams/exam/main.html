@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+
+<table id="publishingHouse">
+</table>
+
+<p>
+  Search by Topics:
+  <input type="text" id="myInput">
+  <button onclick="searchBooks()">search</button>
+</p>
+
+<ul class = booksFromSearch>
+
+</ul>
+
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  function populate(data){
+    let publishingHouses = "    <tr>\n" +
+            // "        <th>id</th>\n" +
+            "        <th>name</th>\n" +
+            "        <th>URL</th>\n" +
+            "        <th>count</th>\n" +
+            "    </tr>";
+    console.log(data);
+    data = $.parseJSON(data);
+
+    data= data.filter((data, index, self) =>
+            index === self.findIndex((t) => (
+                    t.id === data.id
+            ))
+    )
+
+    console.log(data);
+    for (let publishingHouse of data) {
+      console.log(publishingHouse)
+      console.log(publishingHouse.id)
+
+      publishingHouses += "<tr id='" + publishingHouse.id + "'>" +
+              "<td>" + publishingHouse["name"] + " </td> " +
+              "<td>" + publishingHouse["url"] + " </td> " +
+              "<td>" + publishingHouse["count"] + " </td> " +
+              "<td>" + `<button onClick=remove(${publishingHouse.id},${publishingHouse.count})>Remove</button>`+ "</td></tr>";
+
+    }
+    $("#publishingHouse").html(publishingHouses);
+  }
+
+  function populateBooks(data){
+
+    data = $.parseJSON(data);
+
+    var books = "";
+    console.log(data);
+    for(let book of data) {
+
+
+      books += "<li>";
+
+      books += book["name"] + " " + book["topic1"] + " " + book["topic2"] + " " + book["topic3"] + " " + book["topic4"] + " " + book["topic5"] +  "</li>";
+    }
+    $(".booksFromSearch").html(books);
+  }
+
+
+
+  $(document).ready(function () {
+    $.get("getAllPublishingHouse.php", data => populate(data));
+  });
+
+  function remove(id, count){
+    if(count === 0) {
+      $.post("delete.php",
+              {"id": id},
+              data => {
+                populate(data);
+              });
+    }
+    else {
+      alert("Count is not 0!");
+    }
+  }
+
+
+  function searchBooks(){
+    var word = $("#myInput").val();
+
+    $.ajax({
+      type: "GET",
+      url: "search.php",
+      data: {"word": word}
+    }).done(data => populateBooks(data));
+  }
+
+
+
+
+</script>

@@ -1,0 +1,34 @@
+﻿    @model IEnumerable<Document>
+    @{
+        Layout = "_Layout";
+    }
+
+    <h2>Available Documents </h2>
+
+        @foreach (var f in Model)
+        {
+             <ul id="oddEven">
+                <li>
+                <strong>@f.title</strong> - <a asp-action="Render" asp-route-id="@f.ID">Render</a>
+                </li>
+            </ul>
+        }
+
+    <script>
+     const items = document.querySelectorAll("li");
+
+    function stripes(nodeList, colorOdd, colorEven) {
+      nodeList.forEach((node, index) => {
+        node.style.color = index === 0 || index % 2 === 0 ? colorEven : colorOdd;
+      });
+    }
+
+    stripes(items, 'orange', 'black');
+    </script>
+
+    <h2>Documents </h2>
+    <form asp-action="Search" method="post">
+        <label>Titlu: <input name="title" required /></input></label> <br />
+
+        <button type="submit">   Search</button>
+    </form>

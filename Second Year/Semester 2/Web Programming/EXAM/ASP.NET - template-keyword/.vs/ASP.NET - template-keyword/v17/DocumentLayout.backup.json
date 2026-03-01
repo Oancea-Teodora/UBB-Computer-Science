@@ -1,0 +1,367 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\controllers\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\controllers\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\controllers\\templatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\controllers\\templatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\keyword\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\keyword\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\document\\render.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\document\\render.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\document\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\document\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\models\\keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\models\\keyword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\asp.net - template-keyword\\asp.net - template-keyword\\migrations\\20250618172015_migrationtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24CD6BF9-E116-41E3-88DA-FB323819BFB5}|ASP.NET - template-keyword\\ASP.NET - template-keyword.csproj|solutionrelative:asp.net - template-keyword\\migrations\\20250618172015_migrationtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:02:22.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Program.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Program.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Program.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:26:17.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:57:54.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TemplateController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\TemplateController.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Controllers\\TemplateController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\TemplateController.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Controllers\\TemplateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:56:46.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeywordController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\KeywordController.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Controllers\\KeywordController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\KeywordController.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Controllers\\KeywordController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:57:02.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Keyword\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Keyword\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Keyword\\Index.cshtml*",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Keyword\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:07:21.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Controllers\\DocumentController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Controllers\\DocumentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:57:17.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Models\\Document.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Document.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:51:59.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Document\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Document\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Document\\Index.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Document\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T16:50:44.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Render.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Document\\Render.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Document\\Render.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Document\\Render.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Document\\Render.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T18:33:58.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:01:39.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Template.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Template.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Models\\Template.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Template.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Models\\Template.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:43:03.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Keyword.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Keyword.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Models\\Keyword.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\Keyword.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Models\\Keyword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:45:41.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250618172015_migrationTables.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Migrations\\20250618172015_migrationTables.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Migrations\\20250618172015_migrationTables.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Migrations\\20250618172015_migrationTables.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Migrations\\20250618172015_migrationTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:20:15.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:17:12.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\appsettings.json",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\appsettings.json",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\appsettings.json",
+              "RelativeToolTip": "ASP.NET - template-keyword\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-18T17:16:05.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:25:42.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:01:45.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SessionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Helpers\\SessionHelper.cs",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Helpers\\SessionHelper.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Helpers\\SessionHelper.cs",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Helpers\\SessionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:00:44.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:00:14.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ASP.NET - template-keyword\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\ASP.NET - template-keyword\\ASP.NET - template-keyword\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ASP.NET - template-keyword\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T17:00:12.275Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

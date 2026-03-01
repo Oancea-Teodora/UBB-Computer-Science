@@ -1,0 +1,38 @@
+﻿@model List<FeedbackDisplayViewModel>
+
+<div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2>All Customer Feedback</h2>
+        <a asp-action="SubmitFeedback" class="btn btn-primary">Submit New Feedback</a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <p>No feedback has been submitted yet.</p>
+    }
+    else
+    {
+        <div class="feedback-list">
+            @foreach (var feedback in Model)
+            {
+                <div class="feedback-item @(feedback.IsCurrentUser ? "current-user" : "")">
+                    <div class="feedback-header">
+                        <div class="customer-info">
+                            @feedback.CustomerName (@feedback.CustomerEmail)
+                            @if (feedback.IsCurrentUser)
+                            {
+                                <span class="text-success">(You)</span>
+                            }
+                        </div>
+                        <div class="timestamp">
+                            @feedback.Timestamp.ToString("MMM dd, yyyy 'at' HH:mm")
+                        </div>
+                    </div>
+                    <div class="feedback-message">
+                        @feedback.Message
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div> 

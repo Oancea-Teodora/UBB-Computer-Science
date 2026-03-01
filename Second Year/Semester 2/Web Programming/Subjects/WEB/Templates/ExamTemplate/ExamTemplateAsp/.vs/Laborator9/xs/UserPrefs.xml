@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{943040DF-4BD1-462E-8138-980802B0E211}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Laborator9/Web.config">
+    <Files>
+      <File FileName="Laborator9/Views/Home/Index.cshtml" Line="82" Column="1" />
+      <File FileName="Laborator9/Views/Cart/Index.cshtml" />
+      <File FileName="Laborator9/Controllers/HomeController.cs" />
+      <File FileName="Laborator9/Controllers/CartController.cs" />
+      <File FileName="Laborator9/Controllers/LoginController.cs" />
+      <File FileName="Laborator9/Views/Login/Index.cshtml" />
+      <File FileName="Laborator9/App_Start/RouteConfig.cs" />
+      <File FileName="Laborator9/Global.asax.cs" />
+      <File FileName="Laborator9/Web.config" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Laborator9" expanded="True">
+            <Node name="Laborator9" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="App_Start" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cart" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Login" expanded="True" />
+              </Node>
+              <Node name="Global.asax" expanded="True" />
+              <Node name="Web.config" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Laborator9 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<body>
+    <div class="form-horizontal">
+        <form method="post" action="/Login">
+            <label for="username-login">Username:</label>
+            <input type="text" id="username-login" name="username" /><br />
+            <label for="password-login">Password:</label>
+            <input type="password" id="password-login" name="password" /><br />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>

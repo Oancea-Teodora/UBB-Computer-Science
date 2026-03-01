@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<table id="documents">
+</table>
+
+<p>
+    Modify a document with this keywords:
+    <br>
+    Keyword1:
+    <input type="text" id="keyword1">
+    <br>
+    Keyword2:
+    <input type="text" id="keyword2">
+    <br>
+    Keyword3:
+    <input type="text" id="keyword3">
+    <br>
+    Keyword4:
+    <input type="text" id="keyword4">
+    <br>
+    Keyword5:
+    <input type="text" id="keyword5">
+    <br>
+</p>
+
+<p>
+Websites together with their number of documents: <br>
+<ul class="websites">
+</ul>
+</p>
+<p>
+    Search by Keywords:
+    <input type="text" id="myInput">
+    <button onclick="searchDocuments()">search</button>
+</p>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function populate(data){
+
+        let documents = "    <tr>\n" +
+           // "        <th>id</th>\n" +
+            "        <th>webSiteId</th>\n" +
+            "        <th>name</th>\n" +
+            "        <th>keyword1</th>\n" +
+            "        <th>keyword2</th>\n" +
+            "        <th>keyword3</th>\n" +
+            "        <th>keyword4</th>\n" +
+            "        <th>keyword5</th>\n" +
+            "    </tr>";
+        console.log(data);
+        data = $.parseJSON(data);
+        console.log(data);
+        for (let document of data) {
+            console.log(document)
+            console.log(document.id)
+            // console.log(document["OwnerId"])
+            documents += "<tr id='" + document.id + "'>" +
+                //"<td>" + document.id + " </td> " +
+                "<td>" + document["idWebsite"] + " </td> " +
+                "<td>" + document["name"] + " </td> " +
+                "<td>" + document.keyword1 + " </td> " +
+                "<td>" + document.keyword2 + " </td> " +
+                "<td>" + document.keyword3 + " </td> " +
+                "<td>" + document.keyword4 + " </td> " +
+                "<td>" + document.keyword5 + " </td> " +
+                "<td>" + `<button onClick=update(${document.id})>Update</button>`+ "</td></tr>";
+        }
+        $("#documents").html(documents);
+    }
+
+
+    $(document).ready(function () {
+        getAllDocuments();
+    });
+
+    function getAllDocuments(){
+
+        $.ajax({
+            type: "GET",
+            url: "getAllDocuments.php",
+        }).done(data => populate(data));
+    }
+
+    function update(id){
+        var keyword1 = $("#keyword1").val();
+        var keyword2 = $("#keyword2").val();
+        var keyword3 = $("#keyword3").val();
+        var keyword4 = $("#keyword4").val();
+        var keyword5 = $("#keyword5").val();
+        $.ajax({
+            type: "POST",
+            url: "updateDocument.php",
+            data: {"id": id,"keyword1": keyword1,"keyword2": keyword2, "keyword3": keyword3, "keyword4": keyword4, "keyword5": keyword5 }
+        }).done(data => populate(data));
+    }
+
+
+    function populateWebsites(data){
+
+        data = $.parseJSON(data);
+
+        var websites = "";
+        console.log(data);
+        for(let website of data) {
+
+
+            websites += "<li>";
+
+            websites += website["url"] + " " + website["count"] +  "</li>";
+        }
+        $(".websites").html(websites);
+    }
+
+    $(document).ready(function () {
+        getAllWebsites();
+    });
+
+    function getAllWebsites(){
+
+        $.ajax({
+            type: "GET",
+            url: "getAllWebsites.php",
+        }).done(data => populateWebsites(data));
+    }
+
+    function searchDocuments(){
+        var word = $("#myInput").val();
+
+        $.ajax({
+            type: "GET",
+            url: "search.php",
+            data: {"word": word}
+        }).done(data => populate(data));
+    }
+
+
+
+</script>

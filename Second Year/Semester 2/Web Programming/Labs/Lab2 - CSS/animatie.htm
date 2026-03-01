@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexagonal Grid Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #282c34;
+      margin: 0;
+      perspective: 800px;
+    }
+
+    .hex-container {
+      display: grid;
+      grid-template-columns: repeat(5, 100px);
+      gap: 10px;
+      transform-style: preserve-3d;
+    }
+
+    .hex {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #00bcd4, #008ba3);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      transition: transform 0.5s ease-in-out;
+      transform-origin: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .hex:hover {
+      transform: rotateX(30deg) rotateY(30deg) translateZ(20px) scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hex-container">
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+    <div class="hex"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+﻿@model FeedbackViewModel
+
+<div class="card">
+    <h2>Submit Feedback</h2>
+
+    @if (ViewBag.SessionInfo.IsRestricted)
+    {
+        <div class="restricted">
+            <h4>⚠️ Account Restricted</h4>
+            <p>You have exceeded the limit of flagged submissions. You can still write feedback, but you cannot save it to the database.</p>
+        </div>
+    }
+
+    <form asp-action="SubmitFeedback" method="post">
+        <div class="form-group">
+            <label asp-for="Message">Your Feedback Message</label>
+            <textarea asp-for="Message" class="form-control" rows="6" placeholder="Please share your feedback with us..." required></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Analyze Feedback</button>
+        <a asp-action="Index" class="btn btn-danger">Cancel</a>
+    </form>
+
+    @if (Model.BlockedWordsFound.Any())
+    {
+        <div class="blocked-words">
+            <h4>⚠️ Blocked Words Detected</h4>
+            <p>The following blocked words were found in your feedback:</p>
+            <ul>
+                @foreach (var word in Model.BlockedWordsFound)
+                {
+                    <li><strong>@word</strong></li>
+                }
+            </ul>
+
+            @if (Model.IsFlagged)
+            {
+                <div class="warning">
+                    <p><strong>Warning:</strong> Your feedback contains more than 3 blocked words and has been flagged.</p>
+                </div>
+            }
+
+            <div style="margin-top: 15px;">
+                <form asp-action="RemoveBlockedWords" method="post" style="display: inline;">
+                    <input type="hidden" name="message" value="@Model.Message" />
+                    <button type="submit" class="btn btn-warning">Remove Blocked Words</button>
+                </form>
+
+                @if (Model.CanSave)
+                {
+                    <form asp-action="SaveFeedback" method="post" style="display: inline;">
+                        <input type="hidden" name="message" value="@Model.Message" />
+                        <button type="submit" class="btn btn-success">Save Feedback Anyway</button>
+                    </form>
+                }
+                else
+                {
+                    <button class="btn btn-success" disabled>Save Feedback Anyway (Restricted)</button>
+                }
+
+                <a asp-action="Index" class="btn btn-danger">Cancel</a>
+            </div>
+        </div>
+    }
+</div> 

@@ -1,0 +1,110 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<label>Get course students: </label>
+<input placeholder="Enter course name: " id="course"/>
+<button type="submit" id="students">Display participants</button>
+<div id="participantsData"></div><br />
+
+<label>Get student courses: </label>
+<input placeholder="Enter student name: " id="student"/>
+<button type="submit" id="courses">Display courses</button>
+<div id="coursesData"></div><br />
+
+
+<lable>Give grade to student: </lable>
+<div id="myCoursesData"></div>
+<input placeholder="Enter student name: " id="studentgrade"/>
+<input type="number" max="10" min="1" step="1" value=1 id="grade"/>
+<button type="submit" id="gradeButton">Add grade</button>
+<div id="confirmation"></div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+        function buildTable(data) {
+            let code_string="<ul>";
+            for (let row in data) {
+                console.log("row: ", data[row]);
+                code_string += "<li>" + data[row] + "</li>";
+            }
+            code_string+="</ul>";
+            $("#coursesData").html(code_string);
+        }
+
+        function displayCourses(data){
+            let code_string="<select id='select'>";
+            for (let row in data) {
+                console.log("row: ", data[row]);
+                code_string += "<option>" + data[row] + "</option>";
+            }
+            code_string+="</select>";
+            $("#myCoursesData").html(code_string);
+        }
+        
+        $(document).ready(function(){
+            $.get("/Main/GetMyCourses",
+                    function(data) {
+                          displayCourses(data)
+                       }
+            );
+
+
+            $("#students").click(function() {
+                console.log("button clicked with val: ", $("#course").val());
+                  $.get(
+                      "/Main/GetParticipants", 
+                      {course : $("#course").val()},
+                      function(data) {
+                          console.log("participants: ", data);
+                          if(data!=null)
+                            $("#participantsData").html(data);
+                          else
+                            $('#participantsData').html("No participant for the given course name");
+                       }
+                    );
+                    
+            });
+
+            $("#courses").click(function() {
+                console.log("button clicked with val: ", $("#student").val());
+                  $.get(
+                      "/Main/GetCourses", 
+                      {studentName : $("#student").val()},
+                      function(data) {
+                          console.log("courses: ", data);
+                          if(data!=null)
+                            buildTable(data);
+                          else
+                            $('#coursesData').html("No such student found");
+                       }
+                    );
+                    
+            });
+
+        
+
+             $("#gradeButton").click(function() {
+                    console.log("button clicked with val: ", $("#studentrade").val());
+                      $.get(
+                          "/Main/GiveGrade", 
+                          {
+                              course: $('#select').val(),
+                              studentName : $("#studentgrade").val(),
+                              grade: $('#grade').val()
+                          },
+                          function(data) {
+                              $('#confirmation').html(data);
+                           }
+                        );
+                    
+                });
+
+         });
+
+
+
+</script>

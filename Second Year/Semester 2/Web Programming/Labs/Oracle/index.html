@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oracle Java - Technical Details Clone</title>
+  <style>
+    /* -------------------------- RESET & BASE STYLES -------------------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f6f6f6;
+      line-height: 1.4;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    /* -------------------------- HEADER (TOP NAV) -------------------------- */
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .top-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    /* Logo area */
+    .logo img {
+      height: 30px;
+    }
+    /* Main nav items */
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+    nav li {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #444;
+    }
+    /* Right side actions */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.9rem;
+    }
+    .nav-actions a.button-like {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* -------------------------- HERO SECTION -------------------------- */
+    .hero-section {
+      background-color: #3a312f; /* A dark-slate/brownish background, approximate */
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    /* Left image (cloud icon) */
+    .hero-image img {
+      width: 120px;
+      height: auto;
+    }
+    /* Hero text */
+    .hero-text {
+      max-width: 700px;
+    }
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .hero-text a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c74634; /* Oracle red tone */
+      color: #fff;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* -------------------------- BREADCRUMB -------------------------- */
+    .breadcrumb {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+    }
+    .breadcrumb .crumb-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .crumb-container ul {
+      display: flex;
+      gap: 5px;
+      font-size: 0.9rem;
+    }
+    .crumb-container ul li::after {
+      content: "/";
+      margin: 0 5px;
+      color: #888;
+    }
+    .crumb-container ul li:last-child::after {
+      content: "";
+    }
+    .crumb-container h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    /* -------------------------- TABS (Overview / Technical Details) -------------------------- */
+    .tabs {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .tabs-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 30px;
+      padding: 10px 20px;
+    }
+    .tabs-container a {
+      position: relative;
+      padding: 10px 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #555;
+    }
+    .tabs-container a.active {
+      color: #c74634;
+    }
+    /* Simple underline for active tab */
+    .tabs-container a.active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #c74634;
+    }
+
+    /* -------------------------- MAIN CONTENT SECTION -------------------------- */
+    .content-section {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+    }
+    .downloads {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      flex: 1;
+    }
+    .downloads h3 {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .downloads ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+    .downloads li {
+      margin-bottom: 10px;
+    }
+    .downloads a {
+      color: #c74634;
+      font-weight: 600;
+    }
+    /* If you want multiple columns or more sections, add them here */
+
+    /* -------------------------- RESPONSIVE -------------------------- */
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-actions {
+        display: none; /* You can hide or transform for smaller screens */
+      }
+      .tabs-container {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .content-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER / TOP NAV ========== -->
+  <header>
+    <div class="top-nav">
+      <!-- Left: Oracle Logo -->
+      <div class="logo">
+        <!-- Replace with actual Oracle logo if desired -->
+        <img src="images.png" alt="Oracle Logo" />
+      </div>
+      <!-- Middle: Nav Items -->
+      <nav>
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Company</a></li>
+        </ul>
+      </nav>
+      <!-- Right: Actions -->
+      <div class="nav-actions">
+        <a href="#" class="button-like">View Accounts</a>
+        <a href="#" class="button-like">Contact Sales</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-image">
+        <!-- Replace with your own icon/image -->
+        <img src="cloud.svg" alt="Cloud Icon" />
+      </div>
+      <div class="hero-text">
+        <h2>Java Is the Language of Possibilities</h2>
+        <p>
+          Java is powering the innovation behind our digital world. Harness this potential with
+          Java resources for student coders, hobbyists, developers, and IT leaders.
+        </p>
+        <a href="#">Learn how Java powers innovation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BREADCRUMB ========== -->
+  <div class="breadcrumb">
+    <div class="crumb-container">
+      <ul>
+        <li><a href="#">Java</a></li>
+        <!-- You can add more crumb items if needed -->
+      </ul>
+      <h1>Java Technical Details</h1>
+    </div>
+  </div>
+
+  <!-- ========== TABS ========== -->
+  <div class="tabs">
+    <div class="tabs-container">
+      <a href="#" class="">Overview</a>
+      <a href="#" class="active">Technical Details</a>
+      <!-- Add “More” or additional tabs if needed -->
+    </div>
+  </div>
+
+  <!-- ========== CONTENT SECTION (Example: Newest Downloads) ========== -->
+  <section class="content-section">
+    <div class="downloads">
+      <h3>Newest Downloads</h3>
+      <ul>
+        <li><a href="#">Java SE 24</a></li>
+        <li><a href="#">Java SE 21 (LTS)</a></li>
+        <li><a href="#">Java SE 17 (LTS)</a></li>
+        <li><a href="#">Java SE 11 (LTS)</a></li>
+        <li><a href="#">Java SE 8</a></li>
+      </ul>
+    </div>
+    <!-- You can add more sections or columns here if you like -->
+  </section>
+
+</body>
+</html>

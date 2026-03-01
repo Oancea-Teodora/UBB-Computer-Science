@@ -1,0 +1,506 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\home\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\home\\feedbacklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\home\\customerregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\home\\customerregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\home\\submitfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\home\\submitfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114803_migrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2024-2\\Migrations\\20250619114803_migrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114722_migrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2024-2\\Migrations\\20250619114722_migrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\helpers\\sessionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619075017_migr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2024-2\\Migrations\\20250619075017_migr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074322_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2024-2\\Migrations\\20250619074322_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074145_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:2024-2\\Migrations\\20250619074145_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teodo\\AppData\\Local\\Temp\\gdykiu3n..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\2024-2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\2024-2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|c:\\users\\teodo\\desktop\\teo\\facultate\\anul 2\\semestru 2\\web\\exam\\.net - exam 2024-2 - flights-hotels-reservations\\2024-2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87BDCFC-B1AB-4DBF-80A7-68C3F6071D85}|2024-2\\2024-2.csproj|solutionrelative:2024-2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SubmitFeedback.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\SubmitFeedback.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Home\\SubmitFeedback.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\SubmitFeedback.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Home\\SubmitFeedback.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAuwEEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T14:41:08.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FeedbackList.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\FeedbackList.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Home\\FeedbackList.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\FeedbackList.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Home\\FeedbackList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T14:40:28.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\CustomerRegistration.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Home\\CustomerRegistration.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\CustomerRegistration.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Home\\CustomerRegistration.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T14:39:35.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T17:56:23.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:02:27.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "2024-2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\HomeController.cs*",
+              "RelativeToolTip": "2024-2\\Controllers\\HomeController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T16:08:30.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "2024-2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "2024-2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:14:13.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "2024-2\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\Product.cs",
+              "RelativeToolTip": "2024-2\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:45:41.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:19:11.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T16:24:21.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T17:56:27.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "2024-2\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "2024-2\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:38:33.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T18:22:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250619114803_migrat.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114803_migrat.cs",
+              "RelativeDocumentMoniker": "2024-2\\Migrations\\20250619114803_migrat.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114803_migrat.cs",
+              "RelativeToolTip": "2024-2\\Migrations\\20250619114803_migrat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T11:48:03.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250619114722_migrat.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114722_migrat.cs",
+              "RelativeDocumentMoniker": "2024-2\\Migrations\\20250619114722_migrat.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619114722_migrat.cs",
+              "RelativeToolTip": "2024-2\\Migrations\\20250619114722_migrat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T11:47:23.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "2024-2\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\Order.cs",
+              "RelativeToolTip": "2024-2\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:53:32.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SessionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Helpers\\SessionHelper.cs",
+              "RelativeDocumentMoniker": "2024-2\\Helpers\\SessionHelper.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Helpers\\SessionHelper.cs",
+              "RelativeToolTip": "2024-2\\Helpers\\SessionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:44:12.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "2024-2\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\OrderItem.cs",
+              "RelativeToolTip": "2024-2\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T13:50:12.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "2024-2\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "2024-2\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:16:32.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250619074322_mig.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074322_mig.cs",
+              "RelativeDocumentMoniker": "2024-2\\Migrations\\20250619074322_mig.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074322_mig.cs",
+              "RelativeToolTip": "2024-2\\Migrations\\20250619074322_mig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:43:22.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250619075017_migr.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619075017_migr.cs",
+              "RelativeDocumentMoniker": "2024-2\\Migrations\\20250619075017_migr.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619075017_migr.cs",
+              "RelativeToolTip": "2024-2\\Migrations\\20250619075017_migr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:50:17.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\User.cs",
+              "RelativeDocumentMoniker": "2024-2\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\User.cs",
+              "RelativeToolTip": "2024-2\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:32:00.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\appsettings.json",
+              "RelativeDocumentMoniker": "2024-2\\appsettings.json",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\appsettings.json",
+              "RelativeToolTip": "2024-2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-15T16:10:00.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250619074145_mig.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074145_mig.cs",
+              "RelativeDocumentMoniker": "2024-2\\Migrations\\20250619074145_mig.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Migrations\\20250619074145_mig.cs",
+              "RelativeToolTip": "2024-2\\Migrations\\20250619074145_mig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T07:41:45.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Program.cs",
+              "RelativeDocumentMoniker": "2024-2\\Program.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Program.cs",
+              "RelativeToolTip": "2024-2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:52:13.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "gdykiu3n..cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\AppData\\Local\\Temp\\gdykiu3n..cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\gdykiu3n..cs",
+              "ToolTip": "C:\\Users\\teodo\\AppData\\Local\\Temp\\gdykiu3n..cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\gdykiu3n..cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T11:14:07.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "2024-2\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "2024-2\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T17:56:25.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "2024-2.csproj",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\2024-2.csproj",
+              "RelativeDocumentMoniker": "2024-2\\2024-2.csproj",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\2024-2.csproj",
+              "RelativeToolTip": "2024-2\\2024-2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T16:49:43.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "2024-2\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\teodo\\Desktop\\Teo\\Facultate\\Anul 2\\Semestru 2\\Web\\EXAM\\.NET - Exam 2024-2 - flights-hotels-reservations\\2024-2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "2024-2\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T15:02:32.215Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+
+<div *ngIf = "assets">
+  <table id = "table-container" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>UserId</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let a of assets" [ngClass]="{'red': a.value >= 10}">
+      <td>{{a.id}}</td>
+      <td>{{a.userid}}</td>
+      <td>{{a.name}}</td>
+      <td>{{a.description}}</td>
+      <td>{{a.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id='addAsset' class="justify-content-center">
+  <label>Name:  <input type="text" name="username" class="form-control" #name></label><br>
+  <br>
+  <label>Description:  <input type="text" name="username" class="form-control" #description></label><br>
+  <br>
+  <label>Value:  <input type="text" name="username" class="form-control" #value></label><br>
+  <br>
+  <button (click) = "addAsset(name.value, description.value, value.value)">Add asset</button>
+  <button (click)="addAssets()">Add Assets</button>
+</div>
+
+<div *ngIf = "assetsPage">
+  <table id = "table5" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>UserId</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let a of assetsPage" [ngClass]="{'red': a.value >= 10}">
+      <td>{{a.id}}</td>
+      <td>{{a.userid}}</td>
+      <td>{{a.name}}</td>
+      <td>{{a.description}}</td>
+      <td>{{a.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button id = "prev" (click)="pressPrevious()">Previous</button>
+  <button id = "next" (click)="pressNext()">Next</button>
+</div>

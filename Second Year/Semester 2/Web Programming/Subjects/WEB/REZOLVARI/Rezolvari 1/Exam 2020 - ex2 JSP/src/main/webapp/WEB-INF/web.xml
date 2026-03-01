@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.example.controller.LoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChannelController</servlet-name>
+        <servlet-class>com.example.controller.ChannelController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChannelController</servlet-name>
+        <url-pattern>/Channel</url-pattern>
+    </servlet-mapping>
+
+</web-app>

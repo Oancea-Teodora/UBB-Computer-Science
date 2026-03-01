@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.right {
+    text-align: right;
+}
+
+.update td {
+    border: none;
+    height: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button {
+    width: 150px;
+}
+
+input[readonly] {
+    background-color: gray;
+}

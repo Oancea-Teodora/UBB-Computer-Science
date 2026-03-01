@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Feedback>
+@{
+    Layout = "_Layout";
+}
+<h2>Available Keywords </h2>
+<table>
+    <tr><th>Key</th><th>Value</th><th></th></tr>
+    @foreach (var f in Model)
+    {
+        <tr>
+            <td>@f</td>
+            <td>@f</td>
+        </tr>
+    }
+ </table>

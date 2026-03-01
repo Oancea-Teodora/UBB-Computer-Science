@@ -1,0 +1,71 @@
+<ul class="assets">
+</ul>
+
+Name:
+<input type="text" id="name">
+Description:
+<input type="text" id="description">
+Value:
+<input type="text" id="value">
+<button onclick="addAsset()">Add</button>
+<button onclick="submit()">Submit</button>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function populate(data){
+        console.log(data);
+        data = $.parseJSON(data);
+
+        var assets = "";
+        console.log(data);
+        for(let asset of data) {
+            if (parseInt(asset.value) > 10) {
+                assets += "<li style = 'background-color:red'>";
+            }
+            else {
+                assets += "<li>";
+            }
+            assets += asset.name + " " + asset["description"] + " " + asset["value"] + "</li>";
+        }
+        $(".assets").html(assets);
+    }
+
+    $(document).ready(function(){
+        $.get("asset.php", data => populate(data));
+    });
+
+    var toBeAdded = [];
+    function addAsset() {
+        var name = $("#name").val();
+        var description = $("#description").val();
+        var value = $("#value").val();
+
+        var asset = { name, description, value };
+        toBeAdded.push(asset);
+
+        var assets = $(".assets").html();
+        if (parseInt(value) > 10) {
+            assets += "<li style = 'background-color:red'>";
+        }
+        else {
+            assets += "<li>";
+        }
+        assets += name + " " + description + " " + value + "</li>";
+        $(".assets").html(assets);
+        console.log(JSON.stringify(toBeAdded));
+    }
+
+    function submit() {
+        $.post("addAll.php",
+            {assets: JSON.stringify(toBeAdded)},
+            data => {
+            populate(data);
+            toBeAdded = [];
+        });
+    }
+</script>
+
+

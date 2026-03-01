@@ -1,0 +1,10 @@
+Solve the following problem using the JSP/Servlet technology. 
+State information (between web requests) is always stored in a database;
+ you may store some state information in cookies/session objects. 
+Write a web application for user profile management. Before he can use the application, 
+the user must be authenticated or he has the option of creating a new account (i.e. register). 
+The profile of a user contains the fields: name, email address, picture, age, home town. 
+A user can search the profile database using any of the above fields or parts of a field. 
+The profiles resulted from the search are displayed on the browser window: 
+the image, name, email address, age and home town.
+ Image files need not be stored on the database. A user can also change its profile data.

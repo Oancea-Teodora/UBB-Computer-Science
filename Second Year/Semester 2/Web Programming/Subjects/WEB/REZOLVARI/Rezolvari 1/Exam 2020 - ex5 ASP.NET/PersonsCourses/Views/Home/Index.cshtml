@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <input placeholder="Enter name" id="name"/><br />
+    <button id='log' type="submit">Log in</button><br/>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+        
+        $(document).ready(function(){
+           
+            $("#log").click(function() {
+                  $.get("/Home/VerifyUser", {name : $("#name").val()},
+                    function(data) {
+                        if(data!=-1){
+                            //sessionStorage.setItem("id", data);
+                            window.location.replace("/Main");
+                        }
+                        else{
+                            alert("Log in failed!");
+                        }
+                });
+                    
+            });
+         });
+
+</script>

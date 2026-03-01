@@ -1,0 +1,76 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+<div *ngIf="finalAssets">
+  <table id = "table-container" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>UserId</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let a of finalAssets" [ngClass]="{'red': a.value > 10}">
+      <td>{{a.id}}</td>
+      <td>{{a.userid}}</td>
+      <td>{{a.name}}</td>
+      <td>{{a.description}}</td>
+      <td>{{a.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id='addAsset' class="justify-content-center" style="height: 600px">
+  <label>Name:  <input type="text" name="username" class="form-control" #name></label><br>
+  <br>
+  <label>Description:  <input type="text" name="username" class="form-control" #description></label><br>
+  <br>
+  <label>Value:  <input type="text" name="username" class="form-control" #value></label><br>
+  <br>
+  <button (click) = "addAsset(name.value, description.value, value.value)">Add asset</button>
+  <button (click)="addAssets()">Add Assets</button>
+
+
+</div>
+
+
+
+
+<!--
+<div *ngIf="assets">
+  <table id = "table-container" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>UserId</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of assets" ng-style="{'background-color': +cell < 10 ? 'red' : 'white'}">
+      <td *ngFor="let cell of log" ng-style="{'background-color': +cell < 10 ? 'red' : 'white'}">
+        <div *ngIf="+cell>10; then red; else normal"  >
+        </div>
+        <ng-template #red>
+          <div>
+            {{cell}} + red
+          </div>
+        </ng-template>
+        <ng-template #normal>
+          <div>
+            {{cell}}
+          </div>
+        </ng-template>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+-->

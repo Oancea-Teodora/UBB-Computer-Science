@@ -1,0 +1,105 @@
+﻿@model ExamTemplateAsp.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <style>
+        body {
+            margin: 0 auto 0 auto;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .box {
+            width: 250px;
+            margin: 15% auto 0 auto;
+            padding: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+
+        #username {
+            border: #ccc 1px solid;
+            padding: 8px;
+            width: 250px;
+            font-size: 1em;
+        }
+
+        #password {
+            border: #ccc 1px solid;
+            padding: 8px;
+            width: 250px;
+            font-size: 1em;
+        }
+
+        .btn {
+            width: 125px;
+            padding-top: 5px;
+            margin-top: 20px;
+            margin-left: 16px;
+            font-weight: 800;
+            font-size: 0.8em;
+        }
+
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-div" class="box">
+        @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+        {
+            <table>
+                <tr style="font-size:1.5em; color:#525252;">
+                    <td colspan="2">
+                        Login to students database<br />
+                    </td>
+                </tr>
+                <tr id="username">
+                    <td>
+                        @Html.LabelFor(model => model.Username)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.Username)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.Username)</td>
+                </tr>
+                <tr id="password">
+                    <td>
+                        @Html.LabelFor(model => model.Password)
+                    </td>
+                    <td>
+                        @Html.EditorFor(model => model.Password)
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@Html.ValidationMessageFor(model => model.Password)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMessage)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn" type="submit" name="name" value="Login" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/jquery.validate.min.js"></script>
+    <script src="Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
+

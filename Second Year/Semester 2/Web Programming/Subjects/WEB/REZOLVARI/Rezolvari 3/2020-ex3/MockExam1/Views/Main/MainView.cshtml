@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/Webapp/Scripts/main.js"></script>
+</head>
+<body>
+    <main>
+        <h2>Hello, @Session["user"]!</h2>
+
+        <form class="form">
+            <label for="post-id">Post ID:</label>
+            <input type="text" id="post-id" name="post-id"><br>
+            <label for="post-topic-name">Post topic name:</label>
+            <input type="text" id="post-topic-name" name="post-topic-name"><br>
+            <label for="post-text">Post text:</label>
+            <input type="text" id="post-text" name="post-text"><br>
+
+            <button onclick="onUpdateBtnClicked()" type="button" id="update-btn">Update post</button>
+            <button onclick="onInsertBtnClicked()" type="button" id="insert-btn">Insert post</button>
+        </form>
+    </main>
+</body>
+</html>

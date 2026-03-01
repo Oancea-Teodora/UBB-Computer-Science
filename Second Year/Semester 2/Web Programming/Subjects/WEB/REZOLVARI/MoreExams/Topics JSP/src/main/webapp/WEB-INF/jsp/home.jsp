@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<ul class="posts">
+</ul>
+
+<p>
+    Update the desired post with the following informations:
+    <br>
+    Enter topic id
+    <input type="text" id="topic">
+    <br>
+    Enter text of the post
+    <input type="text" id="text">
+
+</p>
+
+<p>
+    Add a new post:
+    <br>
+    Enter topic name
+    <input type="text" id="topicName">
+    <br>
+    Enter text of the post
+    <input type="text" id="newText">
+    <br>
+    <button onclick="addPost()">Add</button>
+</p>
+
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function populate(data){
+        console.log(data);
+
+        var posts = "";
+        console.log(data);
+        for(let post of data) {
+
+
+            posts += "<li>";
+            posts += post["username"] + " " + post["topicid"] + " " + post["text"] + " " + post["date"];
+            posts += "<button onClick=updatePost(" + post.id + ")>Update</button>";
+            posts += "</li>";
+        }
+        $(".posts").html(posts);
+    }
+
+    $(document).ready(function () {
+        $.get("Post", data => populate(data));
+    });
+
+    function updatePost(id)
+    {
+        var topicid = $("#topic").val();
+        var text = $("#text").val();
+
+        var topic = {"id":id,"username":"null","topicid":topicid,"text":text,"date":0};
+
+        $.ajax({
+            type: 'PUT',
+            url: 'Post/'+id,
+            contentType: 'application/json',
+            data: JSON.stringify(topic),
+        }).done(data => populate(data));
+    }
+
+    function addPost(){
+        var topicName = $("#topicName").val();
+        var text = $("#newText").val();
+        console.log(topicName)
+        console.log(text)
+        $.post("Post",{"topicName": topicName, "text": text}, data => populate(data));
+    }
+
+    function checkNew() {
+        $.get("Post/New", function(data, status){
+            console.log("Data: " + data + "\nStatus: " + status);
+            if (data !== "false")
+                alert("Someone added a new post! " + data);
+        });
+    }
+
+    setInterval(checkNew, 3000);
+
+
+
+</script>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Animated Squares
+</title>
+
+<style>
+    .square {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .left {
+        left: 0;
+        background-color: red;
+        animation: moveLeft 3s infinite;
+    }
+
+    .right {
+        right: 0;
+        background-color: blue;
+        animation: moveRight 3s infinite;
+    }
+
+    @keyframes moveLeft {
+        0% {
+            left: 0;
+            background-color: red;
+        }
+
+        49% {
+            left: 49%;
+
+            transform: translateX(-50%) scale(1.5) rotate(180deg);
+            background-color: red;
+        }
+
+        50% {
+            left: 50%;
+            transform: translateX(-50%) scale(2.5) rotate(180deg);
+
+            border-radius: 50%;
+            background-color: purple;
+        }
+
+        51% {
+
+            left: 51%;
+            transform: translateX(-50%) scale(1.5) rotate(180deg);
+            background-color: purple;
+        }
+
+        100% {
+            left: 0;
+            background-color: red;
+        }
+    }
+
+    @keyframes moveRight {
+        0% {
+            right: 0;
+            background-color: blue;
+        }
+
+        49% {
+            right: 49%;
+
+            transform: translateX(50%) scale(1.5) rotate(-180deg);
+            background-color: blue;
+        }
+
+        50% {
+            right: 50%;
+            border-radius: 50%;
+            transform: translateX(50%) scale(2.5) rotate(-180deg);
+            background-color: blueviolet;
+        }
+
+        51% {
+            right: 51%;
+
+            transform: translateX(50%) scale(1.5) rotate(-180deg);
+            background-color: blueviolet;
+        }
+
+        100% {
+            right: 0;
+            background-color: blue;
+        }
+    }
+</style>
+
+<body>
+    <div class="squares">
+        <div class="square left"></div>
+        <div class="square right"></div>
+    </div>
+</body>
+
+</html>

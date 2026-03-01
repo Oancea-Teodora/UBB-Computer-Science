@@ -1,0 +1,33 @@
+/* _content/lab10/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-el7tl2eke3] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-el7tl2eke3] {
+  color: #0077cc;
+}
+
+.border-top[b-el7tl2eke3] {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-el7tl2eke3] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-el7tl2eke3] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.footer[b-el7tl2eke3] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

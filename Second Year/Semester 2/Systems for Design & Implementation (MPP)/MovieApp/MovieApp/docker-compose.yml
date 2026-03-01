@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  # Backend service
+  backend:
+    image: 789536877951.dkr.ecr.eu-north-1.amazonaws.com/movie-app-backend:latest
+    container_name: movie-app-backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=your_jwt_secret_here
+    volumes:
+      - db-data:/app/data
+    networks:
+      - movie-app-network
+
+  # Frontend service
+  frontend:
+    image: 789536877951.dkr.ecr.eu-north-1.amazonaws.com/movie-app-frontend:latest
+    container_name: movie-app-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - movie-app-network
+
+networks:
+  movie-app-network:
+    driver: bridge
+
+volumes:
+  db-data:
+    driver: local

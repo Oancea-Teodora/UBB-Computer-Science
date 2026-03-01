@@ -1,0 +1,78 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand"> Welcome {{username}}! This is your website app!</a>
+</nav>
+
+<div *ngIf = projects>
+  <table id = "table-container" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Project Manager ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Members</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let p of projects">
+      <td>{{p.id}}</td>
+      <td>{{p.projectManagerID}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.description}}</td>
+      <td>{{p.members}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<button (click)="getMemberProject()">See {{username}}'s projects</button>
+
+<div *ngIf = memberProjects>
+  <table id = "table2" class = "table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Project Manager ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Members</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let p of memberProjects" >
+      <td>{{p.id}}</td>
+      <td>{{p.projectManagerID}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.description}}</td>
+      <td>{{p.members}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<br><br>
+<div>
+
+<label>Skill:  <input type="text" name="username" class="form-control" #skill></label><br>
+<button (click)="filterDevSkills(skill.value)">See skills</button>
+
+  <div *ngIf = filteredDevs>
+    <li *ngFor = "let d of filteredDevs">
+      {{d.name}}
+    </li>
+  </div>
+
+</div>
+
+<br><br>
+
+<div>
+<label>Choose a developer: </label><br>
+<select class = "dropdown-header" [(ngModel)]="filterDev">
+  <option class = "dropdown-item" *ngFor = "let dev of devs" [ngValue]="dev">
+    {{dev.name}}
+  </option>
+</select>
+  <label>Developer name  <input type="text" name="username" class="form-control" #devname></label><br>
+  <label>Projects(separated by comma):  <input type="text" name="username" class="form-control" #projectlist></label><br>
+<button (click)="addProjects(devname.value, projectlist.value)">Assign developer to projects</button>
+</div>
