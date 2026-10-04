@@ -39,3 +39,11 @@
 | 3 | [Software Engineering (ISS)](./Second%20Year/Semester%202/Software%20Engineering%20%28ISS%29) |                               |
 | 4 | [Systems for Design & Implementation (MPP)](./Second%20Year/Semester%202/Systems%20for%20Design%20%26%20Implementation%20%28MPP%29) |                               |
 | 5 | [Web Programming](./Second%20Year/Semester%202/Web%20Programming) |                               |
+
+### 📂5th Semester
+| No. | Course | Concepts and knowledge |
+|-----|--------|------------------------|
+| 1 | [Cloud Applications Architecture](./Third%20Year/Semester%201/Cloud%20applications%20architecture) |                               |
+| 2 | [Formal Languages and Compiler Design](./Third%20Year/Semester%201/Formal%20languages%20and%20compiler%20design) |                               |
+| 3 | [Mobile Application Programming](./Third%20Year/Semester%201/Mobile%20Application%20Programming) |                               |
+| 4 | [Parallel and Distributed Programming](./Third%20Year/Semester%201/Parallel%20and%20Distributed%20Programming) |                               |
