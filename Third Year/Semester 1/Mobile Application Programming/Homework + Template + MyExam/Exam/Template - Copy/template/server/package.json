@@ -1,0 +1,20 @@
+{
+    "name": "exam2026-jan20a",
+    "version": "1.0.0",
+    "description": "Library Loans Exam Server",
+    "private": true,
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "@koa/cors": "^5.0.0",
+        "koa": "^2.15.0",
+        "koa-bodyparser": "^4.3.0",
+        "@koa/router": "^15.2.0",
+        "ws": "^8.4.0"
+    },
+    "overrides": {
+        "keygrip": "git+https://github.com/crypto-utils/keygrip.git"
+    }
+}
