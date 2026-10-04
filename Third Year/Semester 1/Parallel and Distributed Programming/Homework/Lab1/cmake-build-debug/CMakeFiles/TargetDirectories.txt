@@ -1,0 +1,3 @@
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

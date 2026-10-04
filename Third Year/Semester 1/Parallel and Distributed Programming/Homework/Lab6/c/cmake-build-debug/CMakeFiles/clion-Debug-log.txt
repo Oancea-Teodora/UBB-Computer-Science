@@ -1,0 +1,30 @@
+"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\teodo\Desktop\Teo\Facultate\Anul 3\Semester 1\Parallel and distributed programming\Parallel and distributed programming\Lab6\c" -B "C:\Users\teodo\Desktop\Teo\Facultate\Anul 3\Semester 1\Parallel and distributed programming\Parallel and distributed programming\Lab6\c\cmake-build-debug"
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+CMake Warning in C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab6/c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvjlv3/CMakeLists.txt:
+  The object file directory
+
+    C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab6/c/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvjlv3/CMakeFiles/cmTC_11d81.dir/./
+
+  has 224 characters.  The maximum full path to an object file is 250
+  characters (see CMAKE_OBJECT_PATH_MAX).  Object file
+
+    CMakeCXXCompilerABI.cpp.obj
+
+  cannot be safely placed under this directory.  The build may not work
+  correctly.
+
+
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (16.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/Parallel and distributed programming/Parallel and distributed programming/Lab6/c/cmake-build-debug
