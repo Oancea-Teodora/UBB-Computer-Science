@@ -1,0 +1,5 @@
+let a = 3.14;
+let b = sin(a);
+let c = cos(a);
+print b * b + c * c;
+

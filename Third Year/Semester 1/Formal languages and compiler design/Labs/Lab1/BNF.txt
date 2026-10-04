@@ -1,0 +1,43 @@
+<program> ::= <statement_list>
+<statement_list> ::= <statement> <statement_list> | epsilon 
+<statement> ::= <let_stmt> | <assign_stmt> | <print_stmt> | <if_stmt>
+
+<let_stmt> ::= "LET" <identifier> "=" <expr> ";"
+<assign_stmt> ::= <identifier> "=" <expr> ";"
+<print_stmt> ::= "PRINT" <expr> ";"
+
+<if_stmt> ::= "if" <expr> "then" <statement_list> <else_part> "end"
+<else_part> ::= "else" <statement_list> | epsilon
+
+<expr> ::= <or_expr>
+<or_expr> ::= <and_expr> <or_tail>
+<or_tail> ::= "or" <and_expr> <or_tail> | epsilon
+<and_expr> ::= <cmp_expr> <and_tail>
+<and_tail> ::= "and" <cmp_expr> <and_tail> | epsilon
+<cmp_expr> ::= <add_expr> <cmp_tail>
+<cmp_tail> ::= <cmp_op> <add_expr> | epsilon
+<cmp_op> ::= "==" | "!=" | "<" | "<=" | ">" | ">="
+<add_expr> ::= <mul_expr> <add_tail>
+<add_tail> ::= <add_op> <mul_expr> <add_tail> | epsilon
+<add_op> ::= "+" | "-"
+<mul_expr> ::= <unary> <mul_tail>
+<mul_tail> ::= <mul_op> <unary> <mul_tail> | epsilon
+<mul_op> ::= "*" | "/"
+
+<unary> ::= "-" <unary> | <primary>
+<primary> ::= <number> | <identifier> | "(" <expr> ")" | <call>
+
+<call> ::= <func> "(" <arg_list_opt> ")"
+<arg_list_opt> ::= <arg_list> | epsilon
+<arg_list> ::= <expr> <arg_list_tail>
+<arg_list_tail> ::= "," <expr> <arg_list_tail> | epsilon
+<func> ::= "sin" | "cos" | "sqrt" | "pow"
+
+<identifier> ::= <letter> <id_tail>
+<id_tail> ::= <letter_or_digit_or_underscore> <id_tail> | epsilon
+<letter_or_digit_or_underscore> ::= <letter> | <digit> | "_"
+<number> ::= <digit> <digits_opt> <frac_opt>
+<digits_opt> ::= <digit> <digits_opt> | epsilon
+<frac_opt> ::= "." <digit> <digits_opt> | epsilon
+<letter> ::= "A" | "B" | ... | "Z" | "a" | ... | "z" |
+<digit> ::= "0" | "1" |... | "8" | "9"

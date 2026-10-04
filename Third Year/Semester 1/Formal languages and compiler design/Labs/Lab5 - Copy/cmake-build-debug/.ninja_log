@@ -1,0 +1,6 @@
+# ninja log v5
+15	178	7853295971722350	CMakeFiles/Lab3.dir/parse_main.c.obj	8e977ef05c562e7b
+11	206	7853295971833256	CMakeFiles/Lab3.dir/fa.c.obj	e177dc005d2cbca4
+7	187	7853295971833256	CMakeFiles/Lab3.dir/st_bst.c.obj	16d5e6d4177987d
+1	222	7853295971878966	CMakeFiles/Lab3.dir/main.c.obj	91da4f8f6468817f
+19	230	7853295972295187	CMakeFiles/Lab3.dir/st_hash.c.obj	e8a15d6fb7d322f6

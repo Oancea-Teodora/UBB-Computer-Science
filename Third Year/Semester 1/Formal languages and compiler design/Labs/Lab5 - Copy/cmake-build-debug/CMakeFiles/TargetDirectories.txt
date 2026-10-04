@@ -1,0 +1,4 @@
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab5 - Copy/cmake-build-debug/CMakeFiles/Lab3.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab5 - Copy/cmake-build-debug/CMakeFiles/parser.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab5 - Copy/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab5 - Copy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

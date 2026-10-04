@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\teodo\Desktop\Teo\Facultate\Anul 3\Semester 1\LFTC\Lab6 - Copy\ll1_mini.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\teodo\Desktop\Teo\Facultate\Anul 3\Semester 1\LFTC\Lab6 - Copy\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2A54164C-863F-3545-9DF0-3A9892C23BB9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

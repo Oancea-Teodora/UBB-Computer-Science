@@ -1,0 +1,6 @@
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/Lab3.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/ll1_seminar.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/ll1_mini.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/mini_ai_parser.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/ALL_BUILD.dir
+C:/Users/teodo/Desktop/Teo/Facultate/Anul 3/Semester 1/LFTC/Lab6 - Copy/cmake-build-debug/CMakeFiles/ZERO_CHECK.dir

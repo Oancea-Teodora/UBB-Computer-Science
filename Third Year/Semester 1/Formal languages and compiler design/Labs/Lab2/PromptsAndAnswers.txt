@@ -1,0 +1,50 @@
+PROMPT:
+Check if this grammar uses only pure BNF: <N> ::= ..., quoted terminals, |, and explicit epsilon. Say PASS/FAIL and list any violations.
+
+ANSWER:
+PASS
+No violations after ignoring the | ... | shorthand. The grammar otherwise uses only angle-bracketed nonterminals, ::=, quoted terminals, |, and explicit epsilon.
+
+
+PROMPT:
+Check that all nonterminals are defined and reachable from the start symbol.
+List undefined or unreachable ones if any
+
+ANSWER:
+All good ✅
+Undefined nonterminals: None
+Unreachable nonterminals (from <program>): None
+Every nonterminal is defined and reachable from the start symbol <program>.
+
+PROMPT:
+Check if every nonterminal can produce terminal strings and uses epsilon correctly. List any dead or cyclic rules.
+
+ANSWER:
+All good ✅
+Every nonterminal can derive a terminal-only string.
+ε is used only for proper optionals/lists (no nullable cycles).
+Nullable nonterminals (by design):
+<statement_list>, <or_tail>, <and_tail>, <cmp_tail>, <add_tail>, <mul_tail>, <arg_list_opt>, <arg_list_tail>, <digits_opt>, <frac_opt>, <id_tail>, <else_part>.
+Dead rules: None.
+Cyclic (non-terminating) rules: None.
+
+PROMPT:
+Check for immediate or indirect left recursion.
+List recursive rules and suggest fixes.
+
+ANSWER:
+No left recursion found ✅
+Recursive (but right-recursive) rules:
+<statement_list> ::= <statement> <statement_list> | ε
+<or_tail> ::= "or" <and_expr> <or_tail> | ε
+<and_tail> ::= "and" <cmp_expr> <and_tail> | ε
+<add_tail> ::= <add_op> <mul_expr> <add_tail> | ε
+<mul_tail> ::= <mul_op> <unary> <mul_tail> | ε
+<arg_list> ::= <expr> <arg_list_tail>
+<arg_list_tail> ::= "," <expr> <arg_list_tail> | ε
+<id_tail> ::= <letter_or_digit_or_underscore> <id_tail> | ε
+<digits_opt> ::= <digit> <digits_opt> | ε
+<frac_opt> ::= "." <digit> <digits_opt> | ε
+<unary> ::= "-" <unary> | <primary> (recursive on the right via the leading “-”)
+Immediate/Indirect left recursion: None.
+Fixes needed: None. (If you ever had left recursion A → A α | β, convert to A → β R; R → α R | ε.)

@@ -1,0 +1,7 @@
+************************************* Invoked: Wed Oct 22 11:02:50 2025
+[0] Arguments: C:\Users\teodo\AppData\Local\Temp\WinGet\MSYS2.MSYS2.20250830\msys2-x86_64-20250830.exe, install, --confirm-command, --root, C:\msys64
+[30] Operations sanity check succeeded.
+[65] Using metadata cache from "C:/Users/teodo/AppData/Local/cache\\qt-installer-framework\\d75f1c19-3379-3717-ae8d-1404b51494a9"
+[66] Found 0 cached items.
+[72] Loaded control script ":/metadata/installer-config/control_js"
+[75] TargetDirectoryInUse : Error : The directory you selected already exists and contains an installation. Choose a different target for installation.
